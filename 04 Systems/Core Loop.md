@@ -48,9 +48,12 @@ flowchart LR
   Q[Quest] --> C[Recruit / upgrade companion]
   C --> B[Boss test]
   B --> A[New traversal + combat option]
-  A --> R[New region]
+  A --> S[Outfit Shop / Gear Up]
+  S --> R[New region]
   R --> Q
 ```
+
+The meta loop now includes the **Outfit Shop**, where Desire Fragments earned in combat are spent on kinky attire and armaments that alter Dorothy's interaction with the world.
 
 ## Session Loop
 
