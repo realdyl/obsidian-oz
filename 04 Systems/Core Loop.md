@@ -16,15 +16,15 @@ updated: 2026-10-26
 
 ```mermaid
 flowchart LR
-  A[Read the room] --> B[Reposition with Shoes]
+  A[Read the room] --> B[Reposition / Allure]
   B --> C[Summon the right friend]
   C --> D[Spend ability meter]
   D --> E[Kick / finish / disengage]
   E --> A
 ```
 
-1. **Read:** enemy mix, hazards, exits, verticality.
-2. **Move:** blink-dodge telegraphs, reposition, take high ground.
+1. **Read:** enemy mix, hazards, exits, verticality, and "Desire triggers."
+2. **Move/Allure:** blink-dodge telegraphs, reposition, or use **Allure** (movement/attire-based distraction) to open a gap.
 3. **Choose:** summon the companion whose kit answers this room.
 4. **Spend:** use abilities that drain that companion's meter.
 5. **Resolve:** kick to stagger/launch, disengage, or chain into the next beat.
@@ -62,6 +62,7 @@ flowchart LR
 | Resource | Owner | Regenerates | Spent on |
 | --- | --- | --- | --- |
 | **Spark** (shoe charges) | Dorothy | Fast, on cooldown | Blink, long teleport |
+| **Allure** | Dorothy | On successful distractions | Seductive stuns, enemy manipulation |
 | **Brain** | Scarecrow | Slow, on dismiss/out of combat | Crows, Confuse, Decoy, Stitch |
 | **Heart** | Tin Man | Slow, on block/damage absorbed | Axe, Oil, Gilded Edge, Guard |
 | **Courage** | Lion | Slow, on stealth/fear | Roar, Cloak, Pounce, Sweep |

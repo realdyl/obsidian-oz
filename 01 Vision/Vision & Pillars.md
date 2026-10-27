@@ -15,9 +15,9 @@ updated: 2026-10-26
 
 ## High Concept
 
-> *A young girl lands in Oz and discovers the fairy tale is a machine. To get home, she must break it — with a pair of impossible shoes and three companions who each believe they are missing the one thing they need.*
+> *A young woman lands in Oz and discovers the fairy tale is a machine of distorted desire. To get home, she must navigate a world of opulent excess and profound rot, borrowing the shattered fragments of courage, heart, and brains from companions who have been consumed by their own appetites.*
 
-A third-person action-adventure built on **mobility + summons**. Dorothy is not a warrior. She is fast, clever, and relentless — and she fights by borrowing the courage, heart, and brains of friends who don't believe they have any.
+A third-person action-adventure built on **mobility + summons**, exploring the intersection of **Eros and Horror**. Dorothy is not a damsel; she is a survivor who learns to weaponize the desires of others to dismantle the Wizard's gilded cage.
 
 ## Player Fantasy
 
@@ -47,7 +47,7 @@ Scale is a mechanic and a mood. Mombi is a building. The Wizard is a façade. Th
 
 ## Tone
 
-Whimsical dread. Warm and funny in the quiet moments, genuinely unnerving in the dark ones. Never grimdark; always storybook.
+**Hedonistic Horror.** A world of extreme contrast: opulent, neon-lit pleasure juxtaposed with biological rot and spiritual void. It is a satire of desire—warm and seductive in its surface, but cold and predatory underneath. Rated M/AO.
 
 ## Reference Points
 

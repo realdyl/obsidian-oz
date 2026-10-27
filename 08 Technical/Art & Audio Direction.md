@@ -20,14 +20,15 @@ updated: 2026-10-26
 2. **Oz is beautiful and wrong.** Saturated wonder undercut by rot, propaganda, and stitching.
 3. **Silhouette first.** Every character reads at 20 m.
 4. **Color = faction and mood.** Munchkinland candy-bright; Gillikin cool greens; Wilds amber/rust; Winkie iron-grey; Emerald City poisoned green.
-5. **The Duality of the Dream.** Every environment and character should have a "perfect" face and a "broken" side. Contrast the whimsical with the morbid (e.g., a beautiful dress with a rotting underside).
+5. **The Duality of the Dream.** Every environment and character should have a "perfect" face and a "broken" side. Contrast the whimsical with the morbid.
+6. **Horrific and Aesthetic.** Borrow the "Beautiful Corruption" of *Alice: Madness Returns*. High fashion and ornate beauty meeting visceral, unsettling decay.
 
-## Aesthetic Guidelines: Whimsical Dread
+## Aesthetic Guidelines: Hedonistic Horror
 
 ### 1. Contrast & Saturation
-- **Opposing Palettes**: Pair high-saturation "candy" colors with oppressive, deep shadows. 
+- **Opposing Palettes**: Pair high-saturation "candy" colors (neon pinks, electric blues) with oppressive, deep shadows. 
 - **Luminous Accents**: Use glowing, ethereal light sources (neon blues, toxic greens) to highlight points of interest in dark, decaying spaces.
-- **The "Rot" Layer**: Beauty is the skin; rot is the bone. Textures should transition from pristine to decayed as the player examines them closer or enters "broken" zones.
+- **The "Rot" Layer**: Beauty is the skin; rot is the bone. High-fashion aesthetics (latex, lace, silk) transitioning into visceral decay.
 
 ### 2. Surreal Architecture
 - **Distorted Geometry**: Buildings should feel sentient or unstable. Lean into "wrong" angles, floating fragments, and impossible connections (e.g., a house held together by glowing wires or stitches).
@@ -45,13 +46,19 @@ updated: 2026-10-26
 | Region | Dominant | Accent | Mood |
 | --- | --- | --- | --- |
 | Kansas (prologue) | Black, white, grey | Warm window light | Austere, doomed, tender |
-| Munchkinland | Candy pink, sky blue | Licorice black | Cheerful, uneasy |
+| Munchkinland | Neon pink, electric blue | Licorice black | Hedonistic, predatory cabaret |
 | Gillikin | Moss, cream | Gold | Noble, fading |
 | The Wilds | Amber, rust, deep green | Bone white | Feral, mythic |
 | Winkie Country | Iron grey, ember | Toxic green | Industrial dread |
-| Emerald City | Emerald, chrome | White | Spectacle, lie |
+| Emerald City | Emerald, chrome | White | Apex of vice, toxic luxury |
 
 ## Character Read
+
+### Protagonist: Badass Dorothy
+Dorothy is not a damsel; she is the most dangerous thing in the room.
+- **The "Sexy" Factor**: Not sexualized, but "sexy" in her absolute competence and intensity. 
+- **Vibe**: Fearless, focused, and relentless. Her movements should be precise and powerful.
+- **Visual Contrast**: A small, innocent gingham aesthetic paired with a lethal, calculated combat style.
 
 | Character | Silhouette |
 | --- | --- |
@@ -83,6 +90,10 @@ updated: 2026-10-26
 4. **Each companion has a motif** that layers in when summoned.
 
 ## Prologue Color Script
+
+### The Opening Scene: Kansas
+**Atmosphere**: A dusty, oppressive wasteland. A singular, lonely farmhouse surrounded by beaten-down, rotting fences. The environment should feel exhausted and drained of life.
+- **Visuals**: High-contrast black and white. Soft grain. The dust should feel tangible, like a veil over the world.
 
 1. **Kansas and the house interior:** pure black and white. High contrast, soft grain, no color grading tricks beyond luminance.
 2. **Flight:** black and white with a single warm accent (the window light, Dorothy's shoes catching the storm).
