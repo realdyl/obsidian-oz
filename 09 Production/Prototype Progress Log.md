@@ -196,3 +196,7 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
 - [[Party Control and the Bond]]
 - [[Ozma, Locasta & Glinda]]
 - [[Witch of the West]]
+
+### 2026-11-06 — L3 Poppy rescue clarity
+- Both flesh stick first pass; Clear Air (1/3) · Mice Cart (2/3) · E Lion haul (3/3)
+- oz ship after smoke/act34 OK
