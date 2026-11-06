@@ -13,6 +13,14 @@ updated: 2026-11-05
 
 Living log for Godot `oz/` vs this vault. Agents append dated bullets; do not delete history.
 
+## 2026-11-06 — L2 linear YBR geography
+
+- **User correction:** Locasta was wedged in the fallen house; companions sat left/right of spawn (Scarecrow east / Lion NE / Tin west). Request: Locasta **before** the house on a longer approach; **follow the Yellow Brick Road** to find each character in sequence; expand territory as needed.
+- **Spine (south = +Z):** spawn `YBR_SPAWN (0,-52)` → Locasta `YBR_LOCASTA (0,-28)` clear of house (~z=-5) → house/Shoes → Scarecrow `(0,28)` → Lion `(0,62)` → Tin `(0,95)` → tree `(0,110)` → marshal `(0,118)` → West gate `YBR_WEST_GATE (0,128)`.
+- Bounds `PLAY_BOUND` **72×140**; continuous NS brick strips; cottages/whimsy off-centerline only.
+- Locasta counsel + objectives all say “follow the YBR south”; compass OPEN_ROAD points at West gate.
+- Headless: `PLACE_OK` (Locasta before house + sequenced z) · `PLAY_OK` · `SMOKE_OK`.
+
 ## 2026-11-05
 
 ### Flow
