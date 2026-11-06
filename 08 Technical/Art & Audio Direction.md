@@ -75,6 +75,7 @@ Dorothy is not a damsel; she is the most dangerous thing in the room.
 - Basket UI is a literal basket close-up.
 - Health as a stitched heart; meters as Brain/Heart/Courage icons.
 - No sci-fi HUD. No damage numbers by default (optional).
+- **Full polish roadmap / agent handoff:** [[GUI & UX Roadmap]] (phases G0–G5, APIs, debt, acceptance).
 
 ## Animation Style
 

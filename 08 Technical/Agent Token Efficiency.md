@@ -236,3 +236,4 @@ flowchart LR
 - [[Regions & Level Flow]]
 - [[Movement, Red Shoes & Kick]]
 - [[Design Note Template]]
+- [[GUI & UX Roadmap]] — polish phase only when founder unlocks; do not thrash spine sessions on chrome

@@ -13,6 +13,13 @@ updated: 2026-11-06
 
 Living log for Godot `oz/` vs this vault. Agents append dated bullets; do not delete history.
 
+## 2026-11-06 — GUI & UX Roadmap (handoff)
+
+- **User:** Vault must hold a GUI roadmap so a future agent can significantly enhance GUI/UX when polish phase starts.
+- **Note:** [[GUI & UX Roadmap]] under `08 Technical` — pillars, current `play_hud` / DialogueUI / LevelTransition APIs, UX debt, phases **G0–G5**, component checklist, per-level acceptance, handoff blurb.
+- Linked from [[Oz Control Room]], [[Art & Audio Direction]], [[Milestones & Backlog]], [[Accessibility & Difficulty]], `AGENTS.md`.
+- Gate unchanged: do not start chrome work until founder unlocks GUI phase; spine logic first.
+
 ## 2026-11-06 — L3 Deadly Poppy Field (book spine insert)
 
 - **User:** Poppy nap is book (Baum ch.VIII–IX), not MGM-only. Want **own level** in proper sequence between Munchkin party and West.

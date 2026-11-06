@@ -149,3 +149,4 @@ res://
 - [[Prototype Plan]]
 - [[Agent Token Efficiency]]
 - [[Art & Audio Direction]]
+- [[GUI & UX Roadmap]] — PlayHUD / DialogueUI / shell architecture for polish phase

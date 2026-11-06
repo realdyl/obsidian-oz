@@ -41,6 +41,7 @@ updated: 2026-10-26
 - [ ] Scarecrow Crows + meter
 - [ ] Tin Man Axe + meter
 - [ ] Basic HUD
+- [ ] **GUI phase:** follow [[GUI & UX Roadmap]] G0–G5 when founder unlocks polish (do not start early)
 
 ### Next (Vertical slice)
 
@@ -49,10 +50,12 @@ updated: 2026-10-26
 - [ ] East Witch cold open
 - [ ] Scarecrow full kit
 - [ ] Marshal boss
-- [ ] Basket UI
-- [ ] Toto wayfinding v1
-- [ ] Save/checkpoint
-- [ ] VO scratch
+- [ ] Basket UI — see [[GUI & UX Roadmap]] G3
+- [ ] Toto wayfinding v1 — see [[GUI & UX Roadmap]] G3
+- [ ] Save/checkpoint — see [[GUI & UX Roadmap]] G4
+- [ ] VO scratch — DialogueUI speak path
+- [ ] Pause + settings shell — [[GUI & UX Roadmap]] G1
+- [ ] Lead roster + stitched heart — [[GUI & UX Roadmap]] G2
 
 ### Later (Production)
 
@@ -64,9 +67,10 @@ updated: 2026-10-26
 - [ ] Emerald City + Wizard
 - [ ] Glinda + endings
 - [ ] Side quests S1–S8
-- [ ] Accessibility suite
-- [ ] Localization pass
+- [ ] Accessibility suite — [[GUI & UX Roadmap]] G5 + [[Accessibility & Difficulty]]
+- [ ] Localization pass — [[GUI & UX Roadmap]] G5
 - [ ] Steam Deck verification
+- [ ] Title / main menu / credits — [[GUI & UX Roadmap]] G4
 
 ### Cut List (if needed)
 

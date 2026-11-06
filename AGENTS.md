@@ -35,3 +35,4 @@ Game Design / Production.
 - [[Agent Token Efficiency]] — token budget and build protocol for agents on the Oz Godot prototype
 - [[Auto Git Policy]] — commit/push both `obsidian-oz` and `oz` after landed verified work
 - [[Prototype Progress Log]] — living Godot vs vault progress
+- [[GUI & UX Roadmap]] — GUI/UX polish handoff (G0–G5); start only when founder unlocks that phase

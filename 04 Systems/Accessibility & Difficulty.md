@@ -79,3 +79,4 @@ Presets are **fully customizable** after selection; presets are just starting po
 - [[Core Loop]]
 - [[Basket & Toto Wayfinding]]
 - [[Vision & Pillars]]
+- [[GUI & UX Roadmap]] — implementation phases for options, scale, captions, shells
