@@ -1,20 +1,25 @@
 ---
 title: Q4 - Glinda & the Road Home
 type: quest
-status: draft
+status: active
 tags:
   - oz
   - oz/quest
   - oz/act-4
+  - oz/act-5
 aliases:
   - Glinda and the Road Home
   - Q4
-updated: 2026-10-26
+updated: 2026-11-06
 ---
 
 # Q4 — Glinda & the Road Home
 
 > **Founder quest:** “Locate Glinda Goode (Good Witch of the South).”
+
+## Prototype (L5) — `oz/regions/quadling/glinda_court.*`
+
+Playable spine after L4 curtain: YBR south → Glinda multi-line E counsel (Shoes always home) → **FINAL STEP** pink Road Home pad E → hourglass ending sting. F8 skip counsel · F9 ending. Whimsy palette `glinda`. Full multi-ending choice table below remains design scope; prototype ships **go home** sting only.
 
 ## Objective
 

@@ -6,12 +6,20 @@ tags:
   - oz
   - oz/production
   - oz/prototype
-updated: 2026-11-05
+updated: 2026-11-06
 ---
 
 # Prototype Progress Log
 
 Living log for Godot `oz/` vs this vault. Agents append dated bullets; do not delete history.
+
+## 2026-11-06 — L3 open YBR · Whimsy every level · L5 Glinda
+
+- **User:** Winkie road to Emerald sealed by solid gatehouse block; YBR must always be the path to the next level; whimsy on every level (same pattern, regional variation); develop L5.
+- **L3 exit fix:** removed solid `Gatehouse` fill. Open arch = `GatePillarL/R` + `GateArch` lintel; continuous `YellowBrickRoad` / `YellowBrickRoadN` / `YellowBrickRoadGate` through the wall gap; glowing `EmeraldGatePad` at `YBR_EMERALD_GATE (0,0.08,-50)`; `PLAY_BOUND_Z` 56. ROAD_OPEN objective = follow YBR **north** through open arch · E green pad → Emerald (not walk into a building mass).
+- **Whimsy autoload** `systems/whimsy.gd` — `setup` / `try_collect` / `prompt_if_near`; palettes `kansas` · candy/munchkin · `winkie` · `emerald` · `glinda`. Wired L1 Kansas, L3 West, L4 Emerald, L5 Glinda (L2 keeps local off-road whimsy; same bounce/giggle/chime/dance pattern). Never story-gated.
+- **L5 scaffold:** `regions/quadling/glinda_court.*` — YBR south from Emerald exit → Glinda (Good Witch of the **South**) multi-line counsel (shoes always home) → pink **Road Home** pad FINAL STEP · E → ending sting. F8 skip counsel · F9 ending. L4 curtain/choice/DONE + F9 → Glinda via hourglass.
+- Headless: `SMOKE_OK` / `SMOKE_L3_L4_OK` / `SMOKE_L5_OK` · `WEST_YBR_OPEN` / `WEST_OK` / `EMERALD_OK` / `GLINDA_OK` / `ACT34_OK` / `ACT5_OK` · `PLAY_OK`.
 
 ## 2026-11-06 — L2 linear YBR geography
 

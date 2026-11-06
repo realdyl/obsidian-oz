@@ -20,16 +20,25 @@ Compressed for the current `oz/` build — full design table below still holds f
 
 | Play level | Scene | Role |
 | --- | --- | --- |
-| **L1** | Kansas farmyard | B&W prologue · enterable farm · storm house-lift → Munchkinland |
+| **L1** | Kansas farmyard | B&W prologue · enterable farm · storm house-lift → Munchkinland · grey **Whimsy** side score |
 | **L2** | Munchkinland landing | **Linear YBR N→S:** Locasta (before house) → Shoes → SC → Lion → Tin → **YBR south FINAL STEP** → West |
-| **L3** | Winkie · West castle | Court → West (F/axe pressure) → **cistern water melt** → Emerald gate |
-| **L4** | Emerald City · Wizard's tower | **Yellow Brick Road** approach · enterable hall · projection · curtain |
+| **L3** | Winkie · West castle | Court → West (F/axe) → **cistern water melt** → **open YBR arch north** (no solid gatehouse) → Emerald |
+| **L4** | Emerald City · Wizard's tower | **YBR** approach · enterable hall · projection · curtain → **YBR south to Glinda** |
+| **L5** | Quadling · Glinda's court | Glinda South · shoes truth · **Road Home pad FINAL STEP** (prototype ending) |
 
-**Playtest skips:** F9 Kansas→L2 · F10 L2→West · F11 L2→Emerald · F9 West→Emerald.
+**Playtest skips:** F9 Kansas→L2 · F10 L2→West · F11 L2→Emerald · F9 West→Emerald · F9 Emerald→Glinda · F8/F9 on L5 counsel/ending.
+
+**Rule:** the **Yellow Brick Road** is always the continuous path to the next destination / level exit. Never seal a level exit with a solid block building across the brick.
 
 **L2 lost?** Stay on the **Yellow Brick Road** (N→S corridor). Order on the brick: Locasta (before house) → Shoes under house → Scarecrow → Lion → Tin Man → south glowing West gate. Optional **Whimsy** is off the brick (not story-gated).
 
-**L3 stuck on West?** She does **not** die to F spam. Weaken until **GROUNDED — WATER!**, compass → **Cistern**, **E** draw, **E** douse.
+**L3 stuck on West?** She does **not** die to F spam. Weaken until **GROUNDED — WATER!**, compass → **Cistern**, **E** draw, **E** douse. After melt: follow YBR **north** through the **open arch** to the green Emerald pad (E).
+
+**L3→L4 blocked?** There is no solid gatehouse fill — pillars + lintel only; brick continues through the wall gap to `EmeraldGatePad`.
+
+**L4→L5:** after curtain choice, hourglass → Glinda court; stay on YBR south to pink Road Home pad.
+
+**Whimsy (every level):** optional side score — bounce / giggle / chime / dance; shared `Whimsy` autoload; regional palette; never story-gated.
 
 ### Book vs game order (important)
 
