@@ -93,8 +93,10 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
 - **Tin axe:** arm chop + `CombatFx.axe_arc` swing trail (not torso headbutt flash).
 - **Hourglass level transition:** autoload `LevelTransition` — large spinning hourglass ~2s on level enter and on exit/change_scene (Kansas↔Munchkinland, OPEN_ROAD sting). Skipped headless.
 - **Witches (book-true):** Locasta (Good North) greets near landing; East witch remains cold-open dead (not a greeter); Wicked West = distant NW omen only until later boss.
+- **Locasta first beat:** `MEET_LOCASTA` before Shoes — glowing greeter on the path from spawn, multi-line E dialogue that teaches Shoes / Scarecrow E / Lion / Tin / F kick / West later. Compass points to her until done.
+- **Rogue map bounds:** puppets clamp to play half ~56×52 (inside MapBorder); march_from_afar never spawns past rails; always chase Lead (no idle rim); faster far sprint; threat compass ignores/clamps OOB.
 - **Auto-git policy:** [[Auto Git Policy]] + AGENTS.md — commit/push oz + vault after verified passes.
-- Headless: `PLACE_OK` · `AUTO_LEAD_*` · `LION_PACK_OK` · `TIN_PATH_OK` · `MULTI_TARGET_OK` · `PLAY_OK` · `KANSAS_OK`.
+- Headless: `LOCASTA_OK` · `BOUNDS_OK` · `HUNT_OK` · `HUNT_BOUNDS_OK` · `PLACE_OK` · `MULTI_TARGET_OK` · `PLAY_OK` · `KANSAS_OK`.
 
 ## Related
 
