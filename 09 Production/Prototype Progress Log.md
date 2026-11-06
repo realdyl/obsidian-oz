@@ -135,6 +135,16 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
 - **End-gates (Oz-true, no portals)**: L2 south YBR pad E → hourglass West; L3 north Emerald gate E → hourglass Emerald; L4 curtain E → choice E → hourglass sting. Objectives labeled **FINAL STEP**.
 - Headless still `SMOKE_OK` / `SMOKE_L3_L4_OK` / `ACT34_OK`.
 
+### Kansas L1 storm + farm rethink
+- **Spread objectives:** basket ~barn west path; Toto ~east chicken run; house/Aunt center — no more three E markers in one cluster.
+- **Basket:** larger wicker mesh + “Toto's basket” Label3D.
+- **Aunt Em** + **Uncle Henry** full-ish B&W figures; Em multi-line porch dialogue (DialogueUI); Henry runs for stock in storm.
+- **Cellar clarified:** Em already below; Dorothy too late — not a mystery third E.
+- **FINAL STEP (book-true):** glowing farmhouse door E during cyclone → **house lift** ride → white-out hourglass → Munchkinland (not random debris as the only end).
+- Distant grey cyclone funnel only — **no Kansas rainbow** (B&W lock + IP: no “Over the Rainbow”).
+- Film-only left out: Professor Marvel wagon, Miss Gulch double.
+- `kansas_sim` asserts spread distances + house-lift path → `KANSAS_OK`.
+
 ## Related
 
 - [[Kansas Farmyard Prologue]]
