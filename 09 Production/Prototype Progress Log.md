@@ -124,6 +124,17 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
 - `SMOKE_OK` / `SMOKE_L3_L4_OK` load all four scenes.
 - Hourglass `LevelTransition` titles for West / Emerald enter-exit.
 
+### Polish pass (L4 enter + speech + locomotion)
+- **Enterable Wizard palace-hall**: gates → approach stairs → glowing palace doors (E) → hollow great hall, columns, throne dais (not a solid exterior box only).
+- **Oz projection**: screen + face (eyes/mouth pulse) while mysterious; **body figure** of the humbug appears when curtain is pulled (vault P1 spectacle → P3 man).
+- **E audience fix**: dialogue advances inside the hall (was dead because throne radius was too tight after gate teleport).
+- **DialogueUI** autoload: on-screen speaker/body panel + OS TTS when available (AI VO path later: clip bank / ElevenLabs / local XTTS into `DialogueUI.speak`).
+- **Locasta**: full-ish silhouette (legs, layered robe, bodice, arms, hat brim, wand, aura) — not cone+ball only.
+- **Interiors**: title-flavored props (mayor desk/ledger, market counter/shelves, cottage bed/hearth) + plaques — not anonymous junk cubes.
+- **Locomotion** autoload: shared step-up (~1.15m) + wall-steer for Dorothy, companions, and rogue munchkins; Tin terrace uses longer shallow stair run.
+- **End-gates (Oz-true, no portals)**: L2 south YBR pad E → hourglass West; L3 north Emerald gate E → hourglass Emerald; L4 curtain E → choice E → hourglass sting. Objectives labeled **FINAL STEP**.
+- Headless still `SMOKE_OK` / `SMOKE_L3_L4_OK` / `ACT34_OK`.
+
 ## Related
 
 - [[Kansas Farmyard Prologue]]

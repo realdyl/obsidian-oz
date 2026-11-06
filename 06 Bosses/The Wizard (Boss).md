@@ -9,12 +9,20 @@ tags:
 aliases:
   - Wizard Boss
   - Final Boss
-updated: 2026-10-26
+updated: 2026-11-06
 ---
 
 # The Wizard — Final Boss
 
 > The fight is not against a man. It is against **the machine he built** — and the lie a whole land agreed to believe.
+
+## Prototype (L4 · Emerald palace-tower)
+
+- Approach on the **Yellow Brick Road** → city gates → climb steps → **enter the great hall** (E at palace doors).
+- **P1 spectacle (now):** projected face of Oz (glowing head, speaking mouth) — mysterious until curtain. Multi-line audience (E) with on-screen DialogueUI + optional TTS.
+- **Reveal:** pull red curtain → projection dies → **small man body** + humbug line (vault P3 seed; full chase/choice later).
+- Final prototype step: E “I want to go home” → hourglass sting (Glinda / Road Home not built).
+- F8 skip into hall/audience · F9 done stub.
 
 ## Structure
 
