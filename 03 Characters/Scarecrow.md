@@ -16,6 +16,9 @@ updated: 2026-10-26
 **Role:** First companion. Crowd control, confusion, misdirection.
 **Resource:** **Brain** (thematic meter).
 **Found:** Impaled on a pole in the fields outside the Lollipop Guild's territory ([[Q2 - The Lollipop Guild]]).
+**Look target:** Full-body burlap straw man — hat, patches, pole-scar through chest, floppy limb walk, painted eyes. Book-true + original spin (not MGM). Procedural body in `oz/actors/companions/scarecrow_visual.gd`.
+**Lead verb (prototype):** F shove. No blink.
+**Prototype join (Munchkinland landing):** After Shoes, free from glowing pole with **E** → Bond unlock → Tab / 2 Lead.
 
 ## Personality
 

@@ -15,7 +15,7 @@ Start at [[Oz Control Room]].
 | `05 Enemies` | Roster, counters, encounter recipes |
 | `06 Bosses` | Framework + four bosses and the cold open |
 | `07 Quests` | Main questline, Q1–Q4, side quests |
-| `08 Technical` | Engine, architecture, art/audio, prototype |
+| `08 Technical` | Engine, architecture, art/audio, prototype, agent token efficiency |
 | `09 Production` | Roadmap, milestones, risks, open questions |
 | `99 Meta` | Note template and conventions |
 
@@ -32,11 +32,15 @@ The house lands. The Shoes choose Dorothy. Oz is a wonderland run by a liar, and
 5. [[Main Questline]]
 6. [[Game Plan - Roadmap]]
 
+## Agents building the prototype
+
+Load [[Agent Token Efficiency]] + the `godot-4-prototype` skill before Godot work. Prove with `PLAY_OK`, not chat claims.
+
 ## Status
 
 - **M0 Bible:** in progress (this vault)
-- **Engine:** Godot 4.5 recommended, pending prototype
-- **Next:** prototype feel tests — see [[Prototype Plan]]
+- **Engine:** Godot 4.8 prototype live under `realdyl/oz`
+- **Next:** prototype feel tests — see [[Prototype Plan]] · agent protocol [[Agent Token Efficiency]]
 
 ## Conventions
 

@@ -19,7 +19,7 @@ Triage these before content lock. Each has a default so work can continue.
 
 | # | Question | Default | Status |
 | --- | --- | --- | --- |
-| Q1 | Companion control: AI + player abilities, or full swap? | AI + abilities | Proposed |
+| Q1 | Companion control: AI + player abilities, or full swap? | Hybrid: AI default + Lead swap via [[Party Control and the Bond]] | Locked 2026-11-05 |
 | Q2 | Should the Lion restriction apply only in combat, or near any hostile? | Combat state only | Proposed |
 | Q3 | Is the kick the only base attack, or does Dorothy get a second? | Kick only | Proposed |
 | Q4 | Do companions take damage / need healing, or only meters? | Meters only | Proposed |

@@ -147,4 +147,5 @@ res://
 
 - [[Tech Stack Decision]]
 - [[Prototype Plan]]
+- [[Agent Token Efficiency]]
 - [[Art & Audio Direction]]

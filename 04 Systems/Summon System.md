@@ -42,13 +42,13 @@ This keeps the screen readable, the AI scope small, and the fantasy clear: *you 
 
 ## Control Model
 
-**Recommended:** AI-driven companion + player-triggered abilities.
+**Default:** AI-driven companion + player-triggered abilities.
 
 - Companion follows, holds position, or auto-engages based on a simple behavior toggle.
 - Player presses ability buttons to fire the kit; the companion animates it.
-- Dorothy always remains the avatar — no full control swap.
+- Dorothy remains the **default** avatar.
 
-**Alternative (stretch):** direct control swap. Cut from v1; it doubles animation and camera work. See [[Open Questions]].
+**Direct control (Lead):** Bonded companions can take the stick when present. The Silver Shoes stay on Dorothy; only **agency** transfers. Full rules: [[Party Control and the Bond]].
 
 ## Ability Inputs
 
@@ -96,6 +96,7 @@ This keeps the screen readable, the AI scope small, and the fantasy clear: *you 
 ## Related
 
 - [[Companion Kits]]
+- [[Party Control and the Bond]]
 - [[Core Loop]]
 - [[Accessibility & Difficulty]]
 - [[Open Questions]]

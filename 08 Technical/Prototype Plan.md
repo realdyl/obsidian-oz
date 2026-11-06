@@ -9,7 +9,7 @@ tags:
 aliases:
   - Prototype
   - Vertical Slice
-updated: 2026-10-26
+updated: 2026-11-05
 ---
 
 # Prototype Plan
@@ -74,8 +74,13 @@ After prototype:
 - If feel is **not** there → cut scope or re-evaluate engine.
 - If feel **is** there → greenlight vertical slice (Act 1, full Scarecrow kit, first boss).
 
+## Agent execution
+
+Before any Godot build/debug turn on this prototype, follow [[Agent Token Efficiency]] (load skill, minimum reads, `PLAY_OK` then one capture). Do not burn context re-deriving SpringArm, input map, or landing canon.
+
 ## Related
 
+- [[Agent Token Efficiency]]
 - [[Tech Stack Decision]]
 - [[Architecture & Pipeline]]
 - [[Game Plan - Roadmap]]

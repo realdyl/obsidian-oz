@@ -17,7 +17,8 @@ updated: 2026-10-26
 ## Dorothy
 
 **Role:** Protagonist. Mobility + summoner. Not a brawler.
-**Age:** ~12–14. **Voice:** plainspoken Kansas honesty; funny without trying.
+**Age:** 18 (M-rated adult presentation locked 2026-11-05). **Voice:** plainspoken Kansas honesty; funny without trying.
+**Look target:** Full-body feminine farm girl — capable, alluring, badass — not a capsule blob. Procedural body stand-in until authored mesh.
 
 ### Fantasy
 You are not strong. You are *fast, kind, and stubborn* — and you make broken people believe they're whole.
@@ -36,7 +37,7 @@ You are not strong. You are *fast, kind, and stubborn* — and you make broken p
 From *“I just want to go home”* → *“home is something I have to make possible for other people first”* → the final choice (see [[The Wizard (Boss)]]).
 
 ### Prologue
-Kansas is Dorothy's baseline: no shoes, no friends, no powers — just a girl in a house. The playable interior (canvas, debris, closing the window) and the flight establish her as **resourceful before she is magical**. She is presented in black and white until the house lands; color arrives with Oz and the Shoes.
+Kansas is Dorothy's baseline: no shoes, no friends, no powers — just her and the farm. The playable farmyard (basket, Toto, debris) establishes her as **resourceful before she is magical**. She is presented in black and white until the house lands; color arrives with Oz and the Shoes.
 
 ### Rules of Characterization
 - Dorothy never enjoys killing; she disables, scatters, and outsmarts.

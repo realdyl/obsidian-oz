@@ -17,6 +17,9 @@ updated: 2026-10-26
 **Role:** Second companion. Fear, stealth, disruption.
 **Resource:** **Courage** (thematic meter).
 **Found:** Among the **lions, tigers, and bears** of the Wilds, hiding from everything including himself ([[Q3 - Locasta & the Princess]]).
+**Look target:** Full-body lion — mane, four legs, tail, cower pose until calmed, then confident walk. Book-true + original spin. Procedural body in `oz/actors/companions/lion_visual.gd`.
+**Lead verb (prototype):** F roar (AoE stagger). No blink.
+**Prototype join (Munchkinland landing compressed):** After Scarecrow free, calm in north brush with **E** (trust, no fight) → Bond unlock → Tab / 4 Lead.
 
 ## Personality
 

@@ -17,6 +17,9 @@ updated: 2026-10-26
 **Role:** Third companion. Armor-breaker, tank, terrain tool.
 **Resource:** **Heart** (thematic meter).
 **Found:** Rusted solid in the Winkie woods, still standing guard over nothing ([[Main Questline]] Act 3).
+**Look target:** Full-body riveted tin woodman — funnel cap, axe, heavy limb walk; rusted until oiled. Book-true + original spin. Procedural body in `oz/actors/companions/tinman_visual.gd`.
+**Lead verb (prototype):** F axe. No blink.
+**Prototype join (Munchkinland landing compressed):** After Lion, take oil can → **E** on Tin Man → Bond unlock → Tab / 3 Lead.
 
 > [!note] Open design
 > The founder notes don't specify where the Tin Man is found. Proposed: **Winkie Country**, as the West witch's discarded “perfect soldier.” This ties his heart arc to the regime that built him. See [[Open Questions]].

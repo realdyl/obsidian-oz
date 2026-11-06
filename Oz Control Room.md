@@ -8,7 +8,7 @@ tags:
 aliases:
   - Oz Home
   - Control Room
-updated: 2026-10-26
+updated: 2026-11-05
 ---
 
 # Oz Control Room
@@ -43,9 +43,10 @@ Legend: blocked · draft · locked
 - **Legal guardrails for Oz IP:** [[IP & Legal]]
 - **How a minute of play feels:** [[Core Loop]]
 - **The signature verb:** [[Movement, Red Shoes & Kick]]
-- **The hook:** [[Summon System]] · [[Companion Kits]]
+- **The hook:** [[Summon System]] · [[Companion Kits]] · [[Party Control and the Bond]]
 - **The journey:** [[Main Questline]]
 - **The plan:** [[Game Plan - Roadmap]]
+- **Agent / build token budget:** [[Agent Token Efficiency]] (mandatory before Godot execution)
 
 ---
 
@@ -60,7 +61,7 @@ Legend: blocked · draft · locked
 | `05 Enemies` | Enemy roster and counters |
 | `06 Bosses` | Framework + four boss designs |
 | `07 Quests` | Main questline and quest-by-quest beats |
-| `08 Technical` | Engine decision, architecture, art/audio, prototype |
+| `08 Technical` | Engine decision, architecture, art/audio, prototype, [[Agent Token Efficiency]] |
 | `09 Production` | Roadmap, backlog, risks, open questions |
 | `99 Meta` | Templates |
 
@@ -93,6 +94,9 @@ Legend: blocked · draft · locked
 | 2026-10-26 | Vault created; design bible drafted from founder notes | Done |
 | 2026-10-26 | Shoes treated as *silver* in canon, with red as a cosmetic/legal review item | Pending legal |
 | 2026-10-26 | One active summon at a time (AI-driven, player-triggered abilities) | Proposed |
+| 2026-11-05 | Agent sessions follow [[Agent Token Efficiency]] + godot-4-prototype skill before Oz Godot work | Locked |
+| 2026-11-05 | Party Lead via [[Party Control and the Bond]]: agency swap, Shoes stay on Dorothy; arrows primary move | Locked |
+| 2026-11-05 | Play order: [[Kansas Farmyard Prologue]] (L1) → Munchkinland landing (L2); GUI polish deferred until spine is solid | Locked |
 
 ---
 

@@ -20,12 +20,14 @@ Game Design / Production.
 - Respect [[IP & Legal]]: Baum books are public domain; avoid MGM/Warner trade dress (ruby slippers, green-skinned witch, film designs, songs).
 - Keep the design legible: rules, counters, and player decisions over lore dumps.
 - Update `Oz Control Room.md` when the vault structure changes.
+- **Godot / prototype execution:** load [[Agent Token Efficiency]] and the `godot-4-prototype` skill before building or debugging `realdyl/oz`. Prefer headless `PLAY_OK` then one capture; do not re-ingest the whole vault each turn.
 
 ## Verification
 - Verify all Markdown renders in Obsidian (tables, Mermaid, callouts, wikilinks).
 - Check every new note has complete frontmatter and at least one inbound/outbound link.
 - Re-read `09 Production/Open Questions.md` before locking design decisions.
 - Run `git status --short` before handoff; the working tree should be clean and `main` should match `origin/main`.
+- For playable Godot claims: `tools/play_sim.gd` prints `PLAY_OK` (see [[Agent Token Efficiency]]).
 
 ## Child DOX Index
-- (none)
+- [[Agent Token Efficiency]] — token budget and build protocol for agents on the Oz Godot prototype
