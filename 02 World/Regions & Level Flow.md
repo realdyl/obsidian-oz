@@ -21,29 +21,32 @@ Compressed for the current `oz/` build — full design table below still holds f
 | Play level | Scene | Role |
 | --- | --- | --- |
 | **L1** | Kansas farmyard | B&W prologue · enterable farm · storm house-lift → Munchkinland · grey **Whimsy** side score |
-| **L2** | Munchkinland landing | **Linear YBR N→S:** Locasta (before house) → Shoes → SC → Lion → Tin → **YBR south FINAL STEP** → West |
-| **L3** | Winkie · West castle | Court → West (F/axe) → **cistern water melt** → **open YBR arch north** (no solid gatehouse) → Emerald |
-| **L4** | Emerald City · Wizard's tower | **YBR** approach · enterable hall · projection · curtain → **YBR south to Glinda** |
-| **L5** | Quadling · Glinda's court | Glinda South · shoes truth · **Road Home pad · E ×3 heels** → Kansas |
-| **L6** | Kansas homecoming | B&W interactive finale · Aunt Em · porch FINAL STEP · book-true shoes return ([[L6 Kansas Homecoming]]) |
+| **L2** | Munchkinland landing | **Linear YBR N→S:** Locasta (before house) → Shoes → SC → Lion → Tin → **YBR south FINAL STEP** → **Poppy Field** |
+| **L3** | Deadly Poppy Field | Baum ch.VIII–IX · sleep meter · SC/Tin immune · carry Dorothy · mice cart haul Lion · **YBR south → West** ([[L3 Deadly Poppy Field]]) |
+| **L4** | Winkie · West castle | Court → West (F/axe) → **cistern water melt** → **open YBR arch north** (no solid gatehouse) → Emerald |
+| **L5** | Emerald City · Wizard's tower | **YBR** approach · enterable hall · projection · curtain → **YBR south to Glinda** |
+| **L6** | Quadling · Glinda's court | Glinda South · shoes truth · **Road Home pad · E ×3 heels** → Kansas |
+| **L7** | Kansas homecoming | B&W interactive finale · Aunt Em · porch FINAL STEP · book-true shoes return ([[L6 Kansas Homecoming]]) |
 
-**Playtest skips:** F9 Kansas→L2 · F10 L2→West · F11 L2→Emerald · F9 West→Emerald · F9 Emerald→Glinda · F9 L5→Homecoming · F8/F9 on L5/L6.
+**Playtest skips:** F9 Kansas→L2 · **F10 L2→Poppy** · **F12 L2→West skip poppies** · F11 L2→Emerald · F8/F9/F10 Poppy→West · F9 West→Emerald · F9 Emerald→Glinda · F9 Glinda→Homecoming · F8/F9 on homecoming.
 
 **Rule:** the **Yellow Brick Road** is always the continuous path to the next destination / level exit. Never seal a level exit with a solid block building across the brick.
 
-**Home is the Shoes, not the balloon:** Wizard's balloon = his exit (Emerald). Dorothy's return = Silver Shoes heel clicks (L5) → prairie landing (L6).
+**Home is the Shoes, not the balloon:** Wizard's balloon = his exit (Emerald). Dorothy's return = Silver Shoes heel clicks (L6 Glinda) → prairie landing (L7).
 
-**L2 lost?** Stay on the **Yellow Brick Road** (N→S corridor). Order on the brick: Locasta (before house) → Shoes under house → Scarecrow → Lion → Tin Man → south glowing West gate. Optional **Whimsy** is off the brick (not story-gated).
+**L2 lost?** Stay on the **Yellow Brick Road** (N→S corridor). Order on the brick: Locasta (before house) → Shoes under house → Scarecrow → Lion → Tin Man → south glowing gate → **Poppy Field**. Optional **Whimsy** is off the brick (not story-gated).
 
-**L3 stuck on West?** She does **not** die to F spam. Weaken until **GROUNDED — WATER!**, compass → **Cistern**, **E** draw, **E** douse. After melt: follow YBR **north** through the **open arch** to the green Emerald pad (E).
+**L3 Poppy lost?** Flesh sleeps in the red field — **Tab 2/3** Scarecrow/Tin Man. Carry Dorothy south (E). Lion too heavy → wildcat/Queen east of road → mice cart → haul Lion south → West gate E. F8 skips field. See [[L3 Deadly Poppy Field]].
 
-**L3→L4 blocked?** There is no solid gatehouse fill — pillars + lintel only; brick continues through the wall gap to `EmeraldGatePad`.
+**L4 stuck on West?** She does **not** die to F spam. Weaken until **GROUNDED — WATER!**, compass → **Cistern**, **E** draw, **E** douse. After melt: follow YBR **north** through the **open arch** to the green Emerald pad (E).
 
-**L4→L5:** after curtain choice, hourglass → Glinda court; stay on YBR south to pink Road Home pad.
+**L4→L5 blocked?** There is no solid gatehouse fill — pillars + lintel only; brick continues through the wall gap to `EmeraldGatePad`.
 
-**L5→L6:** on Road Home pad, **E three times** (heel clicks) → hourglass → [[L6 Kansas Homecoming]]. Standing on the pad alone is not enough — E must register. F9 skips to homecoming.
+**L5→L6:** after curtain choice, hourglass → Glinda court; stay on YBR south to pink Road Home pad.
 
-**L6 lost?** Compass → Aunt Em, then porch. FINAL STEP = E on porch. Distant balloon is **Wizard flavor only**.
+**L6→L7:** on Road Home pad, **E three times** (heel clicks) → hourglass → [[L6 Kansas Homecoming]]. Standing on the pad alone is not enough — E must register. F9 skips to homecoming.
+
+**L7 lost?** Compass → Aunt Em, then porch. FINAL STEP = E on porch. Distant balloon is **Wizard flavor only**.
 
 **Whimsy (every level):** optional side score — bounce / giggle / chime / dance; shared `Whimsy` autoload; regional palette; never story-gated.
 

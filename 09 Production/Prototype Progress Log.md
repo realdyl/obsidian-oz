@@ -13,6 +13,14 @@ updated: 2026-11-06
 
 Living log for Godot `oz/` vs this vault. Agents append dated bullets; do not delete history.
 
+## 2026-11-06 — L3 Deadly Poppy Field (book spine insert)
+
+- **User:** Poppy nap is book (Baum ch.VIII–IX), not MGM-only. Want **own level** in proper sequence between Munchkin party and West.
+- **Renumber:** L1 Kansas · L2 Munchkin · **L3 Poppy** · L4 West · L5 Emerald · L6 Glinda · L7 Homecoming.
+- **Code:** `regions/poppy/poppy_road.*` — sleep meter (flesh), SC/Tin immune, carry Dorothy south, wildcat→Mouse Queen, mice cart haul Lion, YBR south FINAL STEP → West. Whimsy off-scent only.
+- **Wiring:** L2 south gate / F10 → Poppy (`_go_poppy_road`); F12 L2 skips to West; Poppy F9/F10 → West.
+- Headless: `SMOKE_POPPY_OK` · `POPPY_OK` · `L2_POPPY_WIRED` · `ACT3_POPPY_OK`.
+
 ## 2026-11-06 — L5 pad fix · L6 Kansas homecoming finale
 
 - **User:** L5 Road Home pad did nothing (no hourglass / next level). Wanted a return-home scene like L1, balloon-or-book-true mapped; **L6** interactive finale.
