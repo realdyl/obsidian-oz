@@ -22,13 +22,17 @@ Uncle Henry and Aunt Em live on the grey Kansas prairie with Dorothy and Toto. W
 
 ## Sequence (playable)
 
-1. Dorothy on barren farmland — farmhouse, barn, chicken run, windmill, clothesline.
-2. **Find Toto's basket** (west barn path, ~15m+) → **E**. Basket is a readable wicker prop + label.
-3. **Find Toto** (east chicken run, spread from basket) → he jumps into the basket.
-4. **Talk to Aunt Em** on the porch (multi-line DialogueUI) — urgency, shutter, cellar.
+1. Dorothy on barren farmland — expanded prairie pads (Munchkin-scale), farmhouse, barn, chicken run, windmill, clothesline.
+2. **Find Toto's basket** (open **south yard**, clear of walls — not wedged) → **E**. Readable wicker + “Toto's basket” label + glowing post.
+3. **Find Toto** (east chicken run) → he jumps into the basket.
+4. **Talk to Aunt Em** on the porch (multi-line DialogueUI) — only **after** Toto is safe; shutter + cellar urgency (never “go get Toto” again).
 5. **Latch the shutter** (E) on the farmhouse wall.
 6. **Check the cellar** (E) — Aunt Em is already below; Dorothy is **too late** to join her. Story beat, not a fail.
 7. **FINAL STEP:** Cyclone visible. Soft debris only delays. **E at glowing farmhouse door** with Toto → house lift sequence → white-out → hourglass → Munchkinland (L2).
+
+## Enterable buildings
+
+Farmhouse, barn, and chicken coop: **E** at door areas to enter/exit (teleport + interior fitout), same pattern as Munchkin cottages. Exterior walls stay solid. During cyclone, the **storm farmhouse door** takes priority over casual enter when you are on it.
 
 ## Rules
 

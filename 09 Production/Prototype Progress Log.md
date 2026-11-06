@@ -145,6 +145,14 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
 - Film-only left out: Professor Marvel wagon, Miss Gulch double.
 - `kansas_sim` asserts spread distances + house-lift path → `KANSAS_OK`.
 
+### Playability pass (KS layout · L2 YBR · whimsy · L3 melt clarity)
+- **Kansas layout:** basket open south yard `(10, 0.05, 24)` — not wedged in a building; Toto east run; expansive prairie pads + map border ~56m; farmhouse/barn/coop **enterable** (E teleport interiors, walls stay solid; storm farmhouse door still wins in `STORM_RUN`).
+- **Aunt Em chronology:** lines only **after** Toto is bagged — never “go get Toto” again.
+- **L2 after party:** **FINAL STEP** = follow continuous **Yellow Brick Road south** to glowing West gate (pad + tall post + way markers). YBR spine extended to gate; play bounds widened; Locasta greets ~22m **north** on the road (not on top of spawn) with LOCASTA→ markers.
+- **Whimsy (optional side fun):** bounce toadstools, giggle blooms, candy chimes, dance ring — **Whimsy** score HUD; not required for story.
+- **L3 West defeat (clear path):** F/axe **weaken** only → **GROUNDED — WATER!** → compass → **Cistern** (blue beacon) → **E draw water** → **E douse Witch**. She cannot die by F alone. Lighting brighter (readable dusk, less fog).
+- Headless: `SMOKE_OK` / `SMOKE_L3_L4_OK` / `KANSAS_OK` / `ACT34_OK` / `WEST_OK` / `EMERALD_OK`.
+
 ## Related
 
 - [[Kansas Farmyard Prologue]]

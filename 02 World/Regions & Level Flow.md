@@ -20,12 +20,16 @@ Compressed for the current `oz/` build — full design table below still holds f
 
 | Play level | Scene | Role |
 | --- | --- | --- |
-| **L1** | Kansas farmyard | B&W prologue → storm → Munchkinland |
-| **L2** | Munchkinland landing | Locasta → Shoes → party free (SC/Lion/Tin) → OPEN_ROAD |
-| **L3** | Winkie · West castle | Dark iron/ember castle · court · **Witch of the West** (water melt) |
-| **L4** | Emerald City · Wizard's tower | **Yellow Brick Road** approach · gates · Oz projection · curtain |
+| **L1** | Kansas farmyard | B&W prologue · enterable farm · storm house-lift → Munchkinland |
+| **L2** | Munchkinland landing | Locasta (north road walk) → Shoes → party → **YBR south FINAL STEP** → West |
+| **L3** | Winkie · West castle | Court → West (F/axe pressure) → **cistern water melt** → Emerald gate |
+| **L4** | Emerald City · Wizard's tower | **Yellow Brick Road** approach · enterable hall · projection · curtain |
 
 **Playtest skips:** F9 Kansas→L2 · F10 L2→West · F11 L2→Emerald · F9 West→Emerald.
+
+**L2 lost?** Follow the **Yellow Brick Road** — continuous spine to the south West gate. Optional **Whimsy** pickups for side fun (not story-gated).
+
+**L3 stuck on West?** She does **not** die to F spam. Weaken until **GROUNDED — WATER!**, compass → **Cistern**, **E** draw, **E** douse.
 
 ### Book vs game order (important)
 

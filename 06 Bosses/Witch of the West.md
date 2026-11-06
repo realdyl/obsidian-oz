@@ -54,6 +54,7 @@ Canon nod: water undoes her. **Baum-true** — Dorothy douses her and she melts 
 ### Prototype (Godot L3)
 - Scene: `oz/regions/winkie/west_castle.tscn` — dark courtyard, not candy Munchkinland.
 - Flow: clear winkie-tint court → fight West (smoke hover) → Tin axe / pressure grounds her → **E** draw cistern water → **E** douse melt → road gate to Emerald City.
+- Clarity: HUD/objective/compass name the cistern; blue beacon + **GROUNDED — WATER!** label; brighter dusk lighting so the court is readable.
 - F8 playtest forces water-ready.
 
 ## Rewards
