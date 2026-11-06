@@ -20,6 +20,13 @@ Living log for Godot `oz/` vs this vault. Agents append dated bullets; do not de
 - Linked from [[Oz Control Room]], [[Art & Audio Direction]], [[Milestones & Backlog]], [[Accessibility & Difficulty]], `AGENTS.md`.
 - Gate unchanged: do not start chrome work until founder unlocks GUI phase; spine logic first.
 
+## 2026-11-06 — Presentation north star (anti-Minecraft / real 3D)
+
+- **User:** Do not ship looking like a Minecraft knockoff from prototype basics; want a **real 3D game**. Use vault Alice references; Rockstar (RDR / GTA V–VI) as deep craft research.
+- **Updates:** [[GUI & UX Roadmap]] Visual north star + **P0–P4** presentation track interleaved with G chrome; anti-targets; Alice + Rockstar craft tables; quality bar; per-level presentation acceptance.
+- [[Art & Audio Direction]] pillars + references + UI minimal-chrome note aligned.
+- Control Room decision locked. Still **do not execute** presentation rebuild until founder unlocks GUI/visual phase.
+
 ## 2026-11-06 — L3 Deadly Poppy Field (book spine insert)
 
 - **User:** Poppy nap is book (Baum ch.VIII–IX), not MGM-only. Want **own level** in proper sequence between Munchkin party and West.

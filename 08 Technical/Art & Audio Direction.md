@@ -16,12 +16,13 @@ updated: 2026-10-26
 
 ## Visual Pillars
 
-1. **Storybook, not photoreal.** Hand-painted textures, stylized proportions, visible brushwork.
-2. **Oz is beautiful and wrong.** Saturated wonder undercut by rot, propaganda, and stitching.
-3. **Silhouette first.** Every character reads at 20 m.
-4. **Color = faction and mood.** Munchkinland candy-bright; Gillikin cool greens; Wilds amber/rust; Winkie iron-grey; Emerald City poisoned green.
-5. **The Duality of the Dream.** Every environment and character should have a "perfect" face and a "broken" side. Contrast the whimsical with the morbid.
-6. **Horrific and Aesthetic.** Borrow the "Beautiful Corruption" of *Alice: Madness Returns*. High fashion and ornate beauty meeting visceral, unsettling decay.
+1. **Real stylized 3D, not voxel/block.** Ship art is continuous meshes, light, scale, and silhouette. Prototype CSG/capsules are scaffold only — **never** accept a Minecraft-adjacent product look ([[GUI & UX Roadmap]] anti-targets).
+2. **Storybook-stylized, not photoreal mandate.** Hand-painted or stylized PBR textures, readable proportions, visible craft — premium third-person adventure, not a documentary sim.
+3. **Oz is beautiful and wrong.** Saturated wonder undercut by rot, propaganda, and stitching.
+4. **Silhouette first.** Every character reads at 20 m.
+5. **Color = faction and mood.** Munchkinland candy-bright; Gillikin cool greens; Wilds amber/rust; Winkie iron-grey; Emerald City poisoned green.
+6. **The Duality of the Dream.** Every environment and character should have a "perfect" face and a "broken" side. Contrast the whimsical with the morbid.
+7. **Horrific and Aesthetic.** Borrow the "Beautiful Corruption" of *Alice: Madness Returns* / *Alice: Asylum* mood (`IDEA.md`). High fashion and ornate beauty meeting visceral, unsettling decay — fully **authored 3D stages**, not greybox.
 
 ## Aesthetic Guidelines: Hedonistic Horror
 
@@ -71,11 +72,22 @@ Dorothy is not a damsel; she is the most dangerous thing in the room.
 
 ## UI
 
-- Storybook frame motifs; paper texture, hand-drawn icons.
+- Storybook frame motifs; paper texture, hand-drawn icons — **on top of** a real 3D world, not instead of one.
 - Basket UI is a literal basket close-up.
 - Health as a stitched heart; meters as Brain/Heart/Courage icons.
 - No sci-fi HUD. No damage numbers by default (optional).
-- **Full polish roadmap / agent handoff:** [[GUI & UX Roadmap]] (phases G0–G5, APIs, debt, acceptance).
+- Prefer **minimal permanent chrome** (Rockstar-class craft: world and camera carry identity; prompts appear in context) — still Oz paper language, not GTA radar clone.
+- **Full polish + presentation roadmap / agent handoff:** [[GUI & UX Roadmap]] (G chrome + P world tracks, Alice + Rockstar research rules, anti-Minecraft bar).
+
+## Presentation craft (research, not copy)
+
+| Reference | Use for | Do not |
+| --- | --- | --- |
+| *Alice: Madness Returns* / *Asylum* mood | Ornate 3D sets, beautiful corruption, scale theater, dual perfect/broken | Copy EA/Spicy Horse assets or Alice IP |
+| Rockstar (*RDR*, *GTA V/VI* direction) | Minimal HUD, cinematic framing, landmark wayfinding, locomotion weight, env storytelling | Photoreal city mandate, crime sandbox loop, logos, UI packs, missions |
+| *Over the Garden Wall*, *Psychonauts*, *Hades* | Mood/silhouette/readability | Asset lifts |
+
+Full synthesis and phase tickets: [[GUI & UX Roadmap]] **Visual north star**.
 
 ## Animation Style
 
@@ -146,13 +158,17 @@ Dorothy is not a damsel; she is the most dangerous thing in the room.
 - *Hades* — readable action silhouettes.
 - *Psychonauts* — stylized wrongness.
 - *Bastion* — reactive narration/music.
-- *Alice: Madness Returns* — beautiful corruption (avoid gore).
+- *Alice: Madness Returns* — beautiful corruption (avoid gore); primary **3D fantasy stage** density reference.
+- *Alice: Asylum* (mood; see root `IDEA.md`) — dual dream, whimsical dread.
+- Rockstar presentation craft (*Red Dead Redemption*, *GTA V / VI* direction) — **research only** for camera restraint, HUD quiet, landmarks, body-in-world weight; never clone IP, UI, or sandbox fantasy. Details in [[GUI & UX Roadmap]].
 
 > [!warning] Legal
 > Do not reference or reproduce MGM film designs. See [[IP & Legal]].
+> Do not import Alice, Rockstar, or other proprietary assets into the repo.
 
 ## Related
 
 - [[IP & Legal]]
 - [[Architecture & Pipeline]]
 - [[Vision & Pillars]]
+- [[GUI & UX Roadmap]]

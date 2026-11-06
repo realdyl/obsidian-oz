@@ -55,11 +55,15 @@ Triage these before content lock. Each has a default so work can continue.
 
 | # | Question | Default | Status |
 | --- | --- | --- | --- |
-| P1 | Godot vs. Unity final? | Godot 4.5 | Pending prototype |
+| P1 | Godot vs. Unity final? | Godot 4.x (prototype on 4.8.beta1) | Pending prototype |
 | P2 | PC-only or console too? | PC/Steam Deck first | Open |
 | P3 | VO scope: full, partial, or barks? | Partial + barks | Open |
 | P4 | Funding model? | Self/contract | Open |
 | P5 | Team size and timeline? | 6–8 people, ~18 months | Assumption |
+| P6 | Presentation: first hero region for leave-greybox pass? | Kansas B&W **or** Munchkin color — pick one fully ([[GUI & UX Roadmap]] P1) | Open |
+| P7 | Art pipeline for ship meshes? | Stylized kits + authored hero assets; no voxel | Open |
+| P8 | How far toward photoreal materials vs hand-paint? | Stylized / storybook; Rockstar = craft not realism | Locked direction 2026-11-06 |
+| P9 | Minecraft/voxel product look acceptable? | **No** — founder veto | Locked 2026-11-06 |
 
 ## Process
 
@@ -72,3 +76,5 @@ Triage these before content lock. Each has a default so work can continue.
 - [[Risk Register]]
 - [[Vision & Pillars]]
 - [[Game Plan - Roadmap]]
+- [[GUI & UX Roadmap]]
+- [[Art & Audio Direction]]

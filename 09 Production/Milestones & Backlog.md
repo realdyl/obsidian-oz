@@ -41,7 +41,8 @@ updated: 2026-10-26
 - [ ] Scarecrow Crows + meter
 - [ ] Tin Man Axe + meter
 - [ ] Basic HUD
-- [ ] **GUI phase:** follow [[GUI & UX Roadmap]] G0–G5 when founder unlocks polish (do not start early)
+- [ ] **GUI phase:** follow [[GUI & UX Roadmap]] G + P tracks when founder unlocks polish (do not start early)
+- [ ] **Presentation:** leave greybox — real stylized 3D; anti-Minecraft bar; Alice + Rockstar craft per roadmap
 
 ### Next (Vertical slice)
 

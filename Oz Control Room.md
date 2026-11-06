@@ -99,6 +99,7 @@ Legend: blocked · draft · locked
 | 2026-11-05 | Party Lead via [[Party Control and the Bond]]: agency swap, Shoes stay on Dorothy; arrows primary move | Locked |
 | 2026-11-05 | Play order: [[Kansas Farmyard Prologue]] (L1) → Munchkinland landing (L2); GUI polish deferred until spine is solid | Locked |
 | 2026-11-06 | GUI polish handoff documented in [[GUI & UX Roadmap]] (G0–G5); start only when founder unlocks GUI phase | Locked |
+| 2026-11-06 | Presentation target: real stylized 3D (not Minecraft/voxel); Alice beautiful-corruption + Rockstar **craft** research; see [[GUI & UX Roadmap]] Visual north star | Locked |
 
 ---
 
