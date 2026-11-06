@@ -49,7 +49,12 @@ The regime's **air power and terror**. She is not a puppet of the Wizard — she
 
 ## The Water Beat
 
-Canon nod: water undoes her. The arena has a ruptured cistern; a late-phase puzzle floods a section, creating a safe zone and a damage window. Not a one-shot gimmick — a tactical option.
+Canon nod: water undoes her. **Baum-true** — Dorothy douses her and she melts (the film bucket is the same undoing, not a film-only gag). The arena has a ruptured cistern; a late-phase window grounds her so water is a **finisher after pressure**, not a free one-button skip from the start.
+
+### Prototype (Godot L3)
+- Scene: `oz/regions/winkie/west_castle.tscn` — dark courtyard, not candy Munchkinland.
+- Flow: clear winkie-tint court → fight West (smoke hover) → Tin axe / pressure grounds her → **E** draw cistern water → **E** douse melt → road gate to Emerald City.
+- F8 playtest forces water-ready.
 
 ## Rewards
 

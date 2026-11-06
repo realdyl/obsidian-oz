@@ -9,10 +9,37 @@ tags:
 aliases:
   - Level Flow
   - Regions
-updated: 2026-10-26
+updated: 2026-11-06
 ---
 
 # Regions & Level Flow
+
+## Prototype spine (playable Godot order)
+
+Compressed for the current `oz/` build — full design table below still holds for the long game.
+
+| Play level | Scene | Role |
+| --- | --- | --- |
+| **L1** | Kansas farmyard | B&W prologue → storm → Munchkinland |
+| **L2** | Munchkinland landing | Locasta → Shoes → party free (SC/Lion/Tin) → OPEN_ROAD |
+| **L3** | Winkie · West castle | Dark iron/ember castle · court · **Witch of the West** (water melt) |
+| **L4** | Emerald City · Wizard's tower | **Yellow Brick Road** approach · gates · Oz projection · curtain |
+
+**Playtest skips:** F9 Kansas→L2 · F10 L2→West · F11 L2→Emerald · F9 West→Emerald.
+
+### Book vs game order (important)
+
+Baum *Wonderful Wizard of Oz* road order:
+
+1. Munchkinland / party on the **Yellow Brick Road**
+2. **Emerald City first audience** (Wizard commissions killing the West)
+3. **Winkie / West castle** (defeat)
+4. **Return** to Emerald City (humbug revealed)
+5. Glinda / Road Home
+
+**This vault's act table** and the **prototype spine** place **West (L3) before Emerald finale (L4)** so the Wizard curtain is the Act 4 climax after the regime falls. Prototype dialogue acknowledges West is already gone when Oz blusters. A later pass may insert a short **first Emerald commission** beat on the YBR between L2 and L3 if we want stricter Baum pacing without two full Emerald levels.
+
+**Name:** not "Tower of Oz" — **Emerald City** / the **Wizard's palace-tower**.
 
 ## Region Table
 

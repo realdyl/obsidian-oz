@@ -98,6 +98,32 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
 - **Auto-git policy:** [[Auto Git Policy]] + AGENTS.md — commit/push oz + vault after verified passes.
 - Headless: `LOCASTA_OK` · `BOUNDS_OK` · `HUNT_OK` · `HUNT_BOUNDS_OK` · `PLACE_OK` · `MULTI_TARGET_OK` · `PLAY_OK` · `KANSAS_OK`.
 
+## 2026-11-06
+
+### Act spine L3–L4 (prototype)
+- Play order locked in code + [[Regions & Level Flow]] **Prototype spine**:
+  - **L1** Kansas → **L2** Munchkinland → **L3** Winkie West castle → **L4** Emerald City Wizard tower
+- **Book vs game:** Baum visits Emerald **before** West (commission); vault/prototype put West boss **before** Emerald curtain finale. Documented on Regions note. Optional future short first-Emerald commission on YBR between L2/L3.
+- **Not** named "Tower of Oz" — Emerald City / Wizard's palace-tower; approach is **Yellow Brick Road**.
+
+### L3 Winkie · West castle (`regions/winkie/west_castle.*`)
+- Dark iron/ember palette, fog, braziers, keep towers — **not** Munchkinland candy.
+- Full party starts free (prototype). Court winkie-tint puppets → face **Witch of the West**.
+- Boss: hover smoke armor; Tin **axe** (`armor_break`) grounds her; **ruptured cistern water** (E draw → E douse) = **Baum melt** finish (book-true; film bucket is the same undoing).
+- F8 force water-ready · F9 / north gate → Emerald.
+- Headless: `WEST_OK` · `WEST_PRESENT` · `WEST_WATER_BEAT` via `tools/act34_sim.gd`.
+
+### L4 Emerald City (`regions/emerald_city/wizard_tower.*`)
+- YBR strip from approach → green gates → glass spires → throne projection **OZ**.
+- Audience multi-line → pull **curtain** → humbug man → road-home stub (Glinda not built).
+- F8 skip to audience · F9 done stub.
+- Headless: `EMERALD_OK` · `YBR_OK` · `EMERALD_PRESENT`.
+
+### Wiring
+- L2 `OPEN_ROAD` spawns south **Yellow Brick Road** gate (E) → West; **F10** West · **F11** Emerald.
+- `SMOKE_OK` / `SMOKE_L3_L4_OK` load all four scenes.
+- Hourglass `LevelTransition` titles for West / Emerald enter-exit.
+
 ## Related
 
 - [[Kansas Farmyard Prologue]]
