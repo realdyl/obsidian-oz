@@ -19,7 +19,11 @@ updated: 2026-11-06
 
 ## Prototype (L5) — `oz/regions/quadling/glinda_court.*`
 
-Playable spine after L4 curtain: YBR south → Glinda multi-line E counsel (Shoes always home) → **FINAL STEP** pink Road Home pad E → hourglass ending sting. F8 skip counsel · F9 ending. Whimsy palette `glinda`. Full multi-ending choice table below remains design scope; prototype ships **go home** sting only.
+YBR south → Glinda multi-line E counsel (Shoes always home; balloon is the **Wizard's** road) → **FINAL STEP** pink Road Home pad · **E ×3 heel clicks** → hourglass → **L6** [[L6 Kansas Homecoming]]. F8 skip counsel · F9 skip to homecoming. Whimsy palette `glinda`. Multi-ending table below remains design scope; prototype ships **go home** path only.
+
+## Prototype (L6) — `oz/regions/kansas/homecoming.*`
+
+B&W interactive finale (mirror L1): land → Aunt Em E lines → porch FINAL STEP E → epilogue. See [[L6 Kansas Homecoming]].
 
 ## Objective
 

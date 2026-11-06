@@ -13,6 +13,14 @@ updated: 2026-11-06
 
 Living log for Godot `oz/` vs this vault. Agents append dated bullets; do not delete history.
 
+## 2026-11-06 — L5 pad fix · L6 Kansas homecoming finale
+
+- **User:** L5 Road Home pad did nothing (no hourglass / next level). Wanted a return-home scene like L1, balloon-or-book-true mapped; **L6** interactive finale.
+- **Book map:** Dorothy does **not** ride the balloon (Wizard's exit). Home = **Silver Shoes** · three heel clicks · prairie landing · Aunt Em. Distant balloon silhouette on L6 = flavor only.
+- **L5 fix:** pad live from REVEAL; auto CHOICE on step; tall marker; **E ×3 heels** → `LevelTransition.go_to(homecoming)` (was `play_exit` only). F9 → L6.
+- **L6:** `regions/kansas/homecoming.*` — B&W land → Aunt Em → porch FINAL STEP → epilogue sting. F8/F9 skips. Whimsy grey.
+- Headless: `SMOKE_L6_OK` · `HOME_OK` · `ACT6_OK` · `GLINDA_PAD_OK`.
+
 ## 2026-11-06 — L3 open YBR · Whimsy every level · L5 Glinda
 
 - **User:** Winkie road to Emerald sealed by solid gatehouse block; YBR must always be the path to the next level; whimsy on every level (same pattern, regional variation); develop L5.
