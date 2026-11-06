@@ -13,6 +13,8 @@ Game Design / Production.
 - No emoji.
 - Filenames are Title Case with spaces; no dates in filenames.
 - Record durable design decisions in the relevant note; record unresolved items in `09 Production/Open Questions.md`.
+- **Auto-git (oz + vault):** follow [[Auto Git Policy]]. After landed prototype/design chunks, commit and push `obsidian-oz` and `oz` separately when the user ships or the pass is verified — do not leave playable work only on disk.
+- **Progress log by default:** append [[Prototype Progress Log]] as systems land (doors, borders, kits, characters), not only at session end.
 
 ## Work Guidance
 - Follow [[Design Note Template]] for new notes.
@@ -31,3 +33,5 @@ Game Design / Production.
 
 ## Child DOX Index
 - [[Agent Token Efficiency]] — token budget and build protocol for agents on the Oz Godot prototype
+- [[Auto Git Policy]] — commit/push both `obsidian-oz` and `oz` after landed verified work
+- [[Prototype Progress Log]] — living Godot vs vault progress

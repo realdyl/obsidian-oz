@@ -88,17 +88,22 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
 - **Sticky threat compass:** top-center HUD live-updates nearest live munchkin (arrow · wave · dir · meters · live count). Separate from objective compass.
 - **Rogues hunt the Lead:** map-scale `hunt_range` (~120); no freeze-wander outside short notice; faster approach when far; sneak always walks toward Lead.
 - **Party fight:** rogues target all unlocked/present bodies via `Party.pick_threat_target` (spread + soft stick). Non-Lead Dorothy/Scarecrow/Lion/Tin auto-engage nearest foe with their kit; Tab still manual Lead.
-- **DoorSeal E-only** enter remains; Tin WallWest −70; east approach ramp.
-- **Rogue munchkins:** `march_from_afar` — spawn ~26–40m off-camera and walk in (no pop-in). Landing wave delayed sneak (~9–14s) before full lunges.
-- **Auto-Lead on unlock:** free Scarecrow / calm Lion / oil Tin immediately `Party.set_leader` that companion (like Tab).
-- **Post-unlock waves:** crow field (CAW) · new **LION_PACK** beat (ROAR) · tin_wave at tree. Order: Shoes → landing → free SC → crow → free Lion → lion pack → free Tin → tree → marshal.
-- Headless: `PLACE_OK` · `AUTO_LEAD_*` · `LION_PACK_OK` · `TIN_PATH_OK` · `PLAY_OK`.
+- **Doors:** walls stay solid inside (no walk-through exit); DoorSeal only; staggered party walk-in/out procession (not pop teleport).
+- **Map borders:** solid rails + tree thicket on Kansas and Munchkinland edges (no abyss fall).
+- **Tin axe:** arm chop + `CombatFx.axe_arc` swing trail (not torso headbutt flash).
+- **Hourglass level transition:** autoload `LevelTransition` — large spinning hourglass ~2s on level enter and on exit/change_scene (Kansas↔Munchkinland, OPEN_ROAD sting). Skipped headless.
+- **Witches (book-true):** Locasta (Good North) greets near landing; East witch remains cold-open dead (not a greeter); Wicked West = distant NW omen only until later boss.
+- **Auto-git policy:** [[Auto Git Policy]] + AGENTS.md — commit/push oz + vault after verified passes.
+- Headless: `PLACE_OK` · `AUTO_LEAD_*` · `LION_PACK_OK` · `TIN_PATH_OK` · `MULTI_TARGET_OK` · `PLAY_OK` · `KANSAS_OK`.
 
 ## Related
 
 - [[Kansas Farmyard Prologue]]
 - [[Agent Token Efficiency]]
+- [[Auto Git Policy]]
 - [[Prototype Plan]]
 - [[Dorothy & Toto]]
 - [[Enemy Roster]]
 - [[Party Control and the Bond]]
+- [[Ozma, Locasta & Glinda]]
+- [[Witch of the West]]
