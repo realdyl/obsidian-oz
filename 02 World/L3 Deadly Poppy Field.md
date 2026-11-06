@@ -23,22 +23,22 @@ updated: 2026-11-06
 | Dorothy, Toto, Lion (flesh) | Sleep forever if left in the field |
 | Scarecrow, Tin Man | **Immune** (not flesh) |
 
-## Prototype beats
+## Prototype beats (clear 3-step rescue)
 
-1. **WALK_FIELD** — YBR into scarlet beds both sides; **sleep meter** rises on Dorothy/Lion Lead  
-2. **DOROTHY_DOWN** — auto-swap Lead to Scarecrow; **E** carry Dorothy **south** out of scent  
-3. **LION_DOWN** — Lion too heavy mid-field  
-4. **SAVE_QUEEN** — wildcat east of road · **E** stop cat · **E** Mouse Queen counsel  
-5. **MICE_CART** — hitch mice (**E** cart)  
-6. **HAUL_LION** — haul south to clear air  
-7. **ROAD_OPEN** — **FINAL STEP** glowing West gate · **E** → L4 West castle  
+1. **WALK_FIELD** — YBR into scarlet beds; **separate sleep meters** on Dorothy **and** Lion bodies (not Lead-only). Both flesh **stick on first pass**.
+2. **FLESH_DOWN** — Dorothy parks asleep mid-field; Lion **parks at mid-road** (`LION_FALL`). Auto Lead → Scarecrow.
+3. **GET_CLEAR_AIR (1/3)** — SC or Tin walk **south** of the red field → glowing **CLEAR AIR** orb · **E** → Dorothy wakes and **stays parked south** (will not follow Lead back in). Lion snaps/stays mid-field asleep.
+4. **GET_CART (2/3)** — **MICE CART** appears east of YBR · **E** to take it (required).
+5. **HAUL_LION (3/3)** — with cart, walk to sleeping Lion · **E** starts haul · hold **SOUTH** until clear air.
+6. **ROAD_OPEN** — party free · **FINAL STEP** West gate · **E** → L4.
 
 ## Code
 
 - `oz/regions/poppy/poppy_road.gd` + `.tscn`
+- Markers: `ClearAir`, `MiceCart`, `ClearAirPad`, `WestGatePad`, `YellowBrickRoad`
 - L2 south gate → `_go_poppy_road` (not straight West)
 - Poppy south gate → `_go_west` → `west_castle.tscn`
-- Skips: **F8** clear field · **F9/F10** West · **F11** Emerald · L2 **F12** skips poppies to West  
+- Skips: **F8** clear field · **F9/F10** West · **F11** Emerald · L2 **F12** skips poppies to West
 
 ## Whimsy
 
@@ -46,6 +46,7 @@ Optional off-scent only (pre-field north + safe meadow south) — never required
 
 ## Design notes
 
-- Home/balloon not involved here.  
-- Teaches **Bond Lead swap** hard: flesh cannot finish the level alone.  
+- Home/balloon not involved here.
+- Teaches **Bond Lead swap** hard: flesh cannot finish the level alone.
 - YBR remains the lost-player spine the whole way.
+- Lion cannot walk through while Dorothy is stuck — body sleep + park.
