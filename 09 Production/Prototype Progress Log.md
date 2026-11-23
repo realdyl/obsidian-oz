@@ -13,6 +13,26 @@ updated: 2026-11-23
 
 Living log for Godot `oz/` vs this vault. Agents append dated bullets; do not delete history.
 
+## 2026-11-23 — Phase P4: Toto Controls, WYSIWYG Ground/Hills, All-Party Sprint, Natural Hill Climbing, Wizard Tower & Glinda's Court Overhaul
+
+- **Toto Controls, All-Party Smooth Sprint & Natural Hill/Stair Climbing (`toto_companion.gd`, `locomotion_util.gd`, `player_controller.gd`, `scarecrow.gd`, `lion.gd`, `tinman.gd`):**
+  - Fixed Toto arrow-key/WASD locomotion (switched from non-existent `camera_relative_move` call to `Input.get_vector` + `Party.camera_basis_node()` + `Locomotion.steer`).
+  - Replaced Dorothy's instant single-frame teleport skip with a smooth high-speed `Space` sprint burst + continuous `1.8×` running mode, and added `Space` sprinting across **all 5 playable characters** (Dorothy, Scarecrow, Tin Man, Lion, Toto).
+  - Removed the `25 m/s` forward teleport on smooth slopes in `Locomotion.try_step()` so hills are climbed naturally at normal walking speed and vertical stairs step rhythmically.
+  - Added anti-oblivion failsafe floor recovery (`y < -3.5`) across all 5 party controllers.
+- **WYSIWYG Collidable Borders, Emerald Skyline & Oil Can (`world_kit.gd`, `landing_square.gd`):**
+  - Made `WorldKit.add_ground_apron()` and `WorldKit.add_horizon_hills()` full `StaticBody3D` collidable geometry and expanded Munchkinland's primary floor (`220×360`) so zero invisible border ledges exist.
+  - Removed the legacy floating dark sphere + invisible `8×4×8` blocker (`_spawn_west_omen`).
+  - Moved `WorldKit.add_emerald_skyline` ahead down the Yellow Brick Road (`Vector3(0, 0, 195)`) so players walk **toward** the Emerald City towers.
+  - Fixed signpost back-face arrow orientation (`⬅  %s  ✦` vs `✦  %s  ➔`) and added a hammered-brass arrowhead cap on the 3D wooden pointer tip.
+  - Upgraded Tin Man's Oil Can to `WorldKit.build_oil_can_visual()` (domed brass & copper oiler on a stone plinth).
+- **L3 Poppy Field Smooth Rescue & Styled Badges (`poppy_road.gd`):**
+  - Replaced instant Dorothy teleport on Clear Air with a smooth 2-second cooperative carry-out tween into `SafeMeadow`, and upgraded Mice Cart & Clear Air labels to styled Tier-3 `WorldKit.make_world_badge()` plaques.
+- **L5 Emerald City / Wizard's Palace & L6 Glinda's Court Overhaul (`wizard_tower.gd`, `glinda_court.gd`, `world_kit.gd`):**
+  - Crowned the Wizard's Palace with `WorldKit.build_emerald_palace_facade()` matching Munchkinland's crystalline spires; replaced the flat green circle Oz face with `WorldKit.build_oz_projection_head()` (towering 3D emerald-plasma visage, furrowed brow, blazing amber eyes, articulated rune-jaw & flame-shard beard, rotating brass-emerald astrolabe halo rings) and `WorldKit.build_humbug_wizard()`.
+  - Transformed Glinda's Court with sculpted 24-segment `WorldKit.build_glinda_visual()` and `WorldKit.dress_glinda_court()` (8-column Alabaster & Rose-Gold Temple Rotunda, chandelier, Ruby-Filigree Throne, mirror-water Reflecting Pools with 3D lotus blossoms, wind-swaying rose trees, swaying meadow grass, and Silver-Shoe Compass Rose Altar).
+- **Verification:** `SMOKE_OK`, `KANSAS_OK`, `PLAY_OK` (`BLINK dist=2.27`, `TIN_PATH_OK`, `TAB_CYCLE_OK`), `ACT34_OK` (`ACT5_OK`, `ACT6_OK`, `ACT7_OK`) — all exited 0 with zero script errors.
+
 ## 2026-11-23 — Phase P3: Horizon Continuity, Sculpted Lion & Crows, 4-Wall Interiors, Signage Style Guide, Playable Toto, Poppy Carpet & Kansas Overhaul
 
 - **Style Guide & Centered UI Shell (`08 Technical/Typography & Signpost Style Guide.md`, `ui/shell/pause_menu.gd`, `ui/shell/settings_menu.gd`):**
