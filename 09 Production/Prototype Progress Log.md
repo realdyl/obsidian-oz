@@ -383,3 +383,32 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
 - `kansas_sim.gd`: `KANSAS_OK`
 - `play_sim.gd`: `PLAY_OK` (`SCARECROW_WALK dist=1.76`, `BLINK dist=1.70`, `TAB_CYCLE_OK`)
 - `act34_sim.gd`: `ACT34_OK` (`POPPY`, `WEST`, `EMERALD`, `GLINDA`, `HOME`)
+
+
+---
+
+## 2026-11-23 — Phase P7 Complete (Rated-M Kinky Armaments, Allure/Enamored AI, 3-Hit Combos, Rapture/Hysteria Mode + 10 Visual & UX Fixes)
+
+### Screenshot & UX Fixes (`realdyl/oz`)
+1. **Oz Grimoire (`J`) Mouse Cursor & Keyboard Tabs (`ui/grimoire_menu.gd`)**: Restored `Input.MOUSE_MODE_VISIBLE` on open (`MOUSE_MODE_CAPTURED` on close) plus `Left/Right` & `1–4` keyboard tab switching.
+2. **Kansas Distinct Chicken Coop, Wire Fence & 8 Sculpted 3D Chickens (`world_kit.gd`, `farmyard.gd`)**: Built `WorldKit.build_chicken_coop()` (raised timber coop, sloped roof, nesting bay, wooden ramp, see-through chicken-wire fenced run, and 5 sculpted 3D prairie chickens outside + 3 chickens roosting inside the coop interior).
+3. **Toto Grounded + Light Marker Offset (`regions/kansas/toto.gd`, `farmyard.gd`)**: Grounded Toto's paws firmly at `y = 0.0` trotting beside Dorothy (fixed floating `y = 0.55`) and offset the prairie lantern marker `2.0 m` beside Toto so it never impales him.
+4. **Removed Obtrusive External Rectangular Doors & Shutter Clipping Text (`farmyard.gd`)**: Removed detached door plates in front of Kansas buildings (triggers sit invisibly flush with each building's built-in architectural door) and removed the wall-clipping shutter badge.
+5. **Dorothy Faces Emerald City on Munchkinland Spawn (`landing_square.gd`)**: Oriented Dorothy, her `Visual`, and `CameraPivot` toward `+Z` down the Yellow Brick Road toward Locasta & the Emerald City spires.
+6. **Naturalistic Lion Cave Den & Curved-Lid Treasure Chest (`world_kit.gd`, `landing_square.gd`)**: Replaced boxy Lion den slabs with an organic low-poly stone cave vault + draping ivy vines + iron snare chains; upgraded interior chests to vaulted brass-banded treasure chests with inner jewels; hid stray baked pink door slabs & floating `DEBTS` / `Deadly Poppy Field` sky `Label3D`s.
+7. **Haunted Living Oak Solid Trunk (`actors/enemies/living_tree.gd`)**: Upgraded to a gnarled multi-root Haunted Oak with glowing amber eyes and `collision_layer = 1 | 4` so rogues can never clip inside the trunk.
+
+### Phase P7 — Rated-M Combat Loop, Kinky Armaments & Rapture/Hysteria Mode (`realdyl/oz`)
+- **4 Rated-M "Tools of Allure"** (`player_controller.gd`, `combat_fx.gd`, `puppet_munchkin.gd` — `[C]` cast, `[Z/X]` swap):
+  - **The Lace Whip**: Crimson-lace lash pulling enemies into Kick range + `apply_bind(2.2)` + `+5 Desire`.
+  - **Silk Bindings**: Magenta-silk cocoon immobilizing up to 3 nearby foes (`+50%` damage vulnerability).
+  - **Hypnotic Perfume**: Expanding rose-violet mist applying **`♥ ENAMORED`** (`5.0 s`, halts attacks, bonus `+8 Desire` on execution).
+  - **The Gilded Chain**: Tethers 2 foes with a golden beam mirroring `75%` of damage between them.
+- **3-Hit Stiletto Kick Combo** (`F`: `10 → 14 → 22` dmg finisher with hit-stop & bonus Desire).
+- **Rapture / Hysteria Desperation Mode (`H` key)**: 10-second crimson-vignette overdrive (`2.5×` damage, invulnerability, bonus Desire on every hit, pulsing `RaptureOverlay` on `PlayHUD`).
+
+### Verified Headless Godot 4.8 Simulations (All Exited 0)
+- `smoke_check.gd`: `SMOKE_OK` (`L1–L7`)
+- `kansas_sim.gd`: `KANSAS_OK`
+- `play_sim.gd`: `PLAY_OK` (`BLINK dist=1.70`, `KICK hp 30 -> 20`, `SCARECROW_WALK dist=1.61`, `TAB_CYCLE_OK`)
+- `act34_sim.gd`: `ACT34_OK` (`POPPY`, `WEST`, `EMERALD`, `GLINDA`, `HOME`)
