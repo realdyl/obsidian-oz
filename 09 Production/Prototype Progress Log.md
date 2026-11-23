@@ -13,6 +13,21 @@ updated: 2026-11-23
 
 Living log for Godot `oz/` vs this vault. Agents append dated bullets; do not delete history.
 
+## 2026-11-23 — Phase P5: Universal Jump, Solid Dais Platforms, Sealed Emerald Double Doors, Volumetric Oz Projection, Unified L7 Kansas & Label3D Sweep
+
+- **Universal `Space` Jump + Low-Curb Step & Solid Platforms (`locomotion_util.gd`, `player_controller.gd`, `scarecrow.gd`, `tinman.gd`, `lion.gd`, `toto_companion.gd`, `glinda_court.gd`, `world_kit.gd`):**
+  - Lowered `Locomotion.try_step` foot probe to `y = 0.025m` and added real vertical `Space` jumping (`velocity.y = 7.2–7.6`) across all 5 playable characters.
+  - Added full `StaticBody3D` + `CylinderShape3D` colliders to Glinda's Pavilion marble dais (`top y = 0.11m`, Glinda at `y = 0.12m`) and made `YellowBrickRoad` strips flush (`top y = 0.03m`) so feet always rest cleanly on top of every surface.
+- **Emerald Palace Sealed Double Doors & Volumetric Oz Projection (`wizard_tower.gd`, `world_kit.gd`):**
+  - Added `WorldKit.build_palace_double_doors()` creating full-width `10.0m × 7.5m` ornate hinged Emerald & Gold Double Doors (and outer Emerald City double gates) with full-span colliders so players must press `E` to swing them open `105°` inward.
+  - Added custom Fresnel rim-glow + horizontal scanlines spatial shader (`WorldKit.make_hologram_material`) and rebuilt `WorldKit.build_oz_projection_head()` into a multi-plane chiseled titan visage with scowling brow arches, deep orbital cavities, blazing golden-amber eyes, sweeping mustache wings, hinged rune jaw, rear 16-ray sunburst mandorla & rotating astrolabe strictly behind the head, and flanking brass projector pylons.
+  - Added `_projection_dismissed` lock so once Oz's projection collapses at `Beat.CURTAIN`, `_pulse_projection` never restores it.
+- **L7 Kansas Homecoming Unified with L1 Kansas (`homecoming.gd`):**
+  - Upgraded Aunt Em (`build_kansas_farmer(aunt_em, true)`), added interactive Uncle Henry (`build_kansas_farmer(uncle_henry, false)`), removed the static sphere Toto stub so playable 3D Toto accompanies Dorothy, and added dressed Gale Farmhouse, Barn, 3D Clothesline, Lattice Windmill, swaying B&W prairie grass, and collidable horizon hills.
+- **Game-Wide `Label3D` Sweep (`wizard_tower.gd`, `west_castle.gd`, `poppy_road.gd`, `glinda_court.gd`, `farmyard.gd`, `homecoming.gd`):**
+  - Removed all remaining floating sky titles and raw white labels, replacing them with Tier-1 wooden signposts, Tier-2 architectural crests, and Tier-3 styled world badges.
+- **Verification:** `SMOKE_OK`, `KANSAS_OK`, `PLAY_OK` (`BLINK dist=1.70`, `TIN_PATH_OK`, `TAB_CYCLE_OK`), `ACT34_OK` (`ACT5_OK`, `ACT6_OK`, `ACT7_OK`) — all exited 0 with zero script errors.
+
 ## 2026-11-23 — Phase P4: Toto Controls, WYSIWYG Ground/Hills, All-Party Sprint, Natural Hill Climbing, Wizard Tower & Glinda's Court Overhaul
 
 - **Toto Controls, All-Party Smooth Sprint & Natural Hill/Stair Climbing (`toto_companion.gd`, `locomotion_util.gd`, `player_controller.gd`, `scarecrow.gd`, `lion.gd`, `tinman.gd`):**
