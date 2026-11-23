@@ -358,3 +358,28 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
 - `kansas_sim.gd`: `KANSAS_OK` (`STORM_RUN_OK`, `DOOR_REVEAL_OK`, `HOUSE_LIFT_OK phase=7`)
 - `play_sim.gd`: `PLAY_OK` (`BLINK dist=1.70`, `TIN_PATH_OK`, `TAB_CYCLE_OK leader=scarecrow`)
 - `act34_sim.gd`: `ACT34_OK`, `ACT3_POPPY_OK`, `WEST_OK`, `EMERALD_OK`, `GLINDA_OK`, `HOME_OK`, `ACT5_OK`, `ACT6_OK`, `ACT7_OK`
+
+
+---
+
+## 2026-11-23 — Phase P6 Complete (Retail GUI Mega-Upgrade, Diegetic HUD, Oz Grimoire, Save/Load Slots + Polish Fixes)
+
+### Targeted Fixes & World Polish (`realdyl/oz`)
+1. **Authentic Kansas Storm Debris (`regions/kansas/debris.gd`)**: Replaced flying grey boxes with 5 sculpted, tumbling Kansas farm debris silhouettes (8-spoke Wagon Wheel, Splintered Prairie Fence Section, Louvered Farmhouse Shutter, Iron-Hooped Farm Barrel, Corrugated Tin Roof Sheet).
+2. **Munchkinland Out-of-Bounds Rogue Munchkin Fixed (`landing_square.gd`)**: Cleared baked `WallNorth` and anchored `_tag_baked_landing_puppets()` to a safe in-bounds rally point ahead/beside Dorothy so no rogue Munchkin ever spawns trapped behind her border.
+3. **Gothic Bramble & Wrought-Iron Snare Grotto for the Lion (`world_kit.gd`)**: Replaced the rounded blob den with `build_lion_sanctuary()` featuring tiered craggy mossy cliffs, overhanging keystone arch, gnarled roots, crimson-thorn brambles, wrought-iron hunter's snare stakes & iron chain links, and warm amber woodland lanterns.
+4. **Grassy Hills Burying Characters Fixed (`world_kit.gd`)**: Pushed `add_horizon_hills()` cleanly outside the `MapBorder` (`margin = visual_r + 14.0`) with matching full-width `SphereShape3D` colliders (`visual_r = rad * 1.35`) so hill skirts never poke into the walkable map or bury characters.
+5. **Animated Flowing Water Shader (`world_kit.gd`, `landing_square.gd`)**: Added `WorldKit.make_flowing_water_material()` (dual-layer scrolling wave ripples, shimmering caustics, vertex wave motion, and Fresnel sky reflection) applied across Glinda's Court reflecting pools, Winkie Castle Water Cistern, and Munchkinland WellWater.
+6. **Interactive Building Interior Activities (`systems/interior_pickup.gd`, `world_kit.gd`, `farmyard.gd`)**: Populated Kansas Farmhouse, Barn, and all Munchkinland cottage interiors with interactive **Gilded Desire Chests (`+15 Desire`)** and rotating **Shattered Memory Keepsakes** that unlock lore in the Oz Grimoire and restore Silver-Rose Vitality.
+
+### Phase P6 — Retail-Grade GUI Mega-Upgrade & Diegetic M-Rated HUD (`realdyl/oz`)
+- **Centralized `SaveManager` Autoload (`systems/save_manager.gd`)**: *Thrive*-style decoupled signal bus managing 3 persistent JSON save slots (`user://saves/slot_1..3.json`), Desire Fragments, Silver-Rose Vitality (`5/5` petals), Allure gauge, and Shattered Memories / Bestiary / Companion catalogs.
+- **Diegetic *Alice*-Class Retail HUD (`ui/play_hud.gd`)**: Added top-right **Silver-Rose Vitality Cluster** (5 glowing rose petals), **Allure/Desire Filigree Bar**, live Desire counter, gilded Memory/Desire toast notifications, and the **`[Q]` Companion Quick-Wheel Overlay**.
+- **Oz Grimoire / Codex (`ui/grimoire_menu.gd`, `[J]` key)**: *Thriveopedia*-inspired 4-tab dark-velvet & gold-filigree codex (*Quests & Controls*, *Companions*, *Bestiary*, *Shattered Memories*).
+- **Pause Menu Save/Load Manager (`ui/shell/pause_menu.gd`)**: Added one-click **Oz Grimoire (J)** and **3-Slot Save / Load / Delete** panel directly inside the centered Pause Shell.
+
+### Verified Headless Godot 4.8 Simulations (All Exited 0)
+- `smoke_check.gd`: `SMOKE_OK` (`L1–L7`)
+- `kansas_sim.gd`: `KANSAS_OK`
+- `play_sim.gd`: `PLAY_OK` (`SCARECROW_WALK dist=1.76`, `BLINK dist=1.70`, `TAB_CYCLE_OK`)
+- `act34_sim.gd`: `ACT34_OK` (`POPPY`, `WEST`, `EMERALD`, `GLINDA`, `HOME`)
