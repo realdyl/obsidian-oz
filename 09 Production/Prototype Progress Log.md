@@ -412,3 +412,29 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
 - `kansas_sim.gd`: `KANSAS_OK`
 - `play_sim.gd`: `PLAY_OK` (`BLINK dist=1.70`, `KICK hp 30 -> 20`, `SCARECROW_WALK dist=1.61`, `TAB_CYCLE_OK`)
 - `act34_sim.gd`: `ACT34_OK` (`POPPY`, `WEST`, `EMERALD`, `GLINDA`, `HOME`)
+
+
+---
+
+## 2026-11-23 — Phase P8 Complete (World Expansion, Emerald Boulevard & Tailor of Vices + 14 Visual, Physics & Polish Fixes)
+
+### Screenshot & Gameplay Fixes (`realdyl/oz`)
+1. **Kansas Fence Chime, Rustic Fences & Chicken Coop Swinging Gate (`farmyard.gd`, `world_kit.gd`)**: Cleared sporadic flat baked fence slabs, moved Fence Chime clear of obstacles, and added a hinged auto-swinging wooden gate (`95°`) on the chicken-wire run.
+2. **Authentic Wicker Basket + Carried in Dorothy's Hand + Toto Forward Walk (`world_kit.gd`, `farmyard.gd`, `toto.gd`)**: Rotated the braided handle vertically (`90°`), offset the lantern marker beside the basket, attached a carried wicker basket directly to Dorothy's hand on pickup, and fixed Toto walking backwards (`atan2(-x, -z)`).
+3. **Physical Kansas Storm Debris Knockdown (`farmyard.gd`)**: Storm debris hits now physically knock Dorothy back & down with recoil tilt and recovery instead of vanishing silently.
+4. **Rated-M Blood / Ichor Splatter & Hit Reactions (`combat_fx.gd`, `puppet_munchkin.gd`, `west_witch_boss.gd`)**: Added `CombatFx.blood_splatter()` (arterial crimson droplet arcs + ground spatter pool for Munchkins; dark shadow-ichor for the Wicked Witch).
+5. **Rebuilt Locasta & Glinda (Zero Waist-Poles!) + Glinda Facing & Water Splashes (`world_kit.gd`, `glinda_court.gd`)**: Removed the protruding tilted waist cylinders on both Locasta and Glinda, rebuilt smooth tiered royal silk ballgowns with detailed eyes & lips, rotated Glinda `180°` to face Dorothy, and added `CombatFx.water_splash()` droplets & ripple rings when wading through the reflecting pools.
+6. **Zero Z-Fighting on Treasure Chests & Poppy Gate (`world_kit.gd`, `poppy_road.gd`)**: Offset brass chest bands cleanly outside wood faces and lifted `WestGatePad` cleanly above road height.
+7. **Baum-Canon Flanking Fighting Trees (`living_tree.gd`, `landing_square.gd`)**: Replaced the single center-road tree with a flanking pair of Fighting Trees on the left & right of the Yellow Brick Road that lash branches and hurl thorny seed-pods (public-domain Baum Ch. 19 canon, avoiding MGM-only apple-throwing).
+8. **Poppy Field Facing & Smooth Sleep Transition (`poppy_road.gd`)**: Oriented party `+Z` down the Poppy Road on spawn and added a smooth `0.75 s` collapse-asleep transition before handing Lead to Scarecrow.
+9. **Solid Winkie Water Cistern (`world_kit.gd`)**: Added a solid `StaticBody3D` + `CylinderShape3D` collider to the octagonal stone cistern so characters can never walk through it.
+10. **Emerald City Sealed Gates, Flush Approach Terrace & Unobstructed Wizard (`wizard_tower.gd`)**: Sealed the outer gate walls seamlessly to `MapBorder`, added a flush `PalaceLandingTerrace` eliminating the stair drop-off pit, and moved the velvet curtain & Oscar Diggs forward completely clear of the throne wall.
+
+### Phase P8 — World Expansion & Emerald City Boulevard (`wizard_tower.gd`)
+- Added **Disney-World Fairy-Tale Emerald Boulevard** gilded crystal lampposts lining the plaza approach and **The Tailor of Vices** ornate velvet boutique pavilion (`+25 Desire` Velvet Blessing).
+
+### Verified Headless Godot 4.8 Simulations (All Exited 0)
+- `smoke_check.gd`: `SMOKE_OK` (`L1–L7`)
+- `kansas_sim.gd`: `KANSAS_OK`
+- `play_sim.gd`: `PLAY_OK` (`BLINK dist=1.70`, `KICK hp 30 -> 20`, `TAB_CYCLE_OK`)
+- `act34_sim.gd`: `ACT34_OK` (`POPPY`, `WEST`, `EMERALD`, `GLINDA`, `HOME`)
