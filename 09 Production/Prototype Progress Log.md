@@ -330,3 +330,31 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
 ### 2026-11-06 — L3 Poppy rescue clarity
 - Both flesh stick first pass; Clear Air (1/3) · Mice Cart (2/3) · E Lion haul (3/3)
 - oz ship after smoke/act34 OK
+
+
+---
+
+## 2026-11-23 — Phase P5.5 Hotfixes (Oz Curtain Reveal, Glinda Pools, L1/L7 Kansas Parity & Storm) + Retail Audit & P6–P12 Master Roadmap
+
+### Fixes Shipped (`realdyl/oz`)
+1. **Emerald City Theatrical Velvet Curtain & Oscar Diggs Reveal (`world_kit.gd`, `wizard_tower.gd`)**:
+   - Replaced stationary red box wall with `WorldKit.build_velvet_curtain()` (gilded brass rod, curtain rings, pleated crimson-velvet `LeftDrape`/`RightDrape` panels, gold hem & tassels).
+   - Pressing `E` at the curtain now smoothly parts both velvet drapes (`scale.x -> 0.22`), illuminates a warm golden spotlight, and animates sculpted **Oscar Diggs** (`build_humbug_wizard`, facing `+Z` with spectacles, white moustache, coat, and brass projector console) stepping forward out from behind the curtain.
+2. **Glinda's Court Reflecting Pools & Surface Clipping Sweep (`world_kit.gd`)**:
+   - Upgraded `dress_glinda_court()` reflecting pools from un-collided `0.38 m` visual boxes to solid collidable `StaticBody3D` basins (`top y = 0.08 m`) so characters' feet always stand cleanly on top of every surface with zero leg/body clipping.
+3. **L1 Kansas Farmhouse, Enterable Interiors, Storm Softlock Fix & Tornado Takeoff (`farmyard.gd`)**:
+   - Dressed L1 `Farmhouse` identically to L7 `homecoming.gd` (`WorldKit.dress_cottage_exterior` + `GALE FARMHOUSE` crest sign + hidden flat `.tscn` roof + swaying B&W prairie grass).
+   - Upgraded Kansas Farmhouse & Barn interiors to spacious, warmly lit 4-wall rooms with Exit Doors and Munchkinland's `_set_indoor_camera(true)` (`SpringArm3D` pulls cleanly inside to `2.45 m`, `fov = 72°`) so Dorothy is 100% visible inside every building.
+   - Fixed storm-trigger softlock where talking to Aunt Em before finding Toto/Basket burned `aunt_talked = true` and prevented `Phase.NEED_SHUTTER`/`NEED_CELLAR` progression; allowed flexible shutter/cellar progression once Aunt Em has spoken.
+   - Upgraded `_add_cyclone_funnel()` to a 9-tier twisting volumetric funnel cloud with overhead storm anvil, orbiting debris planks, dynamic lightning flashes, camera shake, and a dramatic `4.2 s` spiraling house takeoff.
+   - Swept all remaining raw floating `Label3D`s in Kansas (`Chicken run`, `HouseDoor`, `Chicken coop`) to styled world badges.
+
+### Obsidian Planning & Master Roadmap (`realdyl/obsidian-oz`)
+- Authored [[Retail Completeness Audit & Phase P6-P12 Roadmap]] with an honest human-player audit, Mermaid phase graph, and self-recursive Phase **P6 → P12** execution blueprints (GUI Mega-Upgrade, Rated-M Combat & Kinky Armaments, 3× World Scale, Multi-Phase Bosses, Tailor of Vices Outfit Shop & Side Quests, AAA Visual Pipeline, and Audio/Shipping Polish).
+- Authored [[Reference Benchmarks - Thrive & Alice Madness Returns]] and linked both into [[Oz Control Room]].
+
+### Verified Headless Godot 4.8 Simulations (All Exited 0)
+- `smoke_check.gd`: `SMOKE_OK`, `SMOKE_L3_POPPY_OK`, `SMOKE_L3_L4_OK`, `SMOKE_L5_OK`, `SMOKE_L6_OK`, `SMOKE_L7_OK`
+- `kansas_sim.gd`: `KANSAS_OK` (`STORM_RUN_OK`, `DOOR_REVEAL_OK`, `HOUSE_LIFT_OK phase=7`)
+- `play_sim.gd`: `PLAY_OK` (`BLINK dist=1.70`, `TIN_PATH_OK`, `TAB_CYCLE_OK leader=scarecrow`)
+- `act34_sim.gd`: `ACT34_OK`, `ACT3_POPPY_OK`, `WEST_OK`, `EMERALD_OK`, `GLINDA_OK`, `HOME_OK`, `ACT5_OK`, `ACT6_OK`, `ACT7_OK`

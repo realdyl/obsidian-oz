@@ -49,6 +49,8 @@ Legend: blocked · draft · locked · active
 - **The plan:** [[Game Plan - Roadmap]]
 - **Agent / build token budget:** [[Agent Token Efficiency]] (mandatory before Godot execution)
 - **GUI / UX polish phase (when unlocked):** [[GUI & UX Roadmap]] — handoff for a future agent to enhance chrome without regressing the spine
+- **Retail Completeness Audit & P6–P12 Roadmap:** [[Retail Completeness Audit & Phase P6-P12 Roadmap]] — honest player audit, Mermaid execution graph, and self-recursive phases P6–P12
+- **Retail Quality Benchmarks:** [[Reference Benchmarks - Thrive & Alice Madness Returns]] — *Thrive* Godot 4 UI modularity + *Alice: Madness Returns* Rated-M dark fairytale craft
 
 ---
 
