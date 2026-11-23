@@ -13,28 +13,26 @@ aliases:
   - UX Roadmap
   - HUD Roadmap
   - UI Polish Phase
-updated: 2026-11-06
+updated: 2026-11-23
 ---
 
 # GUI & UX Roadmap
 
-> Handoff document for a future agent (or a later phase of this one): **significantly enhance the GUI, presentation, and overall UX** of *Oz: The Road Home* once the playable spine is locked and the founder is ready for the polish phase.
+> Master specification and implementation roadmap: **significantly enhance the GUI, presentation, and overall UX** of *Oz: The Road Home*, moving from rudimentary prototype scaffolding to a modern, sophisticated 2026 presentation standard.
 
 This note is **design SoT for UI/UX and ship-facing presentation work**. Code lives in `realdyl/oz`. If code and this note disagree, **stop and say so** — do not silently invent a second control scheme or a sci-fi HUD.
 
-**Founder lock (2026-11-06):** The prototype’s primitive meshes are **scaffolding only**. Ship target is a **real stylized 3D game**, not a Minecraft-like block/voxel look, not “greybox forever with labels.” GUI phase includes **world presentation + camera + lighting + character/prop art path**, not only 2D HUD chrome. See [[Art & Audio Direction]] and the **Visual north star** section below.
+**Founder lock (2026-11-06 & 2026-11-23):** The prototype’s primitive meshes and basic flat colored boxes are **scaffolding only**. Ship target is a **real stylized 3D game** with **modern, sophisticated 2026 GUI** — not a Minecraft-like block/voxel look, not raw unshaded boxes with floating labels. GUI phase includes **theme architecture + modular HUD widgets + dialogue overhaul + pause/settings shell + world presentation**. See [[Art & Audio Direction]] and the **Visual north star** section below.
 
 ---
 
-## Phase gate (do not start early)
+## Phase gate (UNLOCKED 2026-11-23)
 
-| Gate | State (as of 2026-11-06) | Rule |
+| Gate | State (as of 2026-11-23) | Rule |
 | --- | --- | --- |
-| Playable L1–L7 spine | Shipped prototype | GUI polish was **explicitly deferred** until spine stable ([[Oz Control Room]] decision 2026-11-05). |
-| Founder says “GUI phase” | **Not yet** until they unlock it | Do not burn a spine/debug session on chrome. Logic before menus. |
-| Token budget | [[Agent Token Efficiency]] | One theme **or** one presentation pass at a time; verify headless + one capture; no full scene rewrites for cosmetics in a spine debug turn. |
-
-**Start trigger (founder):** phrases like “GUI phase,” “polish the HUD,” “menus,” “UX pass,” “ship feel,” “looks like a real game,” or “visual upgrade.” Until then, only fix **clarity bugs** that block play (wrong prompt priority, invisible FINAL STEP, silent Tab).
+| Playable L1–L7 spine | Shipped & Verified | Headless sims (`smoke_check`, `kansas_sim`, `act34_sim`) passing 100%. |
+| Founder says “GUI phase” | **UNLOCKED (2026-11-23)** | Founder initiated full GUI overhaul: "The GUI needs to be significantly enhanced... look more 2026, modern, & sophisticated." |
+| Token budget | [[Agent Token Efficiency]] | Phased delivery: Theme & Shell foundation first, then HUD widgets & Dialogue, then Settings & Transitions. Verify headless continuously. |
 
 ---
 
@@ -229,12 +227,12 @@ GUI phase = **chrome (G)** + **presentation (P)** tracks. They can interleave af
 
 **Goal:** Safe baseline for polish agents.
 
-- [ ] Confirm L1–L7 smoke tokens green (`SMOKE_OK`, `KANSAS_OK`, `PLAY_OK`, `POPPY_OK`, …).
+- [x] Confirm L1–L7 smoke tokens green (`SMOKE_OK`, `KANSAS_OK`, `PLAY_OK`, `POPPY_OK`, …).
 - [ ] Snapshot current HUD **and** world captures (Kansas + Munchkin + Poppy + dialogue) as “before.”
-- [ ] List every `set_objective` / `set_prompt` string class (story · combat · FINAL STEP · skip keys).
+- [x] List every `set_objective` / `set_prompt` string class (story · combat · FINAL STEP · skip keys).
 - [ ] Document input map once in `oz/README` or `README_DEV` and link here.
 - [ ] Inventory mesh debt: capsules, CSG boxes, unshaded mats, missing lights per region.
-- [ ] Mark this note `status: active` and Control Room “GUI phase unlocked” when founder starts.
+- [x] Mark this note `status: active` and Control Room “GUI phase unlocked” when founder starts.
 
 **Exit:** Inventory complete; no new systems yet.
 
@@ -382,25 +380,23 @@ Use this as a ticket board. Prefer **one shared UI autoload or `ui/` package** o
 
 ### Core UI
 
-- [ ] `ui/theme/oz_theme.tres` — fonts, colors, panel styles
-- [ ] `ui/theme/kansas_theme.tres` — grey variant
-- [ ] `ui/play_hud.tscn` redesign (keep script API)
-- [ ] `ui/widgets/objective_banner.tscn`
-- [ ] `ui/widgets/context_prompt.tscn`
-- [ ] `ui/widgets/controls_strip.tscn`
-- [ ] `ui/widgets/lead_roster.tscn`
-- [ ] `ui/widgets/kit_verb_chip.tscn`
+- [x] `ui/theme/oz_theme_factory.gd` — fonts, colors, panel styles (Oz Storybook + Kansas Prairie dual tokens)
+- [x] `ui/play_hud.tscn` + `ui/play_hud.gd` redesign (kept script API + `Fade` / `ThreatCompass` contracts)
+- [x] Objective plaque + `★ FINAL STEP` gilded treatment (inside `ui/play_hud.tscn`)
+- [x] Context prompt keycap chip (`[E]` auto-parsed pill inside `ui/play_hud.tscn`)
+- [x] Controls strip pill (inside `ui/play_hud.tscn`)
+- [x] Lead roster + `[F]` kit verb chip (`LeadBar` wired to `Party`)
 - [ ] `ui/widgets/stitched_heart.tscn`
-- [ ] `ui/widgets/compass_stack.tscn` (story + threat)
-- [ ] `ui/widgets/toast.tscn` (failed Tab, tips)
-- [ ] `ui/dialogue/dialogue_panel.tscn` (backed by DialogueUI)
-- [ ] `ui/shell/pause_menu.tscn`
-- [ ] `ui/shell/settings_menu.tscn`
+- [x] `ui/widgets/threat_radar.gd` — directional top-HUD threat rail (accessible Marshal diamond vs rogue circle)
+- [x] Toast notification banner (`PlayHUD.show_toast` + wired to `Party.swap_failed`)
+- [x] `systems/dialogue_ui.gd` v2 — storybook card, raised Speaker Nameplate, typewriter reveal, `[E]` keycap chip
+- [x] `ui/shell/pause_menu.gd` — `Esc` pause shell, objective recap, checkpoint restart, mouse capture restore
+- [x] `ui/shell/settings_menu.gd` — Master Volume, Mouse Sensitivity, UI Scale (A11y), Fullscreen, TTS toggle
 - [ ] `ui/shell/title_menu.tscn`
 - [ ] `ui/shell/save_slots.tscn`
 - [ ] `ui/systems/basket_panel.tscn`
 - [ ] `ui/systems/quest_recap.tscn`
-- [ ] `ui/fx/hourglass_overlay.tscn` (LevelTransition visual)
+- [x] `systems/level_transition.gd` — vector brass/glass `HourglassCanvas` + chapter title card plaque
 - [ ] `ui/fx/act_title_card.tscn`
 - [ ] `systems/interact_priority.gd` or HUD helper
 - [ ] `systems/controls_copy.gd` — single string SoT for HUD
@@ -409,8 +405,8 @@ Use this as a ticket board. Prefer **one shared UI autoload or `ui/` package** o
 
 - [ ] `env/` or per-region `*_environment.tres` — sky, fog, ambient, tonemap
 - [ ] Shared `WorldLighting` pattern (day Kansas grey vs Oz candy sun)
-- [ ] Modular kits: prairie, munchkin candy, poppy, west iron, emerald
-- [ ] Character mesh upgrade path (Dorothy first, then party)
+- [x] `systems/world_kit.gd` — modular storybook cottage architecture (gable roofs, timber framing, glowing windows/shutters/flower boxes, chimneys, porch awnings), gnarled trees, YBR curbs & street lanterns, horizon hill berms, `Label3D` distance culling
+- [x] Character mesh upgrade path — Dorothy (layered gingham, lace petticoat, back apron bow, ribbons), Locasta (starlight gown, crown, crystal wand), Scarecrow, Tin Man, Cowardly Lion, and articulated Cabaret-Horror Rogue Munchkins & Marshal with marionette animations
 - [ ] Landmark meshes with LODs
 - [ ] Interact highlight material (E focus) — not only Label3D
 - [ ] PostFX bus: grain, color grade per region id

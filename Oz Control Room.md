@@ -29,10 +29,11 @@ This vault is the single source of truth for the game: design, world, systems, q
 | Summon system | Draft v0.1 | Design |
 | Questline (Acts 1–4) | Draft v0.1 | Narrative |
 | Bosses (4 + cold open) | Draft v0.1 | Design |
-| Tech stack | Decision needed | Tech |
-| Vertical slice plan | Draft | Production |
+| Tech stack | Locked (Godot 4.8) | Tech |
+| Vertical slice plan | Playable L1–L7 spine locked | Production |
+| GUI & Presentation | Active (Unlocked 2026-11-23) | Tech / UI |
 
-Legend: blocked · draft · locked
+Legend: blocked · draft · locked · active
 
 ---
 
@@ -100,6 +101,7 @@ Legend: blocked · draft · locked
 | 2026-11-05 | Play order: [[Kansas Farmyard Prologue]] (L1) → Munchkinland landing (L2); GUI polish deferred until spine is solid | Locked |
 | 2026-11-06 | GUI polish handoff documented in [[GUI & UX Roadmap]] (G0–G5); start only when founder unlocks GUI phase | Locked |
 | 2026-11-06 | Presentation target: real stylized 3D (not Minecraft/voxel); Alice beautiful-corruption + Rockstar **craft** research; see [[GUI & UX Roadmap]] Visual north star | Locked |
+| 2026-11-23 | Founder unlocked GUI & Presentation Phase: modern, sophisticated 2026 GUI overhaul replacing rudimentary prototype UI across HUD, Dialogue, Menus, Shell, and Theme | Locked / Active |
 
 ---
 

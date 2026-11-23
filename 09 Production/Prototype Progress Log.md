@@ -13,6 +13,45 @@ updated: 2026-11-06
 
 Living log for Godot `oz/` vs this vault. Agents append dated bullets; do not delete history.
 
+## 2026-11-23 — GUI & Presentation Overhaul (Unlocked & Master Architecture)
+
+- **User:** Unlocked GUI overhaul phase. Current GUI is very rudimentary and basic (looks like a poor Minecraft clone). Must look **2026, modern, & sophisticated**. Provided open-source reference repos in `+ Gaming` (notably *Thrive* in Godot).
+- **Status:** GUI Phase formally **UNLOCKED** in [[Oz Control Room]] and [[GUI & UX Roadmap]].
+- **Planning & Architecture (Gemini 3 Flash):**
+  - Analyzed Godot 4.8 project state, test harnesses, current `PlayHUD`, `DialogueUI`, and `LevelTransition`.
+  - Confirmed 100% pass on all headless simulation suites (`smoke_check`, `kansas_sim`, `act34_sim`).
+  - Outlined 2026 Modern & Sophisticated UI Architecture:
+    1. **Design System & Theme Engine**: Procedural vector styling (`StyleBoxFlat`, high-DPI font overrides, dynamic margins, rounded corner geometry, subtle inner borders, drop shadows, and dual-palette system for Oz Warm Storybook vs Kansas Cold Prairie).
+    2. **Modern Modular HUD (`ui/play_hud.*`)**: Retains 100% API compatibility (`set_objective`, `set_prompt`, `set_kansas_mode`, `set_party_roster`) while replacing flat `ColorRect`s with responsive widgets (`ObjectiveBanner` with `FINAL STEP` badge, `ContextPrompt` keycap badge, `ControlsStrip` pill, `LeadRoster` character chips, and modern threat radar).
+    3. **DialogueUI v2 (`systems/dialogue_ui.gd`)**: Upgraded to a polished storybook frame with speaker badge, typewriter animation, advance indicator, and audio cue hooks.
+    4. **In-Game Shell (`ui/shell/`)**: Full Pause menu (Esc toggle with mouse capture release), Settings modal (Volume, Display, A11y, Controls), and Restart Checkpoint.
+    5. **Visual & Presentation Upgrades**: Alignment with *Alice: Madness Returns* beauty-and-decay mood and Rockstar-class cinematic camera & HUD restraint.
+- **Execution Plan**: Staged execution for Gemini 4 Neon across G1 (Theme & Core HUD), G2 (Dialogue & Shell), and G3 (Polish & Visual integration).
+- **Shipped (2026-11-23 — Execution Complete):**
+  - `oz/ui/theme/oz_theme_factory.gd` — dual 2026 theme engine (Oz Storybook warm glass/gold vs Kansas Prairie film-noir slate).
+  - `oz/ui/widgets/threat_radar.gd` — directional top-HUD threat rail with shape-accessible pips (Marshal diamond vs rogue circle), distance, and live count (retaining hidden `ThreatCompass` contract label for `play_sim`).
+  - `oz/ui/play_hud.tscn` & `oz/ui/play_hud.gd` — Objective plaque with `★ FINAL STEP` highlight, `[E]` keycap-parsed Context Prompt pill, Lead Roster + `[F]` Kit Verb chip wired to `Party`, `show_toast` connected to `Party.swap_failed`, sleek Controls pill, auto-styled/relayouted level external labels, and `Fade` contract preserved.
+  - `oz/systems/dialogue_ui.gd` — DialogueUI v2 storybook card with raised Speaker Nameplate, 75 cps typewriter reveal, `[E]` continue chip, Oz/Kansas auto-matching, and `set_tts_enabled`.
+  - `oz/ui/shell/pause_menu.gd` & `oz/ui/shell/settings_menu.gd` — `Esc` pause shell with objective recap, checkpoint restart, and Settings (Master Volume, Mouse Sensitivity, UI Scale 80–140%, Fullscreen, TTS toggle).
+  - `oz/systems/level_transition.gd` — refined vector brass/glass `HourglassCanvas` and storybook chapter title card plaque.
+  - **Verification:** `SMOKE_OK`, `KANSAS_OK`, `PLAY_OK`, `ACT34_OK` (`ACT5_OK`, `ACT6_OK`, `ACT7_OK`), `UI_API_SMOKE_OK` — all exited 0 with zero script errors.
+
+## 2026-11-23 — Phase P1: 3D Characters, Rogue Munchkins, Storybook Architecture & Auto-Git Policy
+
+- **Auto-Git Policy:** Created `oz/AGENTS.md` and updated `oz/README_DEV.md` so both `oz` and `obsidian-oz` enforce the [[Auto Git Policy]] (commit + push after verified passes).
+- **3D Label Culling & Dialogue Quiet Hours:**
+  - `oz/systems/world_kit.gd` (`WorldKit.apply_label3d_culling`) applies `visibility_range_end = 15.0` self-fade and restrained `pixel_size` across all world `Label3D`s so distant signs no longer pile up on the horizon.
+  - `oz/ui/play_hud.gd` hides `LeadBar`, `PromptCenter`, and `ControlsPanel` while `DialogueUI` is open so party badges never peek behind the dialogue card.
+- **Character & Rogue Munchkin Visual Overhaul:**
+  - `oz/actors/enemies/puppet_munchkin.gd` — replaced static capsule/stick primitives with articulated Cabaret-Horror Marionettes (flared waistcoat, brass buttons, ruffled collar, cracked porcelain mask, glowing button eyes, crooked top hat, licorice cane; Marshal gets gilded shako + plume, shoulder epaulettes, breastplate, and halberd) plus procedural walk/telegraph/lunge/confused/feared limb animation.
+  - `oz/actors/dorothy/dorothy_visual.gd` — layered gingham skirt with lace petticoat hem, wrap-around waist sash with sculpted back bow & ribbon tails, puffed sleeves, crossed pinafore straps, braided pigtails with bows.
+  - `oz/actors/companions/` (`scarecrow_visual.gd`, `tinman_visual.gd`, `lion_visual.gd`) — ragged coat tails/floppy hat/straw bursts, riveted boiler chest/pauldrons/heart-latch/funnel/curved axe, and 10-tuft storm-cloud mane/muzzle/ears.
+  - `WorldKit.build_locasta_visual` — layered starlight gown, capelet, silver hair, filigree star crown, and crystal wand.
+- **Munchkinland Architecture, Trees, Lanterns & Horizon (`landing_square.gd` + `world_kit.gd`):**
+  - Replaced flat box roofs on all cottages and Guild Hall with pitched storybook gable roofs, overhanging eaves, stone plinths, half-timbered beams, glowing paned windows with shutters & flower boxes, front porch awnings, crooked chimneys, and subtle stitch seams.
+  - Upgraded border trees to gnarled multi-limb trees, lined the YBR spine with gold curb stones & alternating crooked wrought-iron street lanterns, and ringed the outer border with rolling horizon hills.
+- **Verification:** `SMOKE_OK`, `KANSAS_OK`, `PLAY_OK`, `ACT34_OK` (`ACT5_OK`, `ACT6_OK`, `ACT7_OK`) — all exited 0 with zero script errors.
+
 ## 2026-11-06 — GUI & UX Roadmap (handoff)
 
 - **User:** Vault must hold a GUI roadmap so a future agent can significantly enhance GUI/UX when polish phase starts.
