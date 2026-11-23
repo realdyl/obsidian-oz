@@ -13,6 +13,30 @@ updated: 2026-11-23
 
 Living log for Godot `oz/` vs this vault. Agents append dated bullets; do not delete history.
 
+## 2026-11-23 — Phase P3: Horizon Continuity, Sculpted Lion & Crows, 4-Wall Interiors, Signage Style Guide, Playable Toto, Poppy Carpet & Kansas Overhaul
+
+- **Style Guide & Centered UI Shell (`08 Technical/Typography & Signpost Style Guide.md`, `ui/shell/pause_menu.gd`, `ui/shell/settings_menu.gd`):**
+  - Authored [[Typography & Signpost Style Guide]] defining the 3-tier diegetic signage system (flush engraved arrow signposts, wrought-iron & walnut architectural building crests, and dark-velvet/gold world badges).
+  - Fixed `SettingsMenu` bottom-right offset by wrapping both Pause and Settings cards in a full-viewport `CenterContainer` (with `"← Back to Pause Menu"` + `Esc` return).
+- **Munchkinland Edges, Lion Anatomy, Crows & Enclosed Interiors (`world_kit.gd`, `lion_visual.gd`, `scarecrow_visual.gd`, `tinman_visual.gd`, `combat_fx.gd`, `landing_square.gd`):**
+  - Added continuous horizon ground apron (`add_ground_apron`) + tighter outer hill skirts so zero sky-void drop-offs appear at Munchkinland's edges.
+  - Rebuilt Cowardly Lion with horizontal organic feline anatomy (chest ribcage, lumbar waist, rounded haunches, 2-tier 18-tuft mane, articulated jaw, 3-toed paws, S-tail) and replaced the blocky green hedge den with `WorldKit.build_lion_sanctuary()` (mossy boulders, twisted-root arch, swaying ferns, lantern-berries).
+  - Upgraded Scarecrow & Tin Man with articulated joint cuffs/ball-joints, brass buttons, and glowing clockwork heart jewel; upgraded `CombatFx.crow_storm()` to 9 sculpted 3D crows with continuous 4-cycle flapping 2-segment wings & fanned tails.
+  - Closed the 4th front wall (`+Z`) + ceiling slab + ornate interior Exit Doorway in `WorldKit.build_rich_interior()`.
+  - Upgraded YBR directional signposts (text flush on both faces of the wooden plank, zero floating text above) and building signs (`make_building_crest_sign`).
+- **Playable Toto (`Tab` / Key `5`) + `F` BARK (`toto_companion.gd`, `party_manager.gd`, `play_hud.gd`, `combat_fx.gd`):**
+  - Promoted `TotoCompanion` to a playable `CharacterBody3D` Lead (`Party.ID_TOTO`, Slot `5 Toto` in `PlayHUD`) with **`F` BARK** (`CombatFx.bark_wave()` sonic startle/fear ring + scent trail).
+- **Winkie Castle Cistern & Witch Melt (`west_castle.gd`, `west_witch_boss.gd`, `world_kit.gd`, `combat_fx.gd`):**
+  - Replaced flat cistern box + neon stick with `WorldKit.build_water_cistern()` (octagonal carved stone & copper well, iron arch, chain & wooden bucket, puddles).
+  - Choreographed `CombatFx.water_splash_and_melt()` (water splash arc, billowing steam/smoke plumes, spiraling melt into a persistent obsidian-crimson puddle with her pointed gothic hat left behind).
+- **L3 Deadly Poppy Field (`poppy_road.gd`, `world_kit.gd`, `dorothy_visual.gd`, `player_controller.gd`, `lion.gd`):**
+  - Upgraded `WorldKit.build_poppy_beds()` to hardware-instanced `MultiMeshInstance3D` rendering **2,400+ swaying scarlet poppies**.
+  - Added progressive drowsiness dialogue (`35%` Dorothy sleepy line, `65%` Lion yawn), realistic **lying-down sleeping poses** (`set_sleeping`) + rising `"Z · z"` slumber particles, smooth Lead-transition toast, and parabolic lift-and-place loading onto the **top center of the Mice Cart flatbed** (zero wheel clipping).
+- **L1 Kansas Farmyard Deep Overhaul (`farmyard.gd`, `world_kit.gd`):**
+  - Fixed Farmhouse interior collider trap & waist-clipping (disables exterior collider while inside, enclosed 4-wall monochrome prairie interiors with clear center foyer).
+  - Replaced floating grey rectangles with `WorldKit.build_clothesline()` (cedar T-posts, sagging hemp rope, clothespins, hanging shirts/sheets), replaced neon sticks with `WorldKit.build_prairie_lantern_marker()`, sculpted woven wicker `build_wicker_basket()`, 4-leg `build_lattice_windmill()`, articulated `build_kansas_farmer()` for Aunt Em & Uncle Henry, and rolling grey prairie horizon hills.
+- **Verification:** `SMOKE_OK`, `KANSAS_OK`, `PLAY_OK`, `ACT34_OK` (`ACT5_OK`, `ACT6_OK`, `ACT7_OK`) — all exited 0 with zero script errors.
+
 ## 2026-11-23 — Phase P2: World Polish, Combat Choreography, Interiors, Toto L1–L7 & Whimsy Boons
 
 - **Horizon, Hills & Foliage (`oz/systems/world_kit.gd`, `oz/regions/munchkinland/landing_square.gd`):**

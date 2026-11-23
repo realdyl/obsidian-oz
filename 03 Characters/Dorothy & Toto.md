@@ -54,7 +54,7 @@ Kansas is Dorothy's baseline: no shoes, no friends, no powers — just her and t
 ## Toto
 
 **Role:** Wayfinding + secret-finding companion. Never a combat unit.
-**Presence:** Sculpted 3D Cairn Terrier (`actors/companions/toto_companion.gd`, shared with Kansas `toto.gd`) who accompanies Dorothy across **all 7 levels (L1–L7)**, trotting beside the party with animated tail wag, floppy ears, and idle breathing (auto-spawned via `PlayHUD` whenever a region has no explicit Toto node).
+**Presence:** Sculpted 3D Cairn Terrier (`actors/companions/toto_companion.gd`, shared with Kansas `toto.gd`) who accompanies Dorothy across **all 7 levels (L1–L7)** and is **fully playable as Lead Slot 5 (`Tab` / Key `5`)** with his **`F` BARK** superpower (sonic terrier bark wave that startles/staggers nearby enemies + emits a directional scent-trail pulse, while remaining non-targeted by enemy aggro).
 
 ### Mechanics
 | Ability | Trigger | Effect |
