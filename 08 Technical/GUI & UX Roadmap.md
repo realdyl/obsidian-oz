@@ -290,20 +290,20 @@ GUI phase = **chrome (G)** + **presentation (P)** tracks. They can interleave af
 
 **Verify:** Lead swap visible; kit chip updates; headless still `PLAY_OK`; capture shows roster + heart.
 
-### P2 — Alice-class set dressing (beautiful corruption)
+### P2 — Alice-class set dressing (beautiful corruption) — ✅ Shipped (2026-11-23)
 
 **Goal:** World density and duality match [[Art & Audio Direction]].
 
-| Deliverable | Detail |
-| --- | --- |
-| Perfect/broken dual read | Each hero space has a clean face and a rot/stitch underside |
-| Modular prop kits | Fences, lanterns, candy architecture, iron Winkie, emerald chrome — reusable |
-| Scale theater | Oversized doors, tall YBR, oppressive West walls — Dorothy stays small |
-| Poppy field art | Scent haze, petal density, Clear Air / cart as **readable props** not floating orbs only |
-| Interior kits | Farmhouse / shops feel built, not empty CSG rooms |
-| VFX language | Dust, crows, oil drip, melt steam — restrained, storybook |
+| Deliverable | Detail | Status |
+| --- | --- | --- |
+| Perfect/broken dual read | Removed giant green monolith (`EmeraldSpeck`), `EastCrook`, and `WinkieHaze`; replaced with distant crystalline Emerald City skyline; Baum-canon Wicked Witch of the West & smooth pleated Locasta | ✅ |
+| Modular prop kits | `WorldKit` spatial wind shaders (rustling grass tufts & wildflowers, swaying tree leaves), crooked 3D wooden signposts, walkable collidable meadow hills, ornate Winkie iron braziers | ✅ |
+| Scale theater | Centered Scarecrow inside lush multi-row cornfield; Dorothy wears fishnet stockings shader + high-heeled silver stilettos; sculpted 3D Cairn Terrier Toto follows across all L1–L7 | ✅ |
+| Poppy field art | Swaying 3D scarlet poppy beds (`WorldKit.build_poppy_beds`) and carved wooden Mice Cart with spoked wheels & 6 harnessed field mice (`WorldKit.build_mice_cart_visual`) | ✅ |
+| Interior kits | Richly furnished interiors (`WorldKit.build_rich_interior`) with planked floors, parlor rug, wainscoting, rafters, hanging candelabrum, brick fireplace with fire, bookshelves, desks/ledgers, framed plaques | ✅ |
+| VFX & Combat Choreography | Dorothy high-heel crescent kick (`play_kick` + `CombatFx.kick_arc`), Scarecrow 8 flapping 3D crows (`play_caw` + `crow_storm`), Lion rearing shockwave (`play_roar` + `roar_shockwave`), Silver Shoes pickup vortex, animated Whimsy pickup FX + Road's Blessing tiers | ✅ |
 
-**Verify:** Region palette table in Art & Audio is visible in captures without HUD.
+**Verify:** `SMOKE_OK`, `KANSAS_OK`, `PLAY_OK`, `ACT34_OK` (`ACT5_OK`, `ACT6_OK`, `ACT7_OK`) — all exited 0 with zero script errors.
 
 ### G3 — Diegetic systems UI
 

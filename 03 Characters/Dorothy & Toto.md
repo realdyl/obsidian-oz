@@ -9,7 +9,7 @@ tags:
 aliases:
   - Dorothy
   - Toto
-updated: 2026-10-26
+updated: 2026-11-23
 ---
 
 # Dorothy Gale & Toto
@@ -18,7 +18,7 @@ updated: 2026-10-26
 
 **Role:** Protagonist. Mobility + summoner. Not a brawler.
 **Age:** 18 (M-rated adult presentation locked 2026-11-05). **Voice:** plainspoken Kansas honesty; funny without trying.
-**Look target:** Full-body feminine farm girl — capable, alluring, badass — not a capsule blob. Procedural body stand-in until authored mesh.
+**Look target:** Full-body feminine farm girl — capable, alluring, badass — not a capsule blob. Signature look includes layered blue gingham dress with lace petticoat & waist sash bow, **diamond-lattice fishnet stockings**, and **sculpted high-heeled silver stilettos** (Baum book Silver Shoes). Procedural body stand-in until authored mesh.
 
 ### Fantasy
 You are not strong. You are *fast, kind, and stubborn* — and you make broken people believe they're whole.
@@ -54,6 +54,7 @@ Kansas is Dorothy's baseline: no shoes, no friends, no powers — just her and t
 ## Toto
 
 **Role:** Wayfinding + secret-finding companion. Never a combat unit.
+**Presence:** Sculpted 3D Cairn Terrier (`actors/companions/toto_companion.gd`, shared with Kansas `toto.gd`) who accompanies Dorothy across **all 7 levels (L1–L7)**, trotting beside the party with animated tail wag, floppy ears, and idle breathing (auto-spawned via `PlayHUD` whenever a region has no explicit Toto node).
 
 ### Mechanics
 | Ability | Trigger | Effect |

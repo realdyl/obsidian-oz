@@ -6,12 +6,30 @@ tags:
   - oz
   - oz/production
   - oz/prototype
-updated: 2026-11-06
+updated: 2026-11-23
 ---
 
 # Prototype Progress Log
 
 Living log for Godot `oz/` vs this vault. Agents append dated bullets; do not delete history.
+
+## 2026-11-23 — Phase P2: World Polish, Combat Choreography, Interiors, Toto L1–L7 & Whimsy Boons
+
+- **Horizon, Hills & Foliage (`oz/systems/world_kit.gd`, `oz/regions/munchkinland/landing_square.gd`):**
+  - Removed the giant mint-green `EmeraldSpeck` rectangle, tilted `EastCrook` monolith, and `WinkieHaze` slab; replaced with a distant crystalline **Emerald City skyline** (`add_emerald_skyline`).
+  - Pushed decorative horizon hills strictly outside playable bounds and added **walkable, collidable meadow hills** (`add_walkable_meadow_hills` with matching `StaticBody3D` + `SphereShape3D`) so characters climb hills instead of sinking/swimming through them.
+  - Replaced random ground pegs with swaying multi-blade **grass tufts & wildflowers** outside the YBR corridor (`absf(x) > 4.2`), driven by a custom wind + character-rustle vertex shader (`make_wind_grass_material`, updated live via `PlayHUD`), plus wind-sway shader on tree canopies (`make_leaf_wind_material`).
+  - Replaced giant floating billboards (`"The road goes on."`, Locasta head text, duplicate interior labels) with crooked 3D **wooden signposts** (`make_wooden_signpost`) and distance-culled `Label3D`s.
+- **Characters, Locomotion & Combat Choreography:**
+  - **Dorothy (`dorothy_visual.gd`, `player_controller.gd`, `silver_shoes.gd`):** Added diamond-lattice **fishnet stockings** shader (`make_fishnet_material`), sculpted **high-heeled silver stilettos**, smoother 24-segment curves, multi-joint walk/run/idle breathing, `E` interact gesture, choreographed high-heel roundhouse/snap kick (`play_kick()` + `CombatFx.kick_arc` — removing rigid root bobbing), and a 3-ring starlight vortex on Silver Shoes pickup.
+  - **Wicked Witch of the West (`west_castle.gd`, `world_kit.gd`):** Replaced the 3-primitive red triangle with a Baum-canon silhouette (pale gaunt face, black eye-patch, single glowing eye, obsidian & crimson velvet corset gown, gothic witch hat, iron umbrella-staff) and upgraded castle braziers to ornate iron lanterns.
+  - **Companions (`scarecrow_visual.gd`, `lion_visual.gd`, `scarecrow.gd`, `lion.gd`, `combat_fx.gd`):** Centered **Scarecrow** inside a lush cornfield (`Vector3(4.5, 0.08, 28.0)`); added `play_caw()` + 8 articulated 3D flapping crows (`CombatFx.crow_storm`), `play_roar()` (rearing up on hind legs) + golden sonic shockwave (`CombatFx.roar_shockwave`), and idle breathing.
+  - **Toto Across All Levels (`actors/companions/toto_companion.gd`, `kansas/toto.gd`, `ui/play_hud.gd`):** Sculpted 3D Cairn Terrier visual shared between Kansas and L2–L7, auto-spawned by `PlayHUD` to trot alongside Dorothy throughout Oz.
+- **Interiors, Poppy Field & Whimsy Intrinsic Value:**
+  - **Interiors (`WorldKit.build_rich_interior`):** Furnished `DebtCottage` and cottages with planked floors, parlor rug, wainscoting, rafters, hanging candelabrum, brick fireplace with 3D fire, stocked bookshelves, desk/ledgers, and framed wall plaques.
+  - **L3 Deadly Poppy Field (`poppy_road.gd`):** Replaced flat red boxes with swaying 3D scarlet poppy flower beds (`build_poppy_beds`) and a carved wooden **Mice Cart** with spoked wheels & 6 harnessed 3D field mice (`build_mice_cart_visual`).
+  - **Whimsy (`systems/whimsy.gd`, `landing_square.gd`):** Added interactive 3D squash/launch/spin pickup celebrations + `CombatFx` bursts and **Road's Blessing** intrinsic boon tiers (`25` Swift Heels +15% blink, `50` Bonded Courage, `75` Silver Trail) with HUD toast notifications.
+- **Verification:** `SMOKE_OK`, `KANSAS_OK`, `PLAY_OK`, `ACT34_OK` (`ACT5_OK`, `ACT6_OK`, `ACT7_OK`) — all exited 0 with zero script errors.
 
 ## 2026-11-23 — GUI & Presentation Overhaul (Unlocked & Master Architecture)
 
