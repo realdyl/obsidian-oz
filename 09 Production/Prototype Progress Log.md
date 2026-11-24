@@ -522,3 +522,9 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
   - Added **Difficulty Presets (`Story 0.6x / Standard 1.0x / Nightmare 1.6x`)**, **Screen Shake toggle**, and **High-Contrast HUD toggle** in `ui/shell/settings_menu.gd` + `SaveManager`.
 - **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
 - **Next**: Ready for recursive polish cycle **`P1.1 → P12.1`**!
+
+## Phase P1.1 — Tailor of Vices 3D Boutique Stage, Drop-In Audio Loader & Prompt Libraries (Complete)
+- **Live 3D Boutique Turntable Stage (`ui/shop_menu.gd`)**: Upgraded *The Tailor of Vices* to a `980×560` split-screen retail boutique with a live `SubViewportContainer` (`own_world_3d = true`), gilded rotating marble pedestal, drag-to-spin camera interaction, live sculpted 3D preview of the active character (`Dorothy`, `Scarecrow`, `Tin Man`, `Lion`, `Toto`), hover-to-preview outfit tinting, and a live 3-bar **Stat Comparison Strip** (`Allure Gain`, `Agility / Aura`, `Combat Edge`).
+- **Drop-In Studio Audio Loader (`systems/audio_manager.gd`)**: Enhanced `AudioFx` to auto-load custom `.ogg`/`.wav`/`.mp3` files from `oz/assets/audio/{music,sfx,voices}/` (preferring user-generated Suno / ElevenLabs / CC0 assets over procedural fallbacks), and created the `oz/assets/audio/` folder scaffold.
+- **Obsidian `10 Prompt Libraries/` Populated**: Created `00 - Asset Sourcing & Folder Guide.md`, `Audio Generation/Music/Suno Music Prompts.md`, `Audio Generation/Sound FX/SFX Generation Prompts.md`, `Audio Generation/Voices & Characters/Voice Profiles & Line Scripts.md`, and `Image Generation/Concept Art, Couture & Texture Prompts.md`.
+- **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
