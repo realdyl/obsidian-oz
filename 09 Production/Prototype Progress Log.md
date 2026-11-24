@@ -484,3 +484,30 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
 - `kansas_sim.gd`: `KANSAS_OK`
 - `play_sim.gd`: `PLAY_OK`
 - `act34_sim.gd`: `ACT34_OK` (`POPPY`, `WEST`, `EMERALD`, `GLINDA`, `HOME`)
+
+
+---
+
+## 2026-11-23 — Phase P11 Complete (2026 AAA Visual Pipeline: ACES Filmic, Glow/SSAO & Destructible Urns + Munchkinland Exit Fix, Animated Chickens & Silver Shoes Anim)
+
+### Targeted Fixes (`realdyl/oz`)
+1. **Munchkinland Progression Softlock Fixed (`landing_square.gd`)**: `Beat.TREE_GATE` and `Beat.MARSHAL` now immediately advance if `tree_down` or `marshal_down` was already achieved before entering that beat, and `_ensure_west_road_gate()` now renders the ornate `GrandPortalArch` (`ROAD TO POPPY FIELD`).
+2. **Solid Fallen Tree Log (`actors/enemies/living_tree.gd`)**: Defeated Fighting Trees now keep `collision_layer = 1` with their `CollisionShape3D` rotated horizontally along the fallen trunk so players walk around the fallen log instead of passing through it.
+3. **Animated Waddling & Pecking Chickens (`systems/chicken_actor.gd`, `world_kit.gd`)**: All sculpted 3D Kansas chickens now actively waddle around their fenced run and bob to peck grain.
+4. **Aunt Em No-Repeat Dialogue (`regions/kansas/farmyard.gd`)**: Pressing `E` after Aunt Em finishes her 3 lines no longer repeats her idle line over and over (matching Locasta's clean behavior).
+5. **Continuous Flush YBR Curbs (`world_kit.gd`)**: Replaced gapped peg-like curb blocks in `dress_ybr_spine()` with continuous flush golden-stone curbs (`height = 0.06 m`).
+6. **Choreographed Silver Shoes Put-On & Full Visible Feet (`player_controller.gd`)**: Claiming the Silver Shoes now triggers a dip-twirl + silver ankle sparkle burst and raises `Visual.position.y = 0.03` so Dorothy's entire Silver Shoes sit cleanly on top of every surface.
+
+### Phase P11 — 2026 AAA Visual Pipeline (`realdyl/oz`)
+- **Forward+ ACES Filmic Post-Processing (`world_kit.gd`)**: Added `WorldKit.apply_aaa_post_processing(env, biome)` enabling ACES Filmic tonemapping, subtle HDR Glow/Bloom, and SSAO across Munchkinland, Emerald City, and Glinda's Court.
+- **Destructible Gilded Porcelain Urns (`systems/destructible_prop.gd`, `world_kit.gd`, `landing_square.gd`)**: Added breakable porcelain urns along Munchkinland that shatter on `F`/`C` hit and drop `+5 Desire Fragments`.
+
+### Obsidian Planning (`realdyl/obsidian-oz`)
+- Authored [[Tailor of Vices - Visual Shop Overhaul Plan]] (3D `SubViewport` turntable preview + custom illustrated icons + stat delta bars).
+- Added the **Recursive Sub-Phase Iteration Protocol (`P1.1 → P12.1`)** to [[Retail Completeness Audit & Phase P6-P12 Roadmap]].
+
+### Verified Headless Godot 4.8 Simulations (All Exited 0)
+- `smoke_check.gd`: `SMOKE_OK` (`L1–L7`)
+- `kansas_sim.gd`: `KANSAS_OK`
+- `play_sim.gd`: `PLAY_OK` (`SCARECROW_WALK dist=1.81`, `TINMAN_WALK dist=1.27`, `TAB_CYCLE_OK`)
+- `act34_sim.gd`: `ACT34_OK` (`POPPY`, `WEST`, `EMERALD`, `GLINDA`, `HOME`)

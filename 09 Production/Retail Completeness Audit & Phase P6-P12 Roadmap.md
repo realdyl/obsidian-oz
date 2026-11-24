@@ -154,3 +154,18 @@ flowchart TD
 - [[Vision & Pillars]]
 - [[Kinky Armaments]]
 - [[Outfit Shop]]
+
+
+---
+
+## 4. Recursive Sub-Phase Iteration Protocol (`P1.1 → P12.1`, `P1.2 → P12.2`, ...)
+
+Once the initial **P1 → P12** vertical-to-retail foundation pass completes, the founder can invoke **recursive refinement passes** on any phase (`"Proceed with Phase P1.1"`, `"Proceed with Phase P2.1"`, `"Proceed with Phase P10.1"`, etc.) to deepen quality iteratively until every single screen, character, interior, and system hits full retail satisfaction:
+
+| Sub-Phase Pass | Deepening Focus |
+| --- | --- |
+| **P1.1 – P3.1** | Deep GUI & Character Silhouette Re-sculpt (replacing procedural primitives with high-detail Blender/glTF rigs, custom painted normal maps, expressive facial blendshapes). |
+| **P4.1 – P5.1** | Kansas, Munchkinland & Emerald City Architectural Megapass (broader landscapes, bespoke interior props, animated townsfolk, zero blocky geometry). |
+| **P6.1 – P7.1** | Retail HUD & Rated-M Combat Finisher Pass (custom SVG iconography, animated petal physics, full weapon animations & blood/decal shaders). |
+| **P8.1 – P10.1** | **Tailor of Vices 3D Turntable Shop Overhaul** (`[[Tailor of Vices - Visual Shop Overhaul Plan]]`), full Vile Request side-quest chains, and multi-district vertical exploration. |
+| **P11.1 – P12.1** | Full Orchestral Adaptive Audio, Voice Barks, Choreographed Cutscene Cameras & 60 FPS Steam Deck/PC Shipping Polish. |
