@@ -556,3 +556,11 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
   - **Wicked Witch of the West (Baum Canon)**: Added sculpted raven head atop her folded dark-iron umbrella-staff, silver-grey braided hair, forged-iron eyepatch, and crown-banded witch hat (`enemy_04_wicked_witch.jpg`).
   - **Oz Volumetric Hologram**: Upgraded twin flanking pylons into coiled brass Tesla towers with glowing emerald arc orbs and giant interlocking brass projector gears (`enemy_02_oz_hologram.jpg`).
 - **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
+
+## Phase P5.1 — Kansas Farmstead Architecture Fidelity Pass (Complete)
+- **Archived 6 Kansas Farmstead References (`Generated References/Buildings/Kansas/`)** & created `08 Technical/Buildings & Architecture Visual Fidelity Spec.md`.
+- **3D Architectural Upgrades (`systems/world_kit.gd`)**:
+  - **Farmhouse & Cottage Exteriors**: Added leaning spoked wooden wagon wheel beside the front porch (`bldg_01_gale_farmhouse.jpg`).
+  - **Parlor & Cottage Interiors**: Added braided oval floor rug and cast-iron pot-belly stove with tall vertical stovepipe (`bldg_05_farmhouse_interior.jpg`).
+  - **Prairie Lattice Windmill**: Added wooden water trough and cast-iron hand water pump with lever handle at the tower base (`bldg_06_windmill_clothesline.jpg`).
+- **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
