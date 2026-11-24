@@ -438,3 +438,25 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
 - `kansas_sim.gd`: `KANSAS_OK`
 - `play_sim.gd`: `PLAY_OK` (`BLINK dist=1.70`, `KICK hp 30 -> 20`, `TAB_CYCLE_OK`)
 - `act34_sim.gd`: `ACT34_OK` (`POPPY`, `WEST`, `EMERALD`, `GLINDA`, `HOME`)
+
+
+---
+
+## 2026-11-23 — Phase P9 Complete (Multi-Phase Boss Overhaul, Boss Health HUD, AoE Telegraphs + Emerald Castle Ramparts, Wind Chimes & L7 Barn)
+
+### Targeted Fixes (`realdyl/oz`)
+1. **Fanciful Storybook Wind-Chime Whimsies (`systems/whimsy.gd`)**: Replaced bare chime blocks with sculpted curved shepherd-hook stands, gilded crown rings, 5 staggered tubular chime bells, and crystal star wind-catchers.
+2. **Enterable Barn on L7 Kansas Homecoming (`regions/kansas/homecoming.gd`)**: Added enterable Barn door trigger, warmly lit 4-wall interior (hay bales, exit door, Desire Chest), and indoor camera matching L1 Kansas.
+3. **Disney-World Fairy-Tale Emerald City Ramparts (`world_kit.gd`, `wizard_tower.gd`)**: Dressed the entire Emerald City curtain wall with `WorldKit.dress_emerald_city_wall()` — 6 soaring crystal-roofed castle turrets with gold finials, crenellated battlements, arched glowing stained-glass bays, royal crimson-gold banners, and flanking flowing-water Emerald Crystal Fountains.
+4. **Unobstructed Wizard Reveal Stage (`wizard_tower.gd`)**: Widened interior Great Hall colonnade from `x = ±8.0` to `x = ±11.4` so no standing column blocks Oscar Diggs when the velvet curtain draws back.
+
+### Phase P9 — Multi-Phase Bosses, Boss HUD & Telegraphed AoE Rings (`realdyl/oz`)
+- **Retail Boss Health & Phase HUD Bar (`ui/play_hud.gd`)**: Added top-center gilded-crimson `BossHealthBar` with live phase readout (`show_boss_bar` / `hide_boss_bar`).
+- **Telegraphed Ground AoE Danger Rings (`systems/combat_fx.gd`)**: Added `CombatFx.aoe_telegraph()` — expanding warning rings that fill and detonate.
+- **Multi-Phase Wicked Witch of the West & Lollipop Guild Marshal (`west_witch_boss.gd`, `puppet_munchkin.gd`)**: Live Boss Health/Phase HUD tracking + Witch Phase I/II telegraphed violet Hex Fire Rings (accelerating in Phase II below 65% HP) + Phase III Water-Douse vulnerability.
+
+### Verified Headless Godot 4.8 Simulations (All Exited 0)
+- `smoke_check.gd`: `SMOKE_OK` (`L1–L7`)
+- `kansas_sim.gd`: `KANSAS_OK`
+- `play_sim.gd`: `PLAY_OK`
+- `act34_sim.gd`: `ACT34_OK` (`POPPY`, `WEST`, `EMERALD`, `GLINDA`, `HOME`)
