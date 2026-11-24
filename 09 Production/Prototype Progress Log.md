@@ -511,3 +511,14 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
 - `kansas_sim.gd`: `KANSAS_OK`
 - `play_sim.gd`: `PLAY_OK` (`SCARECROW_WALK dist=1.81`, `TINMAN_WALK dist=1.27`, `TAB_CYCLE_OK`)
 - `act34_sim.gd`: `ACT34_OK` (`POPPY`, `WEST`, `EMERALD`, `GLINDA`, `HOME`)
+
+## Phase P12 — Procedural SFX Audio, Accessibility/Difficulty Presets & Visual Polish Pass (Complete)
+- **Munchkinland Scarecrow Unlock Blocker Fixed (`systems/destructible_prop.gd`, `regions/munchkinland/landing_square.gd`)**: Removed destructible porcelain urns from the `"enemies"` group (moved to `"destructibles"` while keeping `collision_layer = 1 | 4` so kicks still shatter them) and restricted `_count_live_landing()` strictly to `CharacterBody3D` enemies. Threat Compass restored to `7 live` and `Beat.FREE_SCARECROW` unlocks cleanly upon clearing the landing swarm.
+- **Illustrated Tailor of Vices Product Icons (`ui/widgets/shop_item_icon.gd`, `ui/shop_menu.gd`)**: Replaced all flat `ColorRect` color blocks with bespoke 64×64 custom-drawn vector illustrations inside gilded velvet medallions (gingham dress, velvet corset gown, silver-lace sovereign gown, coiled crimson lace whip, straw hat/tunic, leather bandolier, raven cloak, tin plate & funnel, crimson velvet sash, lion mane, primal gold crown-harness, Cairn terrier, and silver-spiked collar).
+- **Emerald City Skyline Ahead in Poppy Field (`regions/poppy/poppy_road.gd`)**: Added `WorldKit.add_emerald_skyline(self, Vector3(0.0, 0.0, 128.0))` and softened crimson fog density (`0.0042`) so the gleaming Emerald Tower rises on the horizon along the Yellow Brick Road.
+- **Enterable Chicken Coop on L7 Kansas Homecoming (`regions/kansas/homecoming.gd`)**: Added full enterable interior (`E` door trigger + 4-wall timber room + nesting boxes + roosting perches + 3 animated sculpted chickens + interior chest + Exit Door badge + indoor camera zoom) matching L1 Kansas.
+- **Phase P12 Procedural SFX & Accessibility**:
+  - Added zero-dependency `AudioFx` autoload (`systems/audio_manager.gd`) synthesizing 16-bit PCM `AudioStreamWAV` SFX (`kick`, `whip`, `urn`, `chime`, `chest`, `buy`, `ui_click`, `rapture`) with a 6-voice player pool, wired into combat, destructibles, and the shop.
+  - Added **Difficulty Presets (`Story 0.6x / Standard 1.0x / Nightmare 1.6x`)**, **Screen Shake toggle**, and **High-Contrast HUD toggle** in `ui/shell/settings_menu.gd` + `SaveManager`.
+- **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
+- **Next**: Ready for recursive polish cycle **`P1.1 → P12.1`**!
