@@ -40,6 +40,16 @@ Maps approved architectural references in `10 Prompt Libraries/Image Generation/
 
 ---
 
-## 3. Pending Architecture Batches (Sections 3–4 of Prompt Library 03)
-- Winkie Iron Castle Courtyard & Emerald City Disney-Scale Ramparts / Tailor Boutique / Curtain Throne Room
+## 3. Winkie Country & Emerald City Landmarks (L4 & L5)
+
+| Building / Structure | Reference Image | Signature 3D Architectural Details |
+|---|---|---|
+| **Winkie Iron Castle Courtyard & Cistern** | `Buildings/Winkie_Emerald/we_04_winkie_courtyard.jpg` | Riveted dark-iron battlements, spiked portcullis gate, glowing fire braziers, and a central stone-and-iron Water Cistern crowned by an arched iron dome, spoked winch wheel, and twin hanging water buckets. |
+| **Emerald City Castle Ramparts** | `Buildings/Winkie_Emerald/we_02_emerald_ramparts.jpg` | Art-Deco faceted emerald ramparts with 6 glowing crystal turrets, twin stepped cascading emerald fountains, spiral topiary gardens, and monumental golden arched double doors. |
+| **The Tailor of Vices Boutique** | `Buildings/Winkie_Emerald/we_03_tailor_boutique.jpg` | Dark-plum & emerald tiled Victorian storefront with a gilded hanging scissor crest, velvet-draped couture display windows, and warm amber lanterns. |
+| **Wizard's Velvet Curtain Throne Room** | `Buildings/Winkie_Emerald/we_01_wizard_throne_room.jpg` | Fluted emerald-marble columns, towering crimson velvet theater curtains with gold tassels parting to reveal giant interlocking brass clockwork gears behind Oscar Diggs' dais. |
+
+---
+
+## 4. Pending Architecture Batch (Section 4 of Prompt Library 03)
 - Glinda's Ruby-Rose Pavilion, Reflecting Pools & Grand Portal Arches

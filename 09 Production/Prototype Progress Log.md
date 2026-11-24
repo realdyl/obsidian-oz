@@ -572,3 +572,10 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
   - **Cottage Interiors**: Added 3 gilded wall-mounted smiling porcelain masks and a tufted rose-velvet parlor settee (`munch_01_cottage_interior.jpg`).
   - **Street Lanterns**: Added a delicate glowing hanging Northern Star charm beneath the iron cross-arm (`munch_02_signpost_lantern.jpg`).
 - **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
+
+## Phase P7.1 — Winkie Castle & Emerald City Landmarks Fidelity Pass (Complete)
+- **Archived 4 Winkie & Emerald References (`Generated References/Buildings/Winkie_Emerald/`)** & expanded `08 Technical/Buildings & Architecture Visual Fidelity Spec.md` with Section 3.
+- **3D Landmark Upgrades (`systems/world_kit.gd`)**:
+  - **Winkie Courtyard Water Cistern**: Added arched forged-iron dome canopy, spiked finial, spoked winch wheel, and twin hanging wooden water buckets (`we_04_winkie_courtyard.jpg`).
+  - **Wizard's Velvet Curtain Throne Room**: Added 3 colossal interlocking brass clockwork gear rings behind the parting crimson velvet drape (`we_01_wizard_throne_room.jpg`).
+- **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
