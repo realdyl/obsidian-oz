@@ -547,3 +547,12 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
   - **Cowardly Lion (`lion_visual.gd`)**: Ornate dark-leather & antique-gold chest harness with crimson-ribboned golden Courage Medal & ruby center.
   - **Toto (`toto_companion.gd`)**: Dark leather collar with sculpted gleaming silver 5-point star charm pendant.
 - **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
+
+## Phase P4.1 — Character-Specific 3D & GUI Fidelity Blueprint + Enemy & Boss Visual Overhaul (Complete)
+- **Obsidian Spec (`08 Technical/Character-Specific 3D & GUI Fidelity Blueprint.md`)**: Documented all 20 approved Character, Subcharacter, Enemy, and Boss design sheets into exact 3D mesh/shader construction specs and character-specific GUI treatments.
+- **3D Enemy & Boss Visual Overhaul (`actors/enemies/puppet_munchkin.gd`, `systems/world_kit.gd`)**:
+  - **Munchkin Guild Enforcer**: Added ruffled cream neck collar, rosy painted porcelain cheeks, bell-tipped rose pointed hat, and gold-filigree short hatchet blade (`enemy_05_munchkin_enforcer.jpg`).
+  - **Lollipop Guild Marshal Boss**: Added candied-crimson spiked armored pauldrons, plumed shako hat with golden lollipop-swirl emblem, and massive serrated ceremonial cleaver (`enemy_06_marshal_boss.jpg`).
+  - **Wicked Witch of the West (Baum Canon)**: Added sculpted raven head atop her folded dark-iron umbrella-staff, silver-grey braided hair, forged-iron eyepatch, and crown-banded witch hat (`enemy_04_wicked_witch.jpg`).
+  - **Oz Volumetric Hologram**: Upgraded twin flanking pylons into coiled brass Tesla towers with glowing emerald arc orbs and giant interlocking brass projector gears (`enemy_02_oz_hologram.jpg`).
+- **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
