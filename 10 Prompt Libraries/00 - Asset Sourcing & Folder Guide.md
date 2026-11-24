@@ -90,4 +90,9 @@ oz/assets/audio/
 - [[Suno Music Prompts]]
 - [[SFX Generation Prompts]]
 - [[Voice Profiles & Line Scripts]]
-- [[Concept Art, Couture & Texture Prompts]]
+- [[01 - Master Art & GUI Style Reference Prompts]]
+- [[02 - Characters, Subcharacters & Enemies Prompts]]
+- [[03 - Buildings, Architecture & Interiors Prompts]]
+- [[04 - Key Objects, Artifacts & Interactive Props Prompts]]
+- [[05 - Environments, Scenes & Textures Prompts]]
+- [[Concept Art, Couture & Texture Prompts]] (Tailor of Vices 64×64 Shop Icons)
