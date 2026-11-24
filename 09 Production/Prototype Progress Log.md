@@ -460,3 +460,27 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
 - `kansas_sim.gd`: `KANSAS_OK`
 - `play_sim.gd`: `PLAY_OK`
 - `act34_sim.gd`: `ACT34_OK` (`POPPY`, `WEST`, `EMERALD`, `GLINDA`, `HOME`)
+
+
+---
+
+## 2026-11-23 — Phase P10 Complete (Interactive Tailor of Vices Shop UI, Live 3D Outfits & Armory + 10 World & UX Fixes)
+
+### Phase P10 — Interactive "The Tailor of Vices" Shop UI & Live Outfits (`realdyl/oz`)
+- **Shop UI (`ui/shop_menu.gd`)**: Accessible via **`[B]` key**, **Pause Menu (`Esc` → The Tailor of Vices)**, or stepping into the Emerald Plaza Boutique. Features 5 character tabs (*Dorothy*, *Scarecrow*, *Tin Man*, *Lion*, *Toto*), live `♦ Desire Fragments` balance, color swatches, perk descriptions, and one-click **Buy / Equip** buttons.
+- **Live 3D Outfit & Weapon Application (`systems/save_manager.gd`)**: Purchased outfits & weapon upgrades (`Velvet Corset Couture`, `Silver-Lace Sovereign`, `Lace Whip Mastery`, `Burlap & Leather`, `Obsidian Crowmaster`, `Chrome & Crimson Velvet`, `Primal Gold Harness`, `Silver-Spiked Collar`) immediately apply live to the active 3D character models in the world.
+
+### Targeted World, Animation & HUD Fixes (`realdyl/oz`)
+1. **Toto Rides Inside Dorothy's Basket (`regions/kansas/toto.gd`)**: After claiming Toto in Kansas, Toto now hops directly into Dorothy's carried wicker basket with his head, ears, and wagging tail peeking over the rim.
+2. **Fighting Tree Throwing Arms & Persistent Fallen Trunk (`actors/enemies/living_tree.gd`)**: Added articulated shoulder-arm boughs that visibly wind back and hurl seed-pods; defeated trees now topple onto the grass and remain fallen instead of disappearing.
+3. **Poppy Field Meadow Sleep, Breezy Meadow Shrine & Smooth Cart Rescue (`regions/poppy/poppy_road.gd`)**: Dorothy & Lion now collapse inside the scarlet poppy meadow beside the road (`x = -5.4` / `x = 5.8`), removed mid-air asleep `Label3D`s, replaced the bare Clear Air orb with a sculpted `Breezy Meadow Shrine` archway, and smoothly tweened the Lion stepping off the cart + cart parking with zero popping.
+4. **All Whimsical Objects Beautified (`systems/whimsy.gd`)**: Upgraded `bounce` to a Spotted Storybook Toadstool Trampoline and `giggle` to a Floating Crystal Fairy-Lantern with filigree halo ring; moved Emerald City `Gate dance` whimsy clear of the flanking fountains.
+5. **Grandiose Portal Archway Checkpoints (`world_kit.gd`, `poppy_road.gd`, `west_castle.gd`, `glinda_court.gd`)**: Added `WorldKit.build_grand_portal_arch()` (gilded columns, crystal-crowned arch, glowing floor rune medallion) on level exits.
+6. **Winkie Castle Walls & Boss HUD Overlap Fixed (`west_castle.gd`, `west_witch_boss.gd`, `play_hud.gd`)**: Aligned `WallN_L`/`WallN_R` flush with the north gate pillars, hid the Boss Health Bar immediately on `begin_melt()`, and shifted `LevelCompass` cleanly below the Boss Bar whenever active so HUD elements never overlap.
+7. **L7 Kansas Chicken Coop Parity (`regions/kansas/homecoming.gd`)**: Added the matching Chicken Coop + Swinging Fence Gate + 5 sculpted 3D chickens to L7 Kansas Homecoming.
+
+### Verified Headless Godot 4.8 Simulations (All Exited 0)
+- `smoke_check.gd`: `SMOKE_OK` (`L1–L7`)
+- `kansas_sim.gd`: `KANSAS_OK`
+- `play_sim.gd`: `PLAY_OK`
+- `act34_sim.gd`: `ACT34_OK` (`POPPY`, `WEST`, `EMERALD`, `GLINDA`, `HOME`)
