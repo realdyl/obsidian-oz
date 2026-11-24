@@ -51,5 +51,11 @@ Maps approved architectural references in `10 Prompt Libraries/Image Generation/
 
 ---
 
-## 4. Pending Architecture Batch (Section 4 of Prompt Library 03)
-- Glinda's Ruby-Rose Pavilion, Reflecting Pools & Grand Portal Arches
+## 4. Quadling Country — Glinda's Court & Portal Arches (L6 & Biome Borders)
+
+| Building / Structure | Reference Image | Signature 3D Architectural Details |
+|---|---|---|
+| **Grand Portal Arch (Oz Borderlands)** | `Buildings/Quadling/quad_01_portal_arch.jpg` | Carved stone-and-gold arch spanning the Yellow Brick Road crowned with 4 glowing Oz Realm Gemstones (Sapphire Blue, Emerald Green, Ruby Red, Topaz Gold) in gilded bezels, flanked by warm street lanterns. |
+| **Glinda's Ruby-Rose Pavilion** | `Buildings/Quadling/quad_02_glinda_pavilion.jpg` | Circular blush-pink marble colonnade topped with a rose-glass & gold filigree dome and golden starburst finial, ringed by turquoise lotus reflecting pools and warm rose-gold water lanterns. |
+
+*All 4 architectural sections (16/16 building & landmark references) are now archived and specified.*

@@ -579,3 +579,10 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
   - **Winkie Courtyard Water Cistern**: Added arched forged-iron dome canopy, spiked finial, spoked winch wheel, and twin hanging wooden water buckets (`we_04_winkie_courtyard.jpg`).
   - **Wizard's Velvet Curtain Throne Room**: Added 3 colossal interlocking brass clockwork gear rings behind the parting crimson velvet drape (`we_01_wizard_throne_room.jpg`).
 - **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
+
+## Phase P8.1 — Quadling Country Pavilion & Oz Realm Portal Arches Fidelity Pass (Complete)
+- **Archived 2 Quadling References (`Generated References/Buildings/Quadling/`)** & completed all 4 sections of `08 Technical/Buildings & Architecture Visual Fidelity Spec.md` (16/16 building & landmark references archived).
+- **3D Architectural Upgrades (`systems/world_kit.gd`)**:
+  - **Grand Portal Arches (`build_grand_portal_arch`)**: Added the 4 glowing Oz Realm Gemstones (Sapphire Blue, Emerald Green, Ruby Red, Topaz Gold) set into gilded bezels across the arch lintel (`quad_01_portal_arch.jpg`).
+  - **Glinda's Ruby-Rose Pavilion (`dress_glinda_court`)**: Added a radiant golden 8-point starburst crown atop Glinda's rose dome and warm rose-gold glowing water lanterns lining the lotus reflecting pools (`quad_02_glinda_pavilion.jpg`).
+- **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
