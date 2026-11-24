@@ -564,3 +564,11 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
   - **Parlor & Cottage Interiors**: Added braided oval floor rug and cast-iron pot-belly stove with tall vertical stovepipe (`bldg_05_farmhouse_interior.jpg`).
   - **Prairie Lattice Windmill**: Added wooden water trough and cast-iron hand water pump with lever handle at the tower base (`bldg_06_windmill_clothesline.jpg`).
 - **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
+
+## Phase P6.1 — Munchkinland Storybook Architecture & Interior Fidelity Pass (Complete)
+- **Archived 4 Munchkinland Architecture References (`Generated References/Buildings/Munchkinland/`)** & expanded `08 Technical/Buildings & Architecture Visual Fidelity Spec.md` with Section 2.
+- **3D Munchkinland Architectural Upgrades (`systems/world_kit.gd`)**:
+  - **Cottage Exteriors**: Added glowing circular stained-glass rosette window in the front gable peak (`munch_04_cottage_exterior.jpg`).
+  - **Cottage Interiors**: Added 3 gilded wall-mounted smiling porcelain masks and a tufted rose-velvet parlor settee (`munch_01_cottage_interior.jpg`).
+  - **Street Lanterns**: Added a delicate glowing hanging Northern Star charm beneath the iron cross-arm (`munch_02_signpost_lantern.jpg`).
+- **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.

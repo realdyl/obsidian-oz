@@ -29,7 +29,17 @@ Maps approved architectural references in `10 Prompt Libraries/Image Generation/
 
 ---
 
-## 2. Pending Architecture Batches (Sections 2–4 of Prompt Library 03)
-- Munchkinland Storybook Cottages & Crashed Farmhouse Wreckage
+## 2. Munchkinland Architecture (Surreal Pastel Storybook — L2)
+
+| Building / Structure | Reference Image | Signature 3D Architectural Details |
+|---|---|---|
+| **Munchkinland Cottage (Exterior)** | `Buildings/Munchkinland/munch_04_cottage_exterior.jpg` | Pastel-mint plaster walls with rose-pink timber framing, circular stained-glass rosette gable window, stone foundation, scalloped roof, hanging brass bell & gilded crest sign. |
+| **Munchkinland Cottage (Interior)** | `Buildings/Munchkinland/munch_01_cottage_interior.jpg` | Checkered pastel mint/rose/cream tile floor, tufted rose-velvet parlor settee, brass stained-glass chandelier, wall-mounted smiling porcelain masks in gold frames, ornate Desire Chest. |
+| **Crashed Kansas Farmhouse** | `Buildings/Munchkinland/munch_03_crashed_farmhouse.jpg` | Tilted monochrome clapboard wreckage splintered beside the Yellow Brick Road with striped stockings & gleaming Silver Shoes sticking out beneath the beams. |
+| **Signpost & Starlight Lantern** | `Buildings/Munchkinland/munch_02_signpost_lantern.jpg` | Carved multi-plaque directional signpost with perched wooden owl beside a twisting wrought-iron streetlamp bearing a glowing hanging Northern Star charm. |
+
+---
+
+## 3. Pending Architecture Batches (Sections 3–4 of Prompt Library 03)
 - Winkie Iron Castle Courtyard & Emerald City Disney-Scale Ramparts / Tailor Boutique / Curtain Throne Room
 - Glinda's Ruby-Rose Pavilion, Reflecting Pools & Grand Portal Arches
