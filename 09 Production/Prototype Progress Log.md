@@ -535,3 +535,15 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
 - **Oz Grimoire Two-Page Book Spread (`ui/grimoire_menu.gd`)**: Remodeled directly after `ref_01_grimoire_ui.jpg` — Open leather-and-brass double-page velvet parchment spread with left-edge stitched bookmark tabs (`QUESTS`, `COMPANIONS`, `ARMAMENTS`, `BESTIARY`, `SHATTERED MEMORIES`), glowing silver-rose active tab, selectable left-page entries, center spine crease, and framed right-page lore/portrait view.
 - **Gameplay HUD & Pause/Main Menu Shell (`ui/play_hud.gd`, `ui/shell/pause_menu.gd`)**: Added antique-brass filigree overlays (`OrnateFrame`) to the Objective Plaque, Vitality Ribbon, and full-screen Pause Menu with the Silver-Rose `OZ: THE ROAD HOME` crest (`ref_02_main_menu_ui.jpg`), and swapped plain vitality symbols for `RoseVitalityBar`.
 - **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
+
+## Phase P3.1 — Party Portraits in HUD & Dialogue + High-Detail 3D Character Visual Overhaul (Complete)
+- **Painted Party Portraits Wired into Gameplay HUD & Dialogue (`ui/play_hud.gd`, `systems/dialogue_ui.gd`)**:
+  - Bottom-left Party Roster slots now display the cropped 256×256 painted character portraits (`Dorothy`, `Scarecrow`, `Tin Man`, `Lion`, `Toto`), dynamically scaling up for the active Lead and dimming for locked companions.
+  - Dialogue Box now displays a gilded 92×92 antique-brass Speaker Portrait Medallion whenever Dorothy, Scarecrow, Tin Man, Lion, or Toto speaks.
+- **High-Detail 3D Character Visual Overhaul (Gameplay + 3D Boutique Turntable)**:
+  - **Dorothy (`dorothy_visual.gd`)**: Procedural royal-blue & white gingham check shader on skirt/bodice, dark-plum Victorian velvet corset waist-cincher with hammered antique-gold filigree buckle & rims, dark-plum back bow & petticoat hem, and ornate silver instep filigree buckles on her Silver Shoes.
+  - **Scarecrow (`scarecrow_visual.gd`)**: Cross-stitched leather button eyes, brass gear-button badge & tucked raven feather on hat, crossed rope chest straps, brass belt buckle, and gnarled wooden walking staff with hanging brass key.
+  - **Tin Woodman (`tinman_visual.gd`)**: Center gilded filigree clockwork heart cage with glowing crimson heart, twin brass-and-iron steam exhaust pipes on his back, glowing amber-gold clockwork eyes, and spiked riveted shoulder pauldrons.
+  - **Cowardly Lion (`lion_visual.gd`)**: Ornate dark-leather & antique-gold chest harness with crimson-ribboned golden Courage Medal & ruby center.
+  - **Toto (`toto_companion.gd`)**: Dark leather collar with sculpted gleaming silver 5-point star charm pendant.
+- **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
