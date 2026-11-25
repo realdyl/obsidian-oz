@@ -586,3 +586,15 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
   - **Grand Portal Arches (`build_grand_portal_arch`)**: Added the 4 glowing Oz Realm Gemstones (Sapphire Blue, Emerald Green, Ruby Red, Topaz Gold) set into gilded bezels across the arch lintel (`quad_01_portal_arch.jpg`).
   - **Glinda's Ruby-Rose Pavilion (`dress_glinda_court`)**: Added a radiant golden 8-point starburst crown atop Glinda's rose dome and warm rose-gold glowing water lanterns lining the lotus reflecting pools (`quad_02_glinda_pavilion.jpg`).
 - **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
+
+
+## Phase P9.1 — Core Story Quest Objects Fidelity Pass & Grimoire Quest Icons (Complete)
+- **Archived 5 Core Story Quest Object References (`Generated References/Objects/Quest/`)** & created `08 Technical/Objects, Armaments & Props Visual Fidelity Spec.md` (`obj_01_water_cistern_bucket.jpg` through `obj_05_field_mouse_cart.jpg`).
+- **GUI Quest Icons (`oz/assets/art/icons/`, `ui/grimoire_menu.gd`)**:
+  - Cropped 256×256 painted icons for `silver_shoes.png` and `wicker_basket.png`.
+  - Wired `silver_shoes.png` (Current Chapter) and `wicker_basket.png` (Controls & Keybindings) into the Oz Grimoire Quests tab (`[J]`).
+- **3D Hero Quest Prop Upgrades (`systems/world_kit.gd`)**:
+  - **Winkie Courtyard Water Cistern (`build_water_cistern`)**: Added the heavy iron-banded oak water bucket sitting beside the cistern rim with dual iron hoops, brimming shimmering water, and forged bail handle (`obj_01_water_cistern_bucket.jpg`).
+  - **Tin Man's Vintage Oil Can (`build_oil_can_visual`)**: Upgraded base from stone plinth to a mossy forest tree stump with cut wood rings and moss collar, plus an angled brass filler cap on the reservoir shoulder (`obj_02_oil_can.jpg`).
+  - **Dorothy's Wicker Picnic Basket (`build_wicker_basket`)**: Added twin slightly-ajar hinged wicker picnic lids atop the basket rim (`obj_04_wicker_basket.jpg`).
+- **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
