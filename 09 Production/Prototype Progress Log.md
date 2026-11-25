@@ -823,3 +823,14 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
 - `play_sim.gd`: `PLAY_OK`
 - `act34_sim.gd`: `ACT34_OK` (`L3–L7`)
 - `retail_p3_sim.gd`: `TITLE_SCREEN_OK`, `STYLE_RANK_OK`, `CURIO_CHARM_6HP_OK`, `VILE_REQUEST_OK`, `VELVET_ROAD_NG_PLUS_OK`, `CAMERA_FLOOR_CLAMP_OK`, `MUNCHKIN_SANCTUM_AND_PUZZLES_OK`, `GRIMOIRE_6_TABS_OK`, `BOUTIQUE_6_TABS_OK`, `RETAIL_P3_ALL_OK`
+
+
+---
+
+## 2026-11-25 — Post-P12.3 Playtest Polish Hotfix (Portrait Crop, Dialogue Layering, Solid Interior Walls, 2-Way Kansas Gate & Z/C Input Fix)
+
+- **Uncropped Circular Portrait Medallions (`ui/shaders/circle_medallion.gdshader`, `systems/dialogue_ui.gd`):** Pulled the circular alpha mask (`0.460..0.478`) and brass bezel (`0.402..0.476`) cleanly inside the UV quad with a `0.022` anti-aliased margin, and locked `_portrait_frame`/`_portrait_tex` to `SIZE_SHRINK_CENTER` `96×96` square `STRETCH_SCALE` so no character portrait ring ever clips.
+- **Dialogue Tucked Behind All Menus (`systems/dialogue_ui.gd`, `ui/grimoire_menu.gd`):** Lowered `DialogueLayer` from `layer = 80` to `layer = 18` (strictly below Grimoire `28`, Boutique `30`, and Pause Menu `100`) and auto-hid `_box` while `get_tree().paused` (restoring seamlessly on close). Also moved Grimoire's `BookmarkRibbon` onto a full-rect overlay on `cover` so it drapes cleanly from the top-right corner instead of overlapping text.
+- **Solid 4-Wall Interior Containment (`systems/world_kit.gd`, `regions/kansas/farmyard.gd`, `regions/munchkinland/landing_square.gd`, `regions/kansas/homecoming.gd`):** Added `WorldKit.add_interior_wall_colliders(...)` and `set_interior_colliders_enabled(...)` across every Oz & Kansas interior so players are physically contained within the 4 walls until pressing `E` to exit.
+- **Solid Kansas Chicken-Run Fence & Two-Way Swinging Gate (`systems/world_kit.gd`):** Added 5 solid `StaticBody3D` fence wing colliders (`CoopFenceColliders`) plus a solid closed gate leaf (`CoopGateSolid`) that smoothly disables and swings naturally **away from Dorothy** (`+95°` entering, `-95°` exiting) based on her approach side.
+- **Unbound `Z` & `C` from 360° Camera Orbit (`project.godot`, `actors/dorothy/player_controller.gd`):** Rebound `camera_left`/`camera_right` to `[` / `]` so `Z`/`X` cleanly cycle Dorothy's 4 Armaments and `C` casts her active superpower (with a helpful HUD toast if pressed before claiming the Silver Shoes).
