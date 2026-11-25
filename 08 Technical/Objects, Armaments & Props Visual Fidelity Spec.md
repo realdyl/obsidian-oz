@@ -79,3 +79,23 @@ Archived in `10 Prompt Libraries/Image Generation/Generated References/Objects/W
 | `prop_02_desire_chest.jpg` | **Desire Fragment Loot Chest** (`oz/assets/art/icons/desire_chest.png`) | Cropped 256×256 icon of carved dark-walnut brass-strapped chest brimming with radiant crimson-rose Desire Crystals. |
 | `prop_03_porcelain_urn.jpg` | **Breakable Porcelain Urn** (`world_kit.gd:spawn_destructible_urn`) | Upgraded to a rococo mint-and-blush porcelain amphora with scalloped gilded foot & flared rim, twin scrolling gold handles, and blush rose medallions. |
 | `prop_04_ybr_streetlamp.jpg` | **Yellow Brick Road Gas Streetlamp** (`world_kit.gd:make_street_lantern`) | Added stepped octagonal cast-iron pedestal base, twin Victorian ladder cross-bar, and spiked crown finial atop the glowing amber lantern hood. |
+
+
+
+---
+
+## 5. Phase P10.2 — 2026 High-Fidelity Whimsies, Building Interiors, Desire Chests & Bespoke 3D Keepsakes (Shipped)
+
+### Unified 2026 Whimsical Object Suite (`world_kit.gd:build_whimsy_visual`, `whimsy.gd`, `landing_square.gd`)
+Replaced all remaining placeholder cylinders/spheres/tori in Munchkinland and unified all 7 Acts under `WorldKit.build_whimsy_visual()` with live `_process` ambient animation:
+- **Crystal Wind Chimes (`chime` — `prop_01_crystal_chimes.jpg`)**: Vine-wrapped wrought-iron shepherd's post with spear finial & scrolled curls, arched crook arm, 3 suspension chains, 2-tier chandelier rings, 8 alternating fluted silver bells & faceted crystal teardrops, and a central master crystal prism inside a gently swaying `ChimeSway` pivot.
+- **Storybook Spotted Toadstool (`bounce`)**: Mossy base ring, ribbed ivory stem with mushroom skirt & gill underside, velvety domed cap with 8 raised glowing cream spots, 2 satellite baby toadstools, and a subtle breathing bounce squash.
+- **Giggle-Bloom Fairy Lantern (`giggle`)**: Floating 6-petal glowing blossom cup cradling a faceted crystal fairy-orb framed by dual counter-rotating gilded astrolabe rings.
+- **Fairy-Tale Gazebo Dance Ring (`dance`)**: Gilded mosaic floor medallion bordered by 6 wrought-iron lantern bollards and orbiting musical starlight motes.
+
+### 2026 Building Interiors (`world_kit.gd:build_rich_interior`, `world_kit.gd:build_kansas_interior`, `farmyard.gd`)
+- **Oz Cottages, Market & Mayor's Hall (`build_rich_interior`)**: PBR oak plank floor (`kansas_wood.jpg` warm tint), concentric plum-and-gold parlor rug, gothic arched stained-glass bay window flanked by draped plum velvet curtains & brass tie-backs (`prop_03_porcelain_urn.jpg`), 6-candle brass & crystal-drop chandelier, stone hearth with brass mantle candlesticks & antique clock, four-poster quilted cottage bed / carved turned-leg mahogany counting desk with open ledger, quill & brass coin stacks, rococo porcelain vase on velvet-draped tea table, and tufted cabriole-leg velvet settee with bolster pillows.
+- **Kansas Farmhouse, Barn & Chicken Coop (`build_kansas_interior`)**: Eliminated all raw `_ks_prop` grey boxes in `farmyard.gd` in favor of monochrome PBR plank walls/floors, hanging glass prairie oil lantern, braided oval rug, sculpted cast-iron pot-belly woodstove with glowing firebox grate, stovepipe & boiling kettle, iron-frame quilt bed, prairie kitchen hutch with ceramic pitcher & skillet, turned-leg dining table & chairs, Barn twine-bound hay bales, slatted horse stall, 8-spoke wooden wagon wheel, tool workbench with axle-grease tin & oil lamp, and Coop straw-lined nesting boxes with speckled eggs & perched chickens.
+- **Carved Walnut Desire Chest & 5 Bespoke 3D Shattered Memories (`add_interior_activities`, `interior_pickup.gd`)**:
+  - **Desire Chest (`prop_02_desire_chest.jpg`)**: Draped crushed-velvet cloth runner with spilled ruby gems, carved dark-walnut body with brass corner straps, keyhole escutcheon & side ring handles, vaulted barrel lid, brimming bed of 16 glowing faceted crimson-rose Desire Crystal clusters, and crimson-gold opening burst VFX.
+  - **Bespoke 3D Shattered Memory Keepsakes (`_build_memory_keepsake_mesh`)**: Replaced the generic diamond crystal with individual floating 3D keepsakes framed in a golden halo ring — `kansas_barn_diary` (open 1899 weather ledger), `kansas_locket` (open oval tarnished pewter locket + sepia portrait), `munchkin_silver_ledger` (silver-clasped leather book + white feather quill), `munchkin_porcelain_mask` (porcelain mask with exposed brass clockwork gears), and `emerald_spectacles` (round brass-framed green-tinted spectacles).
