@@ -650,3 +650,10 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
   - Wired `emerald_marble.jpg` onto the Art-Deco Emerald City Palace forecourt boulevard (`build_emerald_palace_facade`).
   - Wired `quadling_marble.jpg` & `caustic_water.jpg` onto Glinda's 8-column Pavilion marble dais and lotus reflecting pools (`dress_glinda_court`).
 - **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
+
+
+## Phase P3.2 — Tailor of Vices Boutique Painted Couture Product Icons Overhaul (Complete)
+- **Archived 10 Couture & Style References (`Generated References/Couture/Shop/`)** & created `08 Technical/Boutique Couture & Product Art Spec.md` (1 Global Style Moodboard + 9 Boutique Couture renders).
+- **Cropped 9 Square 256×256 Boutique Product Icons (`oz/assets/art/icons/shop/`)**: `dorothy_gingham.png`, `dorothy_velvet.png`, `dorothy_sovereign.png`, `dorothy_whip_plus.png`, `scarecrow_classic.png`, `scarecrow_obsidian.png`, `tinman_royal.png`, `lion_primal.png`, `toto_spiked.png`.
+- **Upgraded `ShopItemIcon` (`ui/widgets/shop_item_icon.gd`)**: Mapped all 13 `SHOP_CATALOG` items to their real painted 256×256 couture/portrait artwork framed in antique brass (74×74 medallions) with cached texture loading and graceful vector fallback.
+- **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
