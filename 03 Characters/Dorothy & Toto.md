@@ -44,10 +44,11 @@ Kansas is Dorothy's baseline: no shoes, no friends, no powers — just her and t
 - She talks to her companions constantly — combat barks are conversations.
 - She is scared often and acts anyway. Courage is the theme; she is the proof.
 
-### Animation Targets
-- Grounded, weighty run; heel-click idle flourish.
-- Blink = a sharp step-through-space with a trailing afterimage.
-- Kick = whole-body commitment; readable wind-up, strong hit-stop.
+### Animation Targets (Shipped in Phase P8.2 — see [[Dorothy 2026 Flagship Character & Dynamic Sky Spec]])
+- **2026 Flagship 3D Rig (`dorothy_visual.gd`)**: Sculpted heart-shaped face (blinking eyelids, dual-ring slate-blue irises, twin catchlights, arched brows, nose, Cupid's-bow lips, ears, freckles), articulated 4-joint spring-physics twin braids & silk ribbons, articulated hands with fingers, 12-pleat dynamic skirt + 20 scalloped lace hem beadlets, and 5 bespoke `set_outfit` Couture builds (`kansas_pinafore`, `dorothy_gingham`, `dorothy_velvet`, `dorothy_sovereign`, `dorothy_whip_plus`) across both gameplay and *The Tailor of Vices* Boutique turntable.
+- **Grounded, weighty run + turn banking + landing cushion**; automatic & manual (`[V]`) **Silver-Shoe Heel-Click** whimsical flourish.
+- **Blink** = aerodynamic dash pose + shimmering silver-cerulean departure silhouette afterimage (`CombatFx.blink_afterimage`) & starlight heel sparks.
+- **3-Stage Martial Kick Combo** = Hit 1 Snap Roundhouse (`10 dmg`) → Hit 2 `360°` Spinning Back-Heel Sweep (`14 dmg`) → Hit 3 Leaping Starlight Pirouette Crescent Finisher (`22 dmg`) + dedicated Armament cast choreography (`play_cast`).
 
 ---
 
