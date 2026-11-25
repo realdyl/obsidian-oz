@@ -657,3 +657,9 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
 - **Cropped 9 Square 256×256 Boutique Product Icons (`oz/assets/art/icons/shop/`)**: `dorothy_gingham.png`, `dorothy_velvet.png`, `dorothy_sovereign.png`, `dorothy_whip_plus.png`, `scarecrow_classic.png`, `scarecrow_obsidian.png`, `tinman_royal.png`, `lion_primal.png`, `toto_spiked.png`.
 - **Upgraded `ShopItemIcon` (`ui/widgets/shop_item_icon.gd`)**: Mapped all 13 `SHOP_CATALOG` items to their real painted 256×256 couture/portrait artwork framed in antique brass (74×74 medallions) with cached texture loading and graceful vector fallback.
 - **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
+
+
+## Phase P4.2 — Studio Character Portrait Bust Upgrade (Complete)
+- **Archived 5 Dedicated Studio Portrait Busts (`Generated References/Couture/Portraits/`)** & expanded `08 Technical/Boutique Couture & Product Art Spec.md` with Section 3.
+- **Upgraded 6 Live 256×256 Portraits (`oz/assets/art/portraits/`)**: Face-centered studio crops replacing turnaround-sheet crops for `dorothy.png`, `glinda.png`, `oz_hologram.png`, `wizard.png`, `wicked_witch.png`, and `locasta.png` across the Party Medallion Wheel, Dialogue Box, and Oz Grimoire.
+- **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.

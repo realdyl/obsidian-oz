@@ -22,3 +22,17 @@ All 13 `SHOP_CATALOG` items in `oz/systems/save_manager.gd` now render real 256Ã
 | `shop_lion_primal.jpg` | `lion_primal.png` | `lion_primal` (Primal Gold Harness) |
 | `shop_toto_spiked.jpg` | `toto_spiked.png` | `toto_silver_collar` (Silver-Spiked Collar) |
 | *(Character Portraits)* | `portraits/{tinman,lion,toto}.png` | `tinman_classic`, `lion_classic`, `toto_classic` |
+
+
+---
+
+## 3. Studio Character Portrait Busts (Phase P4.2)
+Archived in `10 Prompt Libraries/Image Generation/Generated References/Couture/Portraits/` and cropped face-centered at 256Ã—256 into `oz/assets/art/portraits/` (automatically upgrading the Party Medallion Wheel, Dialogue Box, and Oz Grimoire):
+
+| Reference File | Upgraded Game Portrait(s) (`oz/assets/art/portraits/`) | Visual Focus |
+| :--- | :--- | :--- |
+| `portrait_01_dorothy.jpg` | `dorothy.png` | Crisp blue gingham & embroidered white pinafore, silver-ribbon braids, ruby key pendant, plum velvet backdrop. |
+| `portrait_02_glinda.jpg` | `glinda.png` | Radiant auburn-haired Glinda wearing her golden ruby filigree crown & rose-brocade gown in her Quadling colonnade. |
+| `portrait_03_wizard_dual.jpg` | `oz_hologram.png`, `wizard.png` | Dual crop: glowing emerald holographic Wizard projection (left) + terrified Oscar Diggs peeking from behind the crimson velvet curtain (right). |
+| `portrait_04_wicked_witch.jpg` | `wicked_witch.png` | Baum-canon pale gaunt Wicked Witch with spiderweb iron eyepatch, Victorian mourning gown, and raven-head umbrella-staff. |
+| `portrait_05_locasta.jpg` | `locasta.png` | Silver-haired Locasta framed by a glowing celestial constellation halo, white starlight-lace gown, and brass armillary spheres. |
