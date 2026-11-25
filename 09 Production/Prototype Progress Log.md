@@ -637,3 +637,16 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
 - **Exported 7 Optimized 1280×720 Painted Scene Backdrops (`oz/assets/art/scenes/`)**: `kansas_calm.jpg`, `munchkinland.jpg`, `poppy_field.jpg`, `winkie_castle.jpg`, `emerald_city.jpg`, `glinda_court.jpg`, `kansas_homecoming.jpg`.
 - **Hourglass Level Transition Upgrade (`systems/level_transition.gd`)**: Added full-bleed 16:9 Act artwork behind the translucent veil (`alpha = 0.56`) and spinning antique brass hourglass, automatically matched to the destination Act via `_pick_backdrop_for(title)`.
 - **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
+
+
+## Phase P2.2 — Seamless Tileable PBR Surface Texture Integration Across All 7 Acts (Complete)
+- **Archived 6 Seamless Tileable PBR Surface Textures (`Generated References/Environments/Textures/`)** & expanded `08 Technical/Environments, Lighting & Biome Visual Fidelity Spec.md` with Section 2.
+- **Exported 6 Square 512×512 Seamless Tiles (`oz/assets/textures/`)**: `kansas_wood.jpg`, `quadling_marble.jpg`, `winkie_basalt.jpg`, `yellow_brick.jpg`, `caustic_water.jpg`, `emerald_marble.jpg`.
+- **Triplanar PBR World Material Pipeline (`systems/world_kit.gd`)**:
+  - Added cached `load_pbr_tex()` and `make_pbr_mat()` (`uv1_triplanar = true`) supporting both `ResourceLoader.load` and `Image.load_from_file`.
+  - Wired `yellow_brick.jpg` onto the continuous Yellow Brick Road mosaic paving & curb rails (`dress_ybr_spine`).
+  - Wired `kansas_wood.jpg` onto monochrome Kansas Gale Farmhouse & Barn walls/timbers (`dress_cottage_exterior`).
+  - Wired `winkie_basalt.jpg` onto the Winkie Castle Courtyard Water Cistern masonry (`build_water_cistern`).
+  - Wired `emerald_marble.jpg` onto the Art-Deco Emerald City Palace forecourt boulevard (`build_emerald_palace_facade`).
+  - Wired `quadling_marble.jpg` & `caustic_water.jpg` onto Glinda's 8-column Pavilion marble dais and lotus reflecting pools (`dress_glinda_court`).
+- **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.

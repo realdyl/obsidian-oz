@@ -22,3 +22,18 @@ Archived in `10 Prompt Libraries/Image Generation/Generated References/Environme
 ### Level Transition Integration (`oz/systems/level_transition.gd`)
 - Added a full-bleed `TextureRect` (`_backdrop`, `STRETCH_KEEP_ASPECT_COVERED`) beneath the translucent plum veil (`alpha = 0.56`) and spinning antique brass hourglass.
 - `_pick_backdrop_for(title)` automatically maps every Act transition title to its matching 1280×720 painted scene key art in `res://assets/art/scenes/`.
+
+
+---
+
+## 2. Seamless Tileable PBR Surface Textures (`1:1`, `--tile`) — Phase P2.2
+Archived in `10 Prompt Libraries/Image Generation/Generated References/Environments/Textures/` and exported as 512×512 seamless tiles into `oz/assets/textures/`:
+
+| Reference File | Runtime Texture (`oz/assets/textures/`) | Live 3D Integration (`oz/systems/world_kit.gd`) |
+| :--- | :--- | :--- |
+| `tex_01_kansas_wood.jpg` | `kansas_wood.jpg` | Triplanar-mapped onto monochrome Kansas Gale Farmhouse & Barn exteriors (`dress_cottage_exterior`) in L1 & L7. |
+| `tex_02_quadling_marble.jpg` | `quadling_marble.jpg` | Triplanar-mapped onto Glinda's 8-column Pavilion marble dais and rose-marble walkways (`dress_glinda_court`) in L6. |
+| `tex_03_winkie_basalt.jpg` | `winkie_basalt.jpg` | Triplanar-mapped onto the octagonal Winkie Castle Courtyard Water Cistern masonry (`build_water_cistern`) in L4. |
+| `tex_04_yellow_brick.jpg` | `yellow_brick.jpg` | Triplanar-mapped onto the continuous Yellow Brick Road mosaic paving strip and golden curb rails (`dress_ybr_spine`) across Oz. |
+| `tex_05_caustic_water.jpg` | `caustic_water.jpg` | Triplanar-mapped with subtle turquoise glow onto Glinda's Court lotus reflecting pools (`dress_glinda_court`) in L6. |
+| `tex_06_emerald_marble.jpg` | `emerald_marble.jpg` | Triplanar-mapped onto the Art-Deco Emerald City Palace forecourt boulevard plaza (`build_emerald_palace_facade`) in L5. |
