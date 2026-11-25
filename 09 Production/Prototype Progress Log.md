@@ -782,3 +782,44 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
 
 ### 4. Gemini 4 Carbon One-Shot Master Plan (`09 Production/Gemini 4 Carbon - P1.3 to P12.3 One-Shot Master Plan.md`)
 - Authored the complete **12-phase (`P1.3 → P12.3`) One-Shot Master Plan** in Obsidian covering: 2026 GPU UI shaders, live 3D Title Screen, Nano Banana asset pipeline integration, Companion Synergy Puzzles, Destructible Props, Velvet Sanctums, Side Quests (*Vile Requests*), Perfect Blink-Dodge, Style Rank, multi-phase bosses, act-by-act runtime expansion, and a ready-to-paste Carbon invocation prompt.
+
+
+---
+
+## 2026-11-25 — Phases P1.3 through P12.3 Complete (Gemini 4 Carbon One-Shot Retail & 2026 GUI Master Iteration)
+
+### 1. Retail 360° Camera Floor-Clamp, Layer-1 Collision & DualSense Right-Stick (`systems/party_manager.gd`, `actors/dorothy/player_controller.gd`, `actors/dorothy/kansas_controller.gd`)
+- Eliminated the under-the-floor camera bug across all 7 levels and all 5 playable characters via a triple-layer AAA guard:
+  1. Dynamic max-pitch solver (`pivot_h - CAM_FLOOR_CLEARANCE` vs `spring_length`, capped at `-3.5°`) so looking upward stops gracefully above the bricks/grass and never sees beneath terrain slabs.
+  2. Enabled `SpringArm3D` Layer-1 world collision (`SphereShape3D(0.22)`, `margin = 0.24`, party bodies excluded) + smooth scroll-wheel zoom (`2.5m–6.2m`).
+  3. Added PlayStation DualSense / Xbox Gamepad Right-Stick 360° orbit & floor-safe pitch (`JOY_AXIS_RIGHT_X` / `JOY_AXIS_RIGHT_Y` with `0.16` radial deadzone) plus per-frame `Camera3D` world-Y floor enforcement.
+
+### 2. 2026 Reference-True GPU UI Shaders, Live Title Screen, Gothic Pause Menu, Open-Book Grimoire, Boutique & HUD (`P1.3 → P3.3`)
+- **Custom GPU Shaders (`ui/shaders/`)**: Added `ui_velvet_plaque.gdshader` (smoked bronzed-obsidian velvet micro-grain & gold hover sheen), `ui_book_parchment.gdshader` (aged royal-plum parchment with deckle edges & central spine crease), and `emerald_spectacles.gdshader` (`[G]` toggleable Baum-canon Locked Green-Tinted Spectacles optical lens!).
+- **Winged Silver-Rose & Clockwork Crest (`ui/widgets/gothic_crest.gd`, `ui/widgets/ornate_frame.gd`)**: Added interlocking antique-brass corner cogwheels (`clockwork_gears = true`), multi-petal glowing Silver Rose crest, swept metallic feather wings, ribbon scroll banner, and floating Silver-Rose focus cursor.
+- **2026 Retail Title Screen (`ui/shell/title_screen.tscn`, `ui/shell/title_screen.gd`, `project.godot`)**: Ken Burns animated hero key art (`title_hero_oz.jpg`), drifting emerald/gold embers, gothic bramble silhouettes, smoked bronzed-obsidian filigree plaque buttons (`CONTINUE`, `NEW JOURNEY`, `CHAPTER SELECT`, `LOAD SAVE`, `THE TAILOR OF VICES`, `SETTINGS`, `QUIT`), and live Silver-Rose cursor.
+- **Unified Gothic Filigree Pause Menu (`ui/shell/pause_menu.gd`)**: Harmonized 1:1 with the Title Screen & Boutique (zero rainbow color clash), generous `48 px` safe-zone margins, embedded **Chapter Select (Acts I–VII)**, Save/Load Slots, and Title Screen return.
+- **Open Leather-Bound Oz Grimoire (`ui/grimoire_menu.gd`)**: Stacked cream page-fan edges, 3 sculpted antique-brass clasps on right cover, glowing Silver-Rose active bookmark tab, 6 tabs (*Quests & Vile Requests*, *Companions*, *Armaments*, *Curios*, *Bestiary*, *Shattered Memories*), and direct Curio equipping.
+- **Tailor of Vices Boutique (`ui/shop_menu.gd`, `ui/widgets/shop_item_icon.gd`)**: Added 12-spoke zodiac brass ring dais + volumetric theatrical spotlight cone, 6th **`✦ Curios`** tab with hovering shoe-relic halo preview, and `INSPECT IN GRIMOIRE` shortcut.
+- **Diegetic Gameplay HUD (`ui/play_hud.gd`)**: Added `CURRENT OBJECTIVE` `◈` diamond formatting + live `• Vile Request (x/y)` sub-objective line, animated **Style Rank Emblem** (`D · DARING` → `★ SOVEREIGN · 2.25× DESIRE`), and `[G]` Green-Tinted Spectacles lens toggle.
+
+### 3. Combat Mastery, Synergy Puzzles, Velvet Sanctums, Side Quests & Multi-Phase Bosses (`P4.3 → P12.3`)
+- **Combat & Progression (`systems/save_manager.gd`, `actors/dorothy/player_controller.gd`)**:
+  - **Silver Mirage (Perfect Blink-Dodge)**: Blinking near active threats triggers a silver-starlight stun ring, `+26` Style points, and bonus Desire.
+  - **Combo & Allure Style Rank (`D → C → B → A → S → ★ SOVEREIGN`)**: Multiplies Desire Fragment gains up to `2.25×` (`3.37×` in New Game+).
+  - **4 Silver-Shoe Curios / Charms**: *Echoing Silver Heel* (`+10` AoE wave on 3rd kick), *Thorn of Allure* (`+35%` vs Bound/Enamored), *Tin Clockwork Locket* (`6 Max HP` + heal on boss ground), and *Winged Cap Sigil* (`25%` faster Blink).
+- **Act-by-Act Expansion (`systems/oz_encounters.gd` + all 7 region scripts)**:
+  - **L1 Kansas**: *The Dropping Barometer* side quest (Storm Barometer + Aunt Em's Silver Thimble).
+  - **L2 Munchkinland**: *Vile Request: Sugar & Chains* (Guild Tax Coffers + Scarecrow Crow-Bell Totem), Toto Scent Cache, 8 destructible porcelain urns, **Velvet Sanctum of Echoes**, and Phase-II Marshal Whirlwind AoE telegraph.
+  - **L3 Poppy Canyon**: *Vile Request: Queen's Lost Scouts* Scent-Chimes, **Kalidah Shadow-Chimera** mini-boss, and **Velvet Sanctum of Thorns**.
+  - **L4 Winkie Castle**: *Vile Request: Unchained Iron* Slave-Shackle Pylons, **Sanctum of the Winged Cap**, and Phase-II Witch Winged-Monkey flanking dive telegraphs.
+  - **L5 Emerald City**: *Vile Request: Behind Green Glass* Humbug Illusion Seals (`[G]` Spectacles) and **Velvet Sanctum of Clockwork**.
+  - **L6 Glinda's Court**: *Vile Request: China Country Harmony* Alabaster Porcelain Chimes & Rose-Quartz Urns.
+  - **L7 Kansas Homecoming**: Interactive **Porch Memory Album** and automatic **`★ THE VELVET ROAD` (New Game+)** unlock!
+
+### Verified Headless Godot 4.8 Simulations (All 5 Exited 0, Zero Script Errors)
+- `smoke_check.gd`: `SMOKE_OK` (`L1–L7`)
+- `kansas_sim.gd`: `KANSAS_OK`
+- `play_sim.gd`: `PLAY_OK`
+- `act34_sim.gd`: `ACT34_OK` (`L3–L7`)
+- `retail_p3_sim.gd`: `TITLE_SCREEN_OK`, `STYLE_RANK_OK`, `CURIO_CHARM_6HP_OK`, `VILE_REQUEST_OK`, `VELVET_ROAD_NG_PLUS_OK`, `CAMERA_FLOOR_CLAMP_OK`, `MUNCHKIN_SANCTUM_AND_PUZZLES_OK`, `GRIMOIRE_6_TABS_OK`, `BOUTIQUE_6_TABS_OK`, `RETAIL_P3_ALL_OK`
