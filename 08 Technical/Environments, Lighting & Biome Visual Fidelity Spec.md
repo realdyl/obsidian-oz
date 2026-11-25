@@ -46,3 +46,13 @@ All 5 Batch-2 texture variants archived in `Generated References/Environments/Te
 - **Quadling Rose Marble (`quadling_marble.jpg`)**: **Batch 2 Winner** (`tex_b2_quadling_marble.jpg`) — crisper blush-rose marble contrast and octagonal filigree medallions.
 - **Kansas Barnwood (`kansas_wood.jpg`)**: **Batch 2 Winner** (`tex_b2_kansas_wood.jpg`) — more uniform plank width and cleaner vertical tiling rhythm across farmhouse/barn walls.
 - **Winkie Basalt (`winkie_basalt.jpg`)**: **Batch 1 Winner Kept** (`tex_03_winkie_basalt.jpg`) — symmetric riveted iron cross-strapping avoids the asymmetric corner iron plate repetition in Batch 2.
+
+
+---
+
+## 3. Act Title Cards & Loading Screens (`16:9`) — Phase P6.2
+Archived in `10 Prompt Libraries/Image Generation/Generated References/Environments/TitleCards/`:
+- `title_01_kansas_cyclone.jpg` → `oz/assets/art/scenes/title_kansas_cyclone.jpg` (cyclone/storm transitions)
+- `title_02_munchkinland.jpg` → promoted to `oz/assets/art/scenes/munchkinland.jpg` (spiral Yellow Brick Plaza + peppermint spires)
+- `title_03_poppy_field.jpg` → `oz/assets/art/scenes/title_hero_oz.jpg` (Main Title Screen & default hero transition key art)
+- `title_04_emerald_gates.jpg` → promoted to `oz/assets/art/scenes/emerald_city.jpg` (Art-Deco emerald gates + lion-head fountains)

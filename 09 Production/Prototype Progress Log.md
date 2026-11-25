@@ -669,3 +669,11 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
 - **Archived 5 Batch-2 Texture Variants (`Generated References/Environments/Textures/Batch2/`)** & documented the A/B art-direction review in `08 Technical/Environments, Lighting & Biome Visual Fidelity Spec.md`.
 - **Promoted 4 Batch-2 Winners into `oz/assets/textures/`**: Upgraded `yellow_brick.jpg` (sun-lotus radial cobbles), `emerald_marble.jpg` (richer Art-Deco lattice), `quadling_marble.jpg` (crisper rose filigree), and `kansas_wood.jpg` (uniform plank rhythm), while retaining Batch 1's symmetric `winkie_basalt.jpg` and `caustic_water.jpg`.
 - **Verification**: `tools/smoke_check.gd` exited `0` (`SMOKE_OK`).
+
+
+## Phase P6.2 — Act Title Cards Integration & Gemini 4 Carbon 2026 Overhaul Blueprint (Complete)
+- **Archived 4 Act Title Cards (`Generated References/Environments/TitleCards/`)** — completing **100% of all planned image asset libraries**!
+- **Exported & Wired Hero & Act Loading Art (`oz/assets/art/scenes/`, `systems/level_transition.gd`)**:
+  - Exported `title_hero_oz.jpg` (default hero key art) and `title_kansas_cyclone.jpg` (cyclone/storm transitions), and promoted the iconic Munchkinland spiral plaza (`munchkinland.jpg`) and Emerald City lion-fountain gates (`emerald_city.jpg`).
+- **Gemini 4 Carbon Preparation (`08 Technical/Gemini 4 Carbon — 2026 Vivid GUI & Shader Overhaul Plan.md`)**: Authored the complete asset inventory, custom CanvasItem shader roadmap (gilded metallic sheen, frosted plum-velvet blur, liquid rose vitality bar), micro-interaction targets, and 3D ACES/Sobel-normal material polish plan for Phases P7.2–P12.2.
+- **Verification**: `tools/smoke_check.gd` exited `0` (`SMOKE_OK`).
