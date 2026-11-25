@@ -37,3 +37,12 @@ Archived in `10 Prompt Libraries/Image Generation/Generated References/Environme
 | `tex_04_yellow_brick.jpg` | `yellow_brick.jpg` | Triplanar-mapped onto the continuous Yellow Brick Road mosaic paving strip and golden curb rails (`dress_ybr_spine`) across Oz. |
 | `tex_05_caustic_water.jpg` | `caustic_water.jpg` | Triplanar-mapped with subtle turquoise glow onto Glinda's Court lotus reflecting pools (`dress_glinda_court`) in L6. |
 | `tex_06_emerald_marble.jpg` | `emerald_marble.jpg` | Triplanar-mapped onto the Art-Deco Emerald City Palace forecourt boulevard plaza (`build_emerald_palace_facade`) in L5. |
+
+
+### Batch 1 vs. Batch 2 A/B Texture Selection (Phase P5.2)
+All 5 Batch-2 texture variants archived in `Generated References/Environments/Textures/Batch2/`. Art-direction winners promoted into `oz/assets/textures/`:
+- **Yellow Brick Road (`yellow_brick.jpg`)**: **Batch 2 Winner** (`tex_b2_yellow_brick.jpg`) — tighter concentric radial sun-lotus cobble medallions with cleaner 3rd-person road readability.
+- **Emerald City Marble (`emerald_marble.jpg`)**: **Batch 2 Winner** (`tex_b2_emerald_marble.jpg`) — richer deep emerald veining and tighter symmetrical Art-Deco gold lattice.
+- **Quadling Rose Marble (`quadling_marble.jpg`)**: **Batch 2 Winner** (`tex_b2_quadling_marble.jpg`) — crisper blush-rose marble contrast and octagonal filigree medallions.
+- **Kansas Barnwood (`kansas_wood.jpg`)**: **Batch 2 Winner** (`tex_b2_kansas_wood.jpg`) — more uniform plank width and cleaner vertical tiling rhythm across farmhouse/barn walls.
+- **Winkie Basalt (`winkie_basalt.jpg`)**: **Batch 1 Winner Kept** (`tex_03_winkie_basalt.jpg`) — symmetric riveted iron cross-strapping avoids the asymmetric corner iron plate repetition in Batch 2.

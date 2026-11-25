@@ -663,3 +663,9 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
 - **Archived 5 Dedicated Studio Portrait Busts (`Generated References/Couture/Portraits/`)** & expanded `08 Technical/Boutique Couture & Product Art Spec.md` with Section 3.
 - **Upgraded 6 Live 256×256 Portraits (`oz/assets/art/portraits/`)**: Face-centered studio crops replacing turnaround-sheet crops for `dorothy.png`, `glinda.png`, `oz_hologram.png`, `wizard.png`, `wicked_witch.png`, and `locasta.png` across the Party Medallion Wheel, Dialogue Box, and Oz Grimoire.
 - **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
+
+
+## Phase P5.2 — Best-of-Batch Seamless PBR Texture A/B Selection (Complete)
+- **Archived 5 Batch-2 Texture Variants (`Generated References/Environments/Textures/Batch2/`)** & documented the A/B art-direction review in `08 Technical/Environments, Lighting & Biome Visual Fidelity Spec.md`.
+- **Promoted 4 Batch-2 Winners into `oz/assets/textures/`**: Upgraded `yellow_brick.jpg` (sun-lotus radial cobbles), `emerald_marble.jpg` (richer Art-Deco lattice), `quadling_marble.jpg` (crisper rose filigree), and `kansas_wood.jpg` (uniform plank rhythm), while retaining Batch 1's symmetric `winkie_basalt.jpg` and `caustic_water.jpg`.
+- **Verification**: `tools/smoke_check.gd` exited `0` (`SMOKE_OK`).
