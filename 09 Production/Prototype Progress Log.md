@@ -723,3 +723,38 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
   - Built `build_kansas_interior()` replacing all raw `_ks_prop` boxes across the Kansas Farmhouse (pot-belly cast-iron woodstove + kettle, iron-frame quilt bed, kitchen hutch, turned-leg table & chairs), Barn (twine-bound hay bales, horse stall, 8-spoke wagon wheel, workbench), and Chicken Coop (straw nesting boxes with eggs & perched chickens).
   - Upgraded `add_interior_activities()` with the brimming 16-crystal **Carved Walnut & Brass Desire Chest** (`prop_02_desire_chest.jpg`) + opening crimson-gold burst VFX, and **5 bespoke sculpted 3D Shattered Memory keepsakes** (`kansas_barn_diary`, `kansas_locket`, `munchkin_silver_ledger`, `munchkin_porcelain_mask`, `emerald_spectacles`).
 - **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script/shader errors.
+
+
+---
+
+## 2026-11-25 — Phase P11.2 Complete (Live Store Outfit Sync Across All Levels, 2026 Flagship Sub-Characters Overhaul & Glossy Tactile Jewel Pause Menu)
+
+### 1. Live Store Outfit & Object Synchronization Across All Levels (`systems/save_manager.gd`, `actors/dorothy/dorothy_visual.gd`, `actors/companions/*_visual.gd`, `actors/companions/toto_companion.gd`, `regions/kansas/toto.gd`)
+- **Universal World Sync (`SaveManager.apply_outfit_to_world`)**: Upgraded group lookup to scan `player`, `toto`, `companions`, and `party` (with `"tin"` substring matching so `TinMan` and `TinWoodman` both match), resolving `Visual/Body` or nested `Body` children and invoking `set_outfit(resolved_id)` immediately on purchase or equip.
+- **Reactive `SaveManager.state_changed` Listeners**: Connected Dorothy, Scarecrow, Tin Woodman, Cowardly Lion, Oz Toto, and Kansas Toto directly to `SaveManager.state_changed` so outfits and objects purchased in *The Tailor of Vices* appear instantaneously on every character in whatever level they are currently standing in — and persist seamlessly across all L1–L7 transitions.
+- **Kansas L1 & L7 Couture Parity**: Updated `dorothy_visual.gd` to honor equipped store Couture (`dorothy_velvet`, `dorothy_sovereign`, `dorothy_whip_plus`) even in `greyscale` Kansas scenes (falling back to `"kansas_pinafore"` only for default gingham), and added `set_outfit()` + `SaveManager` sync to `regions/kansas/toto.gd` so Toto's Silver-Spiked Collar appears in Kansas L1 as well.
+
+### 2. 2026 Flagship High-Fidelity Sub-Characters Overhaul (`systems/world_kit.gd`, `actors/enemies/puppet_munchkin.gd`)
+- **Shared 2026 Sculpted Face & Articulated Hand Builders (`WorldKit._build_npc_face`, `_build_npc_hand`)**: Heart-shaped cranium, tapered jaw, sculpted nose bridge/tip, ears, almond sclera + iris + pupil + specular catchlight, arched brows, Cupid's-bow lips, optional forged-iron riveted eyepatch, and contoured palms with thumbs + 4 tapered fingers.
+- **Locasta (`build_locasta_visual`)**: 12-pleat fluted starlight ballgown, sculpted 2026 face, braided silver hair, articulated fingered hands, crystal-ring scepter, and Northern Star halo.
+- **Glinda (`build_glinda_visual`)**: 12-pleat snow-white & rose-silk ballgown, sculpted 2026 face, cascading auburn braids, fingered hands, ruby-star scepter & tiara.
+- **Wicked Witch of the West (`build_west_witch_visual` — Baum 1900 PD canon)**: Chalk-pale gaunt 2026 face with single fierce amber eye & forged-iron riveted eyepatch, silver side braid, 10-pleat obsidian & crimson gothic corset gown with gold boning, fingered hands gripping a raven-pommel iron umbrella-staff.
+- **Oscar Diggs / Humbug Wizard (`build_humbug_wizard`)**: Sculpted lace-up boots (zero box feet), gold watch chain on waistcoat, sculpted face with curled handlebar moustache & torus gold spectacles, silk top hat with tucked Omaha Fair ticket, fingered hands, and an upgraded Geared Brass Projector Console with glowing emerald lens & lever knobs.
+- **Aunt Em & Uncle Henry (`build_kansas_farmer`, L1 & L7)**: Monochrome 2026 faces & fingered hands; 10-pleat prairie skirt & cameo pin for Aunt Em; sculpted lace-up boots, buckled suspenders, handlebar moustache & banded prairie hat for Uncle Henry.
+- **6 Harnessed Field Mice (`build_mice_cart_visual`)**: Pink noses, glossy dark eyes with specular catchlights, inner/outer ears, and torus golden thread harnesses.
+- **Rogue Munchkin Enforcers & Lollipop Guild Marshals (`puppet_munchkin.gd`)**: Exposed brass clockwork gear inside the cracked porcelain mask, 5-segment curved stitched grin, glowing eyes with specular catchlights, and sculpted leather boots with spats replacing blocky `BoxMesh` feet.
+
+### 3. 2026 Glossy Tactile Jewel Pause / Main Menu Redesign (`ui/shell/pause_menu.gd`)
+- Replaced the flat, tightly stacked dark rectangles with a generous `560×610` beveled modal card (`30 px` padding, `16 px` vertical spacing, `22 px` corners, `6 px` bottom 3D bevel), jeweled crest header + pill-framed `GAME PAUSED` subtitle, and recessed `✦ CURRENT OBJECTIVE` ribbon card.
+- Engineered color-coded 3D-cushion jewel buttons (`_style_jewel_button` with `6 px` bottom cushion bevel, hover rim glow, pressed sink depth, text outlines, and `AudioFx` feedback):
+  - **Hero Emerald Jewel CTA**: `▶   RESUME GAME` (`56 px` tall)
+  - **2-Column Chunky Feature Tiles** (`58 px` tall): Royal Amethyst `📖 GRIMOIRE (J)` + Crimson-Ruby `♦ BOUTIQUE (B)` with live Desire Fragment counter badge
+  - **Sapphire-Velvet Utility Stack** (`48 px` tall, `12 px` spacing): Save/Load, Settings & Controls, Restart Checkpoint
+  - **Garnet Exit Footer** separated by a gold divider: `✕   Quit to Desktop`
+- Upgraded the 3-Slot Save/Load sub-panel with individual recessed slot cards, jewel Save/Load/Delete buttons, `Esc` sub-panel return, and Kansas monochrome theme parity.
+
+### Verified Headless Godot 4.8 Simulations (All Exited 0, Zero Script Errors)
+- `smoke_check.gd`: `SMOKE_OK` (`L1–L7`)
+- `kansas_sim.gd`: `KANSAS_OK` (`STORM_RUN_OK`, `DOOR_REVEAL_OK`, `HOUSE_LIFT_OK phase=7`)
+- `play_sim.gd`: `PLAY_OK` (`LOCASTA_OK`, `BLINK dist=1.70`, `TIN_PATH_OK`, `TAB_CYCLE_OK leader=scarecrow`)
+- `act34_sim.gd`: `ACT34_OK` (`POPPY_OK`, `WEST_OK`, `EMERALD_OK`, `GLINDA_OK`, `HOME_OK`, `ACT5_OK`, `ACT6_OK`, `ACT7_OK`)
