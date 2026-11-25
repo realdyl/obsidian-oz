@@ -32,3 +32,20 @@ Maps approved prop references in `10 Prompt Libraries/Image Generation/Generated
 - Kinky Armaments (Lace Whip, Silk Bindings, Hypnotic Perfume, Gilded Chain)
 - Shattered Memories (Locket, Weather Ledger, Cracked Mask, Debt Book, Green Spectacles)
 - World Interactive Props (Desire Chest, Porcelain Urn, Fence Wind Chimes, Street Lantern)
+
+
+---
+
+## 2. Kinky Armaments & Combat Tools (`[C]` / `[Z/X]`) — Phase P10.1
+Archived in `10 Prompt Libraries/Image Generation/Generated References/Objects/Armaments/`:
+
+| Reference File | In-Game Armament | GUI Icon (`oz/assets/art/icons/`) | Visual & 3D VFX Blueprint |
+| :--- | :--- | :--- | :--- |
+| `arm_01_crimson_whip.jpg` | **The Lace Whip** (Slot 1 · Bind & Yank) | `arm_whip.png` | Deep burgundy-crimson hand-braided silk bullwhip, engraved antique-brass floral rose hilt with ruby pommel, and a glowing faceted ruby-crystal lash tip caged in gold filigree (`combat_fx.gd:whip_lash` → burgundy-crimson lash + ruby & gold impact burst). |
+| `arm_02_poppy_atomizer.jpg` | **Hypnotic Perfume** (Slot 3 · Enamored Mist) | `arm_atomizer.png` | Faceted amethyst-violet crystal perfume bottle encased in gilded brass rose-vine filigree with crimson mesh squeeze bulb & tassel spraying violet-rose narcotic mist (`combat_fx.gd:perfume_cloud` → dual-shell amethyst-violet & rose-pink shimmer cloud). |
+| `arm_03_gilded_chain.jpg` | **The Gilded Chain** (Slot 4 · Damage Tether) | `arm_chain.png` | Heavy hammered antique-gold links ending in twin engraved rose-copper shackle clasps with knurled locking screws (`combat_fx.gd:gilded_chain` → hammered gold tether + twin rose-copper shackle anchor flashes). |
+| `arm_04_silk_ribbon.jpg` | **Silk Bindings** (Slot 2 · Multi-Cocoon) | `arm_ribbon.png` | Turned wooden tailor's spool wound with iridescent dusty-rose & lavender silk ribbon embroidered with glowing golden Celtic/shibari knotwork (`combat_fx.gd:silk_cocoon` → dusty-rose silk rings + orbiting golden knotwork halo). |
+
+### GUI Integration
+- **Main HUD (`oz/ui/play_hud.gd`)**: Added a gilded 24×24 framed `_armament_icon` thumbnail right beside the `[C]` Armament HUD prompt that swaps dynamically in `set_active_armament()` as the player cycles armaments with `[Z/X]`.
+- **Oz Grimoire (`oz/ui/grimoire_menu.gd`)**: Wired all 4 painted icons into `ARMAMENT_LORE` so opening `[J]` → `ARMAMENTS` frames each weapon's artwork in antique brass.

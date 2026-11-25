@@ -598,3 +598,17 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
   - **Tin Man's Vintage Oil Can (`build_oil_can_visual`)**: Upgraded base from stone plinth to a mossy forest tree stump with cut wood rings and moss collar, plus an angled brass filler cap on the reservoir shoulder (`obj_02_oil_can.jpg`).
   - **Dorothy's Wicker Picnic Basket (`build_wicker_basket`)**: Added twin slightly-ajar hinged wicker picnic lids atop the basket rim (`obj_04_wicker_basket.jpg`).
 - **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
+
+
+## Phase P10.1 — Kinky Armaments Icon Integration, HUD Slot & 3D Combat VFX Overhaul (Complete)
+- **Archived 4 Kinky Armament References (`Generated References/Objects/Armaments/`)** & expanded `08 Technical/Objects, Armaments & Props Visual Fidelity Spec.md` with Section 2 (`arm_01_crimson_whip.jpg`, `arm_02_poppy_atomizer.jpg`, `arm_03_gilded_chain.jpg`, `arm_04_silk_ribbon.jpg`).
+- **Painted Armament Icons & Live GUI (`oz/assets/art/icons/`, `ui/play_hud.gd`, `ui/grimoire_menu.gd`)**:
+  - Cropped 256×256 PNG icons: `arm_whip.png`, `arm_atomizer.png`, `arm_chain.png`, `arm_ribbon.png`.
+  - Added a gilded 24×24 framed `_armament_icon` thumbnail beside the `[C]` Armament HUD slot in `play_hud.gd` that dynamically swaps as the player cycles armaments (`[Z/X]`).
+  - Wired all 4 icons into `ARMAMENT_LORE` in `grimoire_menu.gd` (`[J]` → `ARMAMENTS`).
+- **3D Combat VFX Fidelity Pass (`systems/combat_fx.gd`)**:
+  - `whip_lash`: Burgundy-crimson silk lash with faceted ruby-crystal & golden filigree tip impact burst.
+  - `silk_cocoon`: Iridescent dusty-rose/lavender silk rings paired with an orbiting glowing golden knotwork halo.
+  - `perfume_cloud`: Dual-shell amethyst-violet and rose-pink narcotic mist bloom.
+  - `gilded_chain`: Hammered antique-gold tether with twin engraved rose-copper shackle anchor flashes.
+- **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
