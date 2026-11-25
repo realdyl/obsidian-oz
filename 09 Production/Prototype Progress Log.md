@@ -630,3 +630,10 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
   - **Breakable Porcelain Urn (`spawn_destructible_urn`)**: Upgraded to a rococo mint-and-blush porcelain amphora with scalloped gilded foot & flared rim, twin scrolling gold handles, and blush rose medallions (`prop_03_porcelain_urn.jpg`).
   - **Yellow Brick Road Gas Streetlamp (`make_street_lantern`)**: Added stepped octagonal cast-iron pedestal base, twin Victorian ladder cross-bar, and spiked crown finial atop the glowing amber lantern hood (`prop_04_ybr_streetlamp.jpg`).
 - **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
+
+
+## Phase P1.2 — Act-by-Act Scene & Lighting Style Sheets Archive & Level Transition Backdrops (Complete)
+- **Archived 9 Act-by-Act Scene & Lighting Style Sheets (`Generated References/Environments/Scenes/`)** & created `08 Technical/Environments, Lighting & Biome Visual Fidelity Spec.md` covering all 7 Acts (L1–L7).
+- **Exported 7 Optimized 1280×720 Painted Scene Backdrops (`oz/assets/art/scenes/`)**: `kansas_calm.jpg`, `munchkinland.jpg`, `poppy_field.jpg`, `winkie_castle.jpg`, `emerald_city.jpg`, `glinda_court.jpg`, `kansas_homecoming.jpg`.
+- **Hourglass Level Transition Upgrade (`systems/level_transition.gd`)**: Added full-bleed 16:9 Act artwork behind the translucent veil (`alpha = 0.56`) and spinning antique brass hourglass, automatically matched to the destination Act via `_pick_backdrop_for(title)`.
+- **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
