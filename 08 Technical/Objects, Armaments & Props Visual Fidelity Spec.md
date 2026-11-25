@@ -49,3 +49,20 @@ Archived in `10 Prompt Libraries/Image Generation/Generated References/Objects/A
 ### GUI Integration
 - **Main HUD (`oz/ui/play_hud.gd`)**: Added a gilded 24×24 framed `_armament_icon` thumbnail right beside the `[C]` Armament HUD prompt that swaps dynamically in `set_active_armament()` as the player cycles armaments with `[Z/X]`.
 - **Oz Grimoire (`oz/ui/grimoire_menu.gd`)**: Wired all 4 painted icons into `ARMAMENT_LORE` so opening `[J]` → `ARMAMENTS` frames each weapon's artwork in antique brass.
+
+
+---
+
+## 3. Shattered Memories (Codex Lore Collectibles) — Phase P11.1
+Archived in `10 Prompt Libraries/Image Generation/Generated References/Objects/Memories/`:
+
+| Reference File | `MEMORY_CATALOG` Key | Grimoire Icon (`oz/assets/art/icons/`) | Visual & Narrative Detail |
+| :--- | :--- | :--- | :--- |
+| `mem_01_cyclone_ledger.jpg` | `kansas_barn_diary` | `mem_cyclone_ledger.png` | Open oil-stained 1899 barometer & weather observations ledger with hand-drawn storm pressure charts, inkwell, and axle grease tin. |
+| `mem_02_aunt_em_locket.jpg` | `kansas_locket` | `mem_aunt_em_locket.png` | Open oval tarnished pewter/silver locket holding a faded sepia daguerreotype of Aunt Em standing before the Kansas prairie homestead. |
+| `mem_03_guild_ledger.jpg` | `munchkin_silver_ledger` | `mem_guild_ledger.png` | Silver-clasped dark-leather bound Registry of Names lying open on plum velvet beside a quill pen and silver inkwell. |
+| `mem_04_porcelain_mask.jpg` | `munchkin_porcelain_mask` | `mem_porcelain_mask.png` | Uncanny pastel-painted smiling porcelain Munchkin mask fractured down the left eye to reveal intricate brass clockwork gears and steel clock hands. |
+| `mem_05_emerald_spectacles.jpg` | `emerald_spectacles` | `mem_emerald_spectacles.png` | Round brass-framed green-tinted glass spectacles with mechanical locking screws on the temples, resting on plum velvet beside a brass case and oil lamp. |
+
+### Oz Grimoire Milestone (`oz/ui/grimoire_menu.gd`)
+- **All 5 Tabs of the Oz Grimoire (`[J]`)** — *Quests, Companions, Armaments, Bestiary, and Shattered Memories* — now render 100% real hand-painted 256×256 artwork framed in antique brass!

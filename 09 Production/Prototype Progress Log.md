@@ -612,3 +612,11 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
   - `perfume_cloud`: Dual-shell amethyst-violet and rose-pink narcotic mist bloom.
   - `gilded_chain`: Hammered antique-gold tether with twin engraved rose-copper shackle anchor flashes.
 - **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
+
+
+## Phase P11.1 — Shattered Memories Codex Integration & Full Grimoire Art Completion (Complete)
+- **Archived 5 Shattered Memory References (`Generated References/Objects/Memories/`)** & expanded `08 Technical/Objects, Armaments & Props Visual Fidelity Spec.md` with Section 3 (`mem_01_cyclone_ledger.jpg` through `mem_05_emerald_spectacles.jpg`).
+- **Painted Shattered Memory Icons (`oz/assets/art/icons/`, `ui/grimoire_menu.gd`)**:
+  - Cropped 256×256 PNG icons: `mem_cyclone_ledger.png`, `mem_aunt_em_locket.png`, `mem_guild_ledger.png`, `mem_porcelain_mask.png`, `mem_emerald_spectacles.png`.
+  - Wired all 5 icons 1-to-1 into `MEMORY_CATALOG` in `grimoire_menu.gd` (`[J]` → `SHATTERED MEMORIES`), completing 100% real painted artwork across all 5 tabs of the Oz Grimoire!
+- **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
