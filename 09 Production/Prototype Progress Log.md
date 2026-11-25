@@ -13,6 +13,26 @@ updated: 2026-11-23
 
 Living log for Godot `oz/` vs this vault. Agents append dated bullets; do not delete history.
 
+## 2026-11-25 — Post-P12.3 Playtest Polish Pass 2 & Gemini 4 Carbon `P1.4 → P12.4` Master Plan
+
+- **Low-Angle 360° Camera Allowance (`systems/party_manager.gd`, `actors/dorothy/kansas_controller.gd`, `tools/retail_p3_sim.gd`):**
+  - Expanded upward pitch ceiling to `17.5°` with tighter floor clearance (`0.18m`) and `CAM_MIN_LEN = 2.3m`, allowing low dramatic upward hero angles while strictly preventing the camera from ever dipping beneath the floor.
+- **Living Tree Anti-Stuck Fix (`actors/enemies/living_tree.gd`):**
+  - Widened solid trunk collider (`radius = 1.08m`, `height = 4.6m`), added per-frame anti-embed pushout for all party members (`< 1.38m -> 1.44m`), and added fallen-log clearance pushout on death so players can never get trapped inside apple-throwing trees.
+- **Poppy Field Rescue, Solid Wind Fountain & Cart-Lion Separation (`regions/poppy/poppy_road.gd`):**
+  - Replaced the flat walk-through cyan `ClearAir` orb with a solid `StaticBody3D` sculpted alabaster & gold Crystal Wind-Fountain Pedestal with orbiting wind-rings (collider toggles cleanly with visibility).
+  - Enforced `2.65–2.95m` solid separation between the Mice Cart and the sleeping Lion in `_tick_haul` so the cart never rolls over or clips through him.
+  - Replaced the jerky wake-up snap for Dorothy and the Lion with smooth stand-up & animated walk-to-meadow choreography (`_waking_dorothy` / `_waking_lion` + `set_locomotion`).
+- **Settings Menu Contrast Fix (`ui/theme/oz_theme_factory.gd`):**
+  - Added a dedicated dark smoked-velvet `pressed` StyleBox and bright ivory `font_pressed_color` for `CheckButton`, eliminating the unreadable light-on-light contrast on toggled-ON options such as *"Combat Hit-Stop & Screen Shake"*.
+- **Dorothy's Held 3D Lace Whip & Always-Visible Crack (`actors/dorothy/dorothy_visual.gd`, `actors/dorothy/player_controller.gd`):**
+  - Mounted a sculpted 3D `WhipInHand` (engraved brass/velvet hilt, rose pommel, crimson-silk braided lash & glowing ruby tip) directly in Dorothy's right hand across Oz scenes, and ensured pressing `C` (Lace Whip) always fires a visible `CombatFx.whip_lash` + ruby flash + `"✦ CRACK!"` even when no enemy is in range.
+- **Solid World Props (`systems/world_kit.gd`):**
+  - Added Layer-1 `StaticBody3D` colliders to Emerald City Fountains (`radius = 2.45m`), Grand Portal Arch pillars (`radius = 0.48m`), Wooden Signposts, Gnarled Trees, and Street Lanterns.
+- **Gemini 4 Carbon `P1.4 → P12.4` Master Plan (`09 Production/Gemini 4 Carbon - P1.4 to P12.4 Master Plan.md`):**
+  - Authored the full 12-phase expansion blueprint for **15-minute-per-act pacing** (expanded multi-terrace geography, side-quests, & bespoke sub-activities across L1–L7) and **beautified `Z`/`X`/`C` superpower kits** for all 5 playable characters (Dorothy, Scarecrow, Tin Man, Lion, Toto).
+- **Verification:** All 5 Godot 4.8 headless simulation suites (`smoke_check`, `kansas_sim`, `play_sim`, `act34_sim`, `retail_p3_sim`) verified `exit 0` with zero script errors.
+
 ## 2026-11-23 — Phase P5: Universal Jump, Solid Dais Platforms, Sealed Emerald Double Doors, Volumetric Oz Projection, Unified L7 Kansas & Label3D Sweep
 
 - **Universal `Space` Jump + Low-Curb Step & Solid Platforms (`locomotion_util.gd`, `player_controller.gd`, `scarecrow.gd`, `tinman.gd`, `lion.gd`, `toto_companion.gd`, `glinda_court.gd`, `world_kit.gd`):**
