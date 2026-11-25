@@ -66,3 +66,16 @@ Archived in `10 Prompt Libraries/Image Generation/Generated References/Objects/M
 
 ### Oz Grimoire Milestone (`oz/ui/grimoire_menu.gd`)
 - **All 5 Tabs of the Oz Grimoire (`[J]`)** — *Quests, Companions, Armaments, Bestiary, and Shattered Memories* — now render 100% real hand-painted 256×256 artwork framed in antique brass!
+
+
+---
+
+## 4. World Interactive Props, Destructibles & Whimsy — Phase P12.1
+Archived in `10 Prompt Libraries/Image Generation/Generated References/Objects/WorldProps/` (**18/18 total Object & Prop references complete!**):
+
+| Reference File | In-Game Prop | 3D & Icon Upgrade |
+| :--- | :--- | :--- |
+| `prop_01_crystal_chimes.jpg` | **Munchkinland Crystal Wind Chimes** (`landing_square.gd`, `world_kit.gd:build_crystal_chimes`) | Replaced placeholder cyan box with a sculpted wrought-iron garden hanger, chandelier crown ring, alternating silver bells, and luminous faceted crystal prisms. |
+| `prop_02_desire_chest.jpg` | **Desire Fragment Loot Chest** (`oz/assets/art/icons/desire_chest.png`) | Cropped 256×256 icon of carved dark-walnut brass-strapped chest brimming with radiant crimson-rose Desire Crystals. |
+| `prop_03_porcelain_urn.jpg` | **Breakable Porcelain Urn** (`world_kit.gd:spawn_destructible_urn`) | Upgraded to a rococo mint-and-blush porcelain amphora with scalloped gilded foot & flared rim, twin scrolling gold handles, and blush rose medallions. |
+| `prop_04_ybr_streetlamp.jpg` | **Yellow Brick Road Gas Streetlamp** (`world_kit.gd:make_street_lantern`) | Added stepped octagonal cast-iron pedestal base, twin Victorian ladder cross-bar, and spiked crown finial atop the glowing amber lantern hood. |

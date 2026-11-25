@@ -620,3 +620,13 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
   - Cropped 256×256 PNG icons: `mem_cyclone_ledger.png`, `mem_aunt_em_locket.png`, `mem_guild_ledger.png`, `mem_porcelain_mask.png`, `mem_emerald_spectacles.png`.
   - Wired all 5 icons 1-to-1 into `MEMORY_CATALOG` in `grimoire_menu.gd` (`[J]` → `SHATTERED MEMORIES`), completing 100% real painted artwork across all 5 tabs of the Oz Grimoire!
 - **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
+
+
+## Phase P12.1 — World Interactive Props, Destructibles & Whimsy Fidelity Pass (Complete)
+- **Archived 4 World Prop References (`Generated References/Objects/WorldProps/`)** & completed all 4 sections of `08 Technical/Objects, Armaments & Props Visual Fidelity Spec.md` (**18/18 total Object & Prop references archived!**).
+- **Cropped Desire Chest Icon (`oz/assets/art/icons/desire_chest.png`)** from `prop_02_desire_chest.jpg`.
+- **3D World Prop & Whimsy Upgrades (`systems/world_kit.gd`, `regions/munchkinland/landing_square.gd`)**:
+  - **Munchkinland Crystal Wind Chimes (`build_crystal_chimes`)**: Replaced the placeholder cyan box in `landing_square.gd` with a sculpted scrolling wrought-iron garden hanger, chandelier crown ring, alternating silver bells, and luminous faceted crystal prisms (`prop_01_crystal_chimes.jpg`).
+  - **Breakable Porcelain Urn (`spawn_destructible_urn`)**: Upgraded to a rococo mint-and-blush porcelain amphora with scalloped gilded foot & flared rim, twin scrolling gold handles, and blush rose medallions (`prop_03_porcelain_urn.jpg`).
+  - **Yellow Brick Road Gas Streetlamp (`make_street_lantern`)**: Added stepped octagonal cast-iron pedestal base, twin Victorian ladder cross-bar, and spiked crown finial atop the glowing amber lantern hood (`prop_04_ybr_streetlamp.jpg`).
+- **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.
