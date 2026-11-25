@@ -758,3 +758,27 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
 - `kansas_sim.gd`: `KANSAS_OK` (`STORM_RUN_OK`, `DOOR_REVEAL_OK`, `HOUSE_LIFT_OK phase=7`)
 - `play_sim.gd`: `PLAY_OK` (`LOCASTA_OK`, `BLINK dist=1.70`, `TIN_PATH_OK`, `TAB_CYCLE_OK leader=scarecrow`)
 - `act34_sim.gd`: `ACT34_OK` (`POPPY_OK`, `WEST_OK`, `EMERALD_OK`, `GLINDA_OK`, `HOME_OK`, `ACT5_OK`, `ACT6_OK`, `ACT7_OK`)
+
+
+---
+
+## 2026-11-25 — Phase P12.2 Complete (Unified 2026 Royal Jewel Palette, Universal OrnateFrame Perimeter Fix, Dialogue/HUD Padding & Gemini 4 Carbon P1.3–P12.3 Master Plan)
+
+### 1. Root-Cause Perimeter Fix for All Framed UI Panels (`ui/widgets/ornate_frame.gd`)
+- Fixed the core Godot `PanelContainer` layout collision where `OrnateFrame` was shrunk into the inner `content_margin` rect and drew gold borders directly on top of dialogue text, buttons, and HUD labels.
+- `OrnateFrame` now detects `get_parent() is PanelContainer` and expands to `Rect2(-position, parent.size).grow(-outer_pad)`, ensuring every gold filigree border hugs the outer card perimeter cleanly with guaranteed breathing room across the entire game.
+
+### 2. Unified 2026 Obsidian-Plum, Burnished-Gold & Imperial-Emerald Palette (`ui/theme/oz_theme_factory.gd`, `ui/shell/pause_menu.gd`, `ui/shop_menu.gd`)
+- Replaced the sporadic 7-color Pause Menu scheme with `OzThemeFactory.style_royal_button(...)` shared identically between the **Pause Menu**, **The Tailor of Vices Boutique**, and **Save/Load Slots**:
+  - `primary` (Imperial Emerald `#16684A` + Burnished Gold rim) for Hero CTAs (`RESUME GAME`, `BUY & EQUIP`, `Save`)
+  - `featured` (Royal Velvet Amethyst + Gold rim) for `GRIMOIRE (J)` and active Shop Character Tabs
+  - `crimson` (Velvet Crimson-Rose + Gold rim) for `BOUTIQUE (B)`
+  - `secondary` (Unified Obsidian Velvet + Antique Brass rim) for all utility actions (`Save/Load`, `Settings`, `Restart`, inactive Shop Tabs, `Close`, `Back`)
+  - `danger` (Muted Velvet Garnet) for `Quit to Desktop` & Delete Slot
+- Increased Pause Menu card sizing (`600×648`) and outer safe-zone padding (`46 px` horizontal, `38/36 px` vertical), plus widened Shop outer padding (`34/28 px`) and detail card padding (`22/16 px`).
+
+### 3. Dialogue Pop-Up & HUD Safe-Zone Padding (`systems/dialogue_ui.gd`, `ui/theme/oz_theme_factory.gd`)
+- Expanded `DialogueUI` content margins to `44 px` horizontal and `28/24 px` vertical, shifted the speaker nameplate to `x = 38`, and raised `make_panel_style` HUD padding to `26×18 px` so dialogue lines (e.g., `"Hee-hee!"`), `[E] continue ▸`, and top-left objective text sit cleanly inside the dark velvet interior without ever touching gold borders.
+
+### 4. Gemini 4 Carbon One-Shot Master Plan (`09 Production/Gemini 4 Carbon - P1.3 to P12.3 One-Shot Master Plan.md`)
+- Authored the complete **12-phase (`P1.3 → P12.3`) One-Shot Master Plan** in Obsidian covering: 2026 GPU UI shaders, live 3D Title Screen, Nano Banana asset pipeline integration, Companion Synergy Puzzles, Destructible Props, Velvet Sanctums, Side Quests (*Vile Requests*), Perfect Blink-Dodge, Style Rank, multi-phase bosses, act-by-act runtime expansion, and a ready-to-paste Carbon invocation prompt.
