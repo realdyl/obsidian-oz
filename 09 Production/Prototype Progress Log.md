@@ -13,6 +13,19 @@ updated: 2026-11-23
 
 Living log for Godot `oz/` vs this vault. Agents append dated bullets; do not delete history.
 
+## 2026-11-25 — Interactive Back-and-Forth Dialogue Overhaul & Book-Length Runtime Blueprint (3.5–4.5 Hours)
+
+- **Game-Wide Interactive Back-and-Forth Conversations (`farmyard.gd`, `landing_square.gd`, `wizard_tower.gd`, `glinda_court.gd`, `homecoming.gd`):**
+  - Eliminated all one-sided NPC monologues across all 7 Acts so every story exchange alternates naturally between speakers (dynamically swapping portrait medallions and nameplates on every turn):
+    - **L1 Kansas:** Aunt Em ↔ Dorothy porch exchange & Uncle Henry ↔ Dorothy storm banter.
+    - **L2 Munchkinland:** Locasta ↔ Dorothy full 8-line back-and-forth (replacing 8 consecutive Locasta lines).
+    - **L5 Emerald City:** OZ (projection) ↔ Dorothy ↔ Scarecrow ↔ Tin Man ↔ Lion throne-room audience.
+    - **L6 Quadling Country:** Glinda ↔ Dorothy ↔ Scarecrow ↔ Tin Man ↔ Lion heartfelt farewell & Silver Shoes reveal.
+    - **L7 Kansas Homecoming:** Aunt Em ↔ Dorothy ↔ Toto joyful porch reunion.
+- **Book-Length Runtime & Pacing Blueprint (`09 Production/Book-Length Runtime & Pacing Blueprint.md`, `09 Production/Gemini 4 Carbon - P1.4 to P12.4 Master Plan.md`):**
+  - Authored a full **24-chapter Baum (1900) → 7-Act runtime blueprint** targeting **~3.5 to 4.5 hours (240–300 min)** to match thoroughly reading *The Wonderful Wizard of Oz* cover-to-cover, detailing per-act minute budgets, anti-filler design pillars, multi-terrace landmarks (Kalidah Chasm, Fighting Trees Orchard, Dainty China Country, Balloon Launch), and 5-character swapping puzzles for Gemini 4 Carbon.
+- **Verification:** All 5 Godot 4.8 headless simulation suites (`smoke_check`, `kansas_sim`, `play_sim`, `act34_sim`, `retail_p3_sim`) verified `exit 0` with zero script errors.
+
 ## 2026-11-25 — Post-P12.3 Playtest Polish Pass 2 & Gemini 4 Carbon `P1.4 → P12.4` Master Plan
 
 - **Low-Angle 360° Camera Allowance (`systems/party_manager.gd`, `actors/dorothy/kansas_controller.gd`, `tools/retail_p3_sim.gd`):**
