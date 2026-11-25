@@ -677,3 +677,16 @@ Shared FX: `systems/combat_fx.gd`. Enemies chase **current Lead** (Bond).
   - Exported `title_hero_oz.jpg` (default hero key art) and `title_kansas_cyclone.jpg` (cyclone/storm transitions), and promoted the iconic Munchkinland spiral plaza (`munchkinland.jpg`) and Emerald City lion-fountain gates (`emerald_city.jpg`).
 - **Gemini 4 Carbon Preparation (`08 Technical/Gemini 4 Carbon — 2026 Vivid GUI & Shader Overhaul Plan.md`)**: Authored the complete asset inventory, custom CanvasItem shader roadmap (gilded metallic sheen, frosted plum-velvet blur, liquid rose vitality bar), micro-interaction targets, and 3D ACES/Sobel-normal material polish plan for Phases P7.2–P12.2.
 - **Verification**: `tools/smoke_check.gd` exited `0` (`SMOKE_OK`).
+
+
+## Phase P7.2 — 2026 Vivid Shader-Driven GUI, Circular Party Wheel, Armament Dock & Couture Combat Perks (Complete)
+- **GPU CanvasItem Shader Suite (`oz/ui/shaders/`)**: Authored `frosted_velvet_backdrop.gdshader` (obsidian-plum damask + drifting gold dust motes + Kansas mix), `circle_medallion.gdshader` (anti-aliased convex-glass circular portrait/icon mask, animated gold rim sweep, radial cooldown wipe), and `rapture_vignette.gdshader` (*Alice*-class crimson-thorn perimeter vignette).
+- **Full `ref_03_gameplay_hud.jpg` HUD Realization (`oz/ui/widgets/`, `oz/ui/play_hud.gd`)**:
+  - Built `party_medallion_wheel.gd` (bottom-left circular 5-portrait dial with 70×70 center Lead, 4 orbiting 44×44 companions, golden tether spokes, bond pips, and spring-scale swap pop).
+  - Built `armament_dock.gd` (bottom-right 4 circular brass Armament medallions with live radial cooldown wipe & pulsing `[H] RAPTURE` readiness pill).
+  - Built `allure_gauge.gd` (crested magenta-to-molten-gold liquid `ALLURE` bar with hung nameplate + faceted glowing `DESIRE` crystal plaque & rolling counter) and upgraded `rose_vitality_bar.gd` (5 multi-tier Crimson-Silver Roses on thorny vine with scattering petal particles on damage).
+- **Modal & Logic Polish (`grimoire_menu.gd`, `shop_menu.gd`, `pause_menu.gd`, `dialogue_ui.gd`, `save_manager.gd`, `player_controller.gd`, `audio_manager.gd`)**:
+  - Added left-row portraits, draping golden silk bookmark ribbon, and page-turn tweens/SFX to the Oz Grimoire.
+  - Added scroll-wheel 3D turntable zoom and `+XX%` stat delta labels to *The Tailor of Vices* Boutique.
+  - Fixed `SaveManager` slot persistence for `owned_items`, `equipped_outfits`, and `difficulty`, and wired real Couture combat perks (`+25%`/`+40%` Allure multiplier, `-15%` Sovereign Blink cooldown, and `+8` Lace Whip Mastery damage & `13.5m` reach).
+- **Verification**: All 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) exited `0` with zero script errors.

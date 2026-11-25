@@ -37,3 +37,30 @@ Every visual library in `obsidian-oz/10 Prompt Libraries/Image Generation/Genera
 
 ### C. Verification Guardrail (Non-Negotiable)
 Every Gemini 4 Carbon iteration MUST pass all 4 headless Godot 4.8 simulations (`smoke_check.gd`, `kansas_sim.gd`, `play_sim.gd`, `act34_sim.gd`) with exit code `0` and zero script errors, and commit/push both `realdyl/oz` and `realdyl/obsidian-oz`.
+
+
+---
+
+## 3. Execution Status — Phase P7.2 Shipped (2026-11-24)
+
+### Shipped in `realdyl/oz` (Phase P7.2)
+1. **2026 GPU CanvasItem Shader Suite (`oz/ui/shaders/`)**:
+   - `frosted_velvet_backdrop.gdshader`: Obsidian-plum damask diamond weave, radial edge vignette, drifting golden/silver dust motes, and Kansas film-noir mix parameter behind `GrimoireMenu`, `ShopMenu`, `PauseMenu`, and `DialogueUI`.
+   - `circle_medallion.gdshader`: Anti-aliased circular portrait & armament mask with convex glass-dome sheen, animated metallic brass rim sweep, locked silhouette desaturation, Kansas greyscale toggle, and radial clock-wipe cooldown overlay.
+   - `rapture_vignette.gdshader`: *Alice*-class Rapture / Hysteria screen-perimeter thorny crimson-rose & molten-gold veins with unobstructed center combat clarity.
+2. **True `ref_03_gameplay_hud.jpg` HUD Architecture (`oz/ui/widgets/` & `oz/ui/play_hud.gd`)**:
+   - **Bottom-Left `PartyMedallionWheel` (`party_medallion_wheel.gd`)**: Smoked-velvet & double-brass circular dial with 70×70 center Lead portrait, 4 orbiting 44×44 companion portrait medallions, golden tether spokes, 4 bond pips, spring-elastic Lead swap animation, and attached `[F]` kit verb pill.
+   - **Bottom-Right `ArmamentDock` (`armament_dock.gd`)**: 4 circular brass-framed painted Armament medallions (`1`–`4` / `[C]`) with spring selection scale, live radial cooldown wipe, and pulsing `✦ [H] RAPTURE READY` badge.
+   - **Top-Right Frameless Vitality & Allure Cluster (`rose_vitality_bar.gd`, `allure_gauge.gd`)**: 5 multi-layered Crimson-Silver Roses on a curved thorny silver vine with scattering petal physics on damage + crested magenta-to-molten-gold `ALLURE` liquid shimmer bar + faceted glowing `DESIRE` crystal plaque with rolling counter.
+   - **Exploration Restraint & A11y High-Contrast Hook**: Smoothly dims combat chrome slightly during calm exploration and snaps to `1.0` opacity on threat or when `SaveManager.high_contrast_hud` is enabled.
+3. **Grimoire, Boutique, Dialogue & Core Logic Polish**:
+   - **`grimoire_menu.gd`**: Framed portrait icons on left-page rows, custom-drawn draping golden silk bookmark ribbon (`BookmarkRibbon`), smooth page-turn fade tween, and `page_turn` / `ui_hover` SFX.
+   - **`shop_menu.gd`**: Mouse-wheel camera zoom (`2.25m–4.15m`) on the 3D turntable, `+XX%` stat delta readouts beside the 12-pip bars, `OrnateFrame` detail card, and hover audio feedback.
+   - **`save_manager.gd` & `player_controller.gd`**: Fixed save/load slot persistence for `owned_items`, `equipped_outfits`, and `difficulty` (with auto-reapply across level transitions), and wired real Couture gameplay perks (`dorothy_velvet` `+25%` Allure, `dorothy_sovereign` `+40%` Allure & `-15%` Blink cooldown, `dorothy_whip_plus` `+8` Lace Whip damage & `13.5m` reach).
+
+### Next Target: Phase P8.2 → P12.2 Roadmap
+- **Phase P8.2**: Dedicated Boot / Title Screen (`main_title.gd` with Ken Burns hero stage, drifting poppy/emerald embers, Continue / New Journey / Load Slot / Settings / Credits) + Diegetic Wicker Basket Quick-Inspect Overlay.
+- **Phase P9.2**: Procedural Runtime Sobel Normal & Roughness Map Generation (`WorldKit.load_pbr_tex`) + Per-Act ACES Filmic Tonemapping, Volumetric Fog & Selective Bloom (`scene_01a`–`scene_07` parity).
+- **Phase P10.2**: Multi-Phase Boss HUD Stagger/Telegraph Polish + Lock-On Clockwork-Rose Reticle (`[R]` / `MMB`).
+- **Phase P11.2**: EnvironmentalCompanion Puzzle Polish & Velvet Sanctum Challenge Trials.
+- **Phase P12.2**: Adaptive Multi-Stem Audio Crossfader, Dynamic Gamepad/Steam Deck Glyphs & 60 FPS Shipping Audit.
