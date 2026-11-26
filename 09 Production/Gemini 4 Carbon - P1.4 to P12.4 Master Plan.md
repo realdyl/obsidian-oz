@@ -50,7 +50,28 @@ Every playable character gets **4 selectable `Z` / `X` Extra Superpowers cast wi
 
 ---
 
-## 3. Execution Sequence (`P1.4 → P12.4`)
+## 3. Concept Art & Boss Visual Reference Specs (For Gemini 4 Carbon)
+
+Gemini 4 Carbon should directly sculpt and elevate every major enemy, boss, and set piece from the user's 6 newly supplied high-fidelity design sheets:
+
+1. **The Orchard Guardian · The Gnarled Oak** — Towering twisted-root ent with glowing ember skull-maw, mossy beard, shoulder-fungi, and spiked iron-bound apple bombs (L2 Timber Ravine & L6 Fighting Trees Orchard).
+2. **Emerald City Holo-Projector Throne** — Cathedral-scale dark-emerald marble hall with twin Tesla brass projector coils, crackling emerald plasma lightning arcs, giant volumetric wireframe-hologram Oz visage, and ornate brass clockwork lens projectors behind the throne.
+3. **The Winged Monkey · The Sky-Stalker** — Charcoal-furred simian predator with snarling fangs, glowing amber eyes, spiked brass-trimmed shoulder pauldrons & bracers, curved tail, and large leathery bat-wings with feathered secondary ridges (already prototyped in `actors/enemies/winged_monkey.gd`, expand with Golden Cap summon & rooftop perches in Carbon!).
+4. **The Wicked Witch of the West · Boss Encounter** — Baum-canon chalk-pale gaunt sorceress with ornate black eye-patch, single piercing amber eye, tattered obsidian lace gown, iron belt keys/vials, and raven-headed gothic umbrella-staff with dark flame aura.
+5. **Munchkin Guild Enforcer · The Toymaker's Blade** — Cracked porcelain-doll grin, pastel mint-and-rose striped uniform with brass guild badge, tattered bell-tipped hat, and gilded cleaver-axe.
+6. **The Lollipop Guild Marshal · Boss Encounter** — Heavy spiked crimson-and-gunmetal plate armor, tall plumed shako hat with golden swirl emblem & skull crest, brass clockwork steam back-pack, crimson sash, and giant serrated candy-striped cleaver.
+
+---
+
+## 4. New Level Authorization (24-Chapter Baum Fidelity)
+
+> **User Mandate:** Gemini 4 Carbon is explicitly authorized to **create new playable levels (`.tscn` + `.gd`)** where doing so makes the 24-chapter, ~3.5–4.5 hour book-length arc feel cohesive, unhurried, and faithful to L. Frank Baum (1900):
+> - **Recommended New Level A — `L3a · The Kalidah Wilds & River Chasm` (`regions/wilds/kalidah_wilds.tscn`)**: Bridges Munchkinland (`L2`) and the Deadly Poppy Field (`L3b`) — featuring the two deep chasms (Lion leaps the first; Tin Man fells a great tree across the second), the **Kalidah Shadow-Chimera** ambush, and the wooden raft river crossing (Baum Ch. 7–8).
+> - **Recommended New Level B — `L6a · Fighting Trees & Dainty China Country` (`regions/south/china_country.tscn`)**: Bridges Emerald City (`L5`) and Glinda's Court (`L6b`) — featuring the **Orchard Guardian / Fighting Trees** grove, the climbable white porcelain wall of **Dainty China Country**, the delicate porcelain village traversal, and the **Giant Forest Spider** duel where the Cowardly Lion becomes King of Beasts (Baum Ch. 18–21).
+
+---
+
+## 5. Execution Sequence (`P1.4 → P12.4`)
 
 1. **P1.4**: Physical held 3D ability props for all 5 playables + unified `Z`/`X`/`C` Extra Ability bar in `ArmamentDock` (auto-swaps icons when you press `1–5` / `Tab`!).
 2. **P2.4**: Full VFX & animation beautification of Dorothy's 4 Armaments (ribbon trails, crystal atomizer mist, chain links, multi-segment physics whip).

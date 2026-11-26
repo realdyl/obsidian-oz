@@ -13,6 +13,24 @@ updated: 2026-11-23
 
 Living log for Godot `oz/` vs this vault. Agents append dated bullets; do not delete history.
 
+## 2026-11-26 — Neon Pre-Carbon Iteration: Couture Footwear/Hosiery, Sculpted 3D Whip, Vase Shattering Synergy, Spyro Dialogue Camera, Winged Monkeys & Marshals
+
+- **Boutique Footwear & Hosiery Layering (`systems/save_manager.gd`, `ui/shop_menu.gd`, `actors/dorothy/dorothy_visual.gd`):**
+  - Added selectable **Silver Enchanted Slippers**, **Silver Stiletto Heels**, **Velvet Lace Fishnets**, and **Crimson Thong & Fishnets** (`+20% Allure`) in Dorothy's Boutique as independent layered slots (`equipped_footwear`, `equipped_hosiery`) that preview live on the 3D turntable and persist across all levels alongside any dress.
+- **2026 Sculpted Continuous 3D Held Whip & Whip-Crack Choreography (`dorothy_visual.gd`, `combat_fx.gd`, `player_controller.gd`):**
+  - Replaced the disconnected whip capsules with a continuous 26-segment `SurfaceTool` braided bullwhip hanging naturally from Dorothy's right hand (velvet-and-brass grip, rose pommel, bolster knot, smooth tapered catenary lash, glowing ruby tip).
+  - Upgraded Dorothy's whip-crack animation to a 2-stage athletic coil-and-snap (`dorothy_visual.gd`) and replaced the static cylinder with a 12-segment animated sinusoidal S-wave whip lash + supersonic white-gold crack ring & ruby spark shower (`combat_fx.gd`).
+- **Visual 3D Vase Shattering & `C`-Ability Synergy (`destructible_prop.gd`, `whimsy.gd`, `combat_fx.gd`, `player_controller.gd`):**
+  - Added `CombatFx.shatter_porcelain()` (11 tumbling ballistic 3D porcelain/mint/gold shards) so vases visually shatter on both `F` and destructive `C` attacks (`Lace Whip`, `Gilded Chain`), which also smash-collect nearby whimsies.
+  - Non-destructive enchantment `C` abilities (`Hypnotic Perfume`, `Silk Bindings`) enchant nearby vases and whimsies with a rose-amethyst aura (`"♥ PERFUMED · 2× REWARD!"`) so shattering or collecting them afterward awards **2× Desire Fragments / Whimsy points**.
+- **Spyro: Year of the Dragon-Style Cinematic Dialogue Camera (`party_manager.gd`, `dialogue_ui.gd`, `farmyard.gd`, `landing_square.gd`, `wizard_tower.gd`, `glinda_court.gd`, `homecoming.gd`):**
+  - Added `Party.enter_dialogue_shot()` / `exit_dialogue_shot()` with consistent 180° axis shot/reverse-shot framing, `44°` cinematic FOV, gentle breathing sway, auto-facing, and animated 44px top/bottom cinema letterbox bars across all 5 major story conversations.
+- **Winged Monkeys & Lollipop Guild Marshals in L4 Winkie Castle (`actors/enemies/winged_monkey.gd`, `regions/winkie/west_castle.gd`):**
+  - Built the **Winged Monkey (Sky-Stalker)** enemy from the concept sheet (articulated flapping bat-wings, spiked brass pauldrons, amber eyes, swooping dive-bomb AI) and spawned **3 Winged Monkeys + 2 Armored Lollipop Guild Marshals** guarding the Wicked Witch of the West's courtyard.
+- **Obsidian Carbon Pre-Planning (`09 Production/Gemini 4 Carbon - P1.4 to P12.4 Master Plan.md`):**
+  - Cataloged all 6 newly uploaded Boss/Creature/Throne concept sheets and added explicit new-level recommendations (`L3a Kalidah Wilds`, `L6a Fighting Trees & Dainty China Country`) for Gemini 4 Carbon's `P1.4 → P12.4` pass.
+- **Verification:** All 5 Godot 4.8 headless simulation suites (`smoke_check`, `kansas_sim`, `play_sim`, `act34_sim`, `retail_p3_sim`) verified `exit 0` with zero script errors.
+
 ## 2026-11-25 — Interactive Back-and-Forth Dialogue Overhaul & Book-Length Runtime Blueprint (3.5–4.5 Hours)
 
 - **Game-Wide Interactive Back-and-Forth Conversations (`farmyard.gd`, `landing_square.gd`, `wizard_tower.gd`, `glinda_court.gd`, `homecoming.gd`):**
