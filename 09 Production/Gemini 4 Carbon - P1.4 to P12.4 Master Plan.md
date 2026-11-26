@@ -1,7 +1,7 @@
 ---
 title: Gemini 4 Carbon — P1.4 to P12.4 Master Plan (15-Minute Acts & All-Party Superpowers)
 type: production
-status: active
+status: completed
 tags:
   - oz
   - oz/production
@@ -9,10 +9,12 @@ tags:
   - oz/carbon
   - oz/pacing
   - oz/abilities
-updated: 2026-11-25
+updated: 2026-11-26
 ---
 
 # *Oz: The Road Home* — Gemini 4 Carbon Master Plan (`P1.4 → P12.4`)
+
+> **Status (2026-11-26):** **SHIPPED & VERIFIED (`P1.4 → P12.4` COMPLETE)** — All 9 campaign scenes (including `L3a · Kalidah Wilds` and `L6a · Dainty China Country`), all 5 party `Z`/`X`/`C` superpower kits + `Silver Heel-Click`, real-time viseme lip-sync + ElevenLabs voice hook, zero-occlusion Spyro dialogue camera, Victorian silk hot-air balloon, 2026 smoked-obsidian world plaques, and painted Boutique icons ([[Couture Footwear, Hosiery & Ability Icons Prompts]]) are live and passing all 5 headless QA suites.
 
 > **Goal:** Elevate *Oz: The Road Home* to a **full book-length odyssey (~3.5 to 4.5 hours total — matching the time to thoroughly read L. Frank Baum's 24-chapter 1900 novel cover-to-cover)**, with **interactive back-and-forth conversations** across every cast member and **fully beautified `Z` / `X` / `C` extra superpowers with held 3D props & bespoke VFX for all 5 playable characters** (Dorothy, Scarecrow, Tin Woodman, Cowardly Lion, and Toto).
 >

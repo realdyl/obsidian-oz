@@ -6,12 +6,36 @@ tags:
   - oz
   - oz/production
   - oz/prototype
-updated: 2026-11-23
+updated: 2026-11-26
 ---
 
 # Prototype Progress Log
 
 Living log for Godot `oz/` vs this vault. Agents append dated bullets; do not delete history.
+
+## 2026-11-26 — Gemini 4 Carbon `P1.4 → P12.4` Master Iteration: Viseme Lip-Sync + ElevenLabs Hook, Zero-Occlusion Dialogue Camera, All-Party `Z`/`X`/`C` Kits, `↑↑` Sprint, 2 New Book Levels (`Kalidah Wilds` & `Dainty China Country`), Victorian Silk Balloon & 2026 Plaques
+
+- **Bespoke Painted Boutique & Ability Icons + Obsidian Prompt Library (`assets/art/icons/shop/*`, `ui/widgets/shop_item_icon.gd`, `10 Prompt Libraries/Image Generation/Couture Footwear, Hosiery & Ability Icons Prompts.md`):**
+  - Replaced placeholder stars on new Boutique items (`dorothy_heels`, `dorothy_slippers`, `dorothy_fishnets`, `dorothy_thong_lingerie`) and Dorothy's new `Silver Heel-Click` (`arm_heel_click.png`) with bespoke painted gothic-couture icons and documented all prompts in [[Couture Footwear, Hosiery & Ability Icons Prompts]].
+- **Phoneme/Viseme Mouth Sync ("Oos" & "Ahs") + ElevenLabs Voice Hook + Zero-Occlusion Dialogue Camera (`systems/world_kit.gd`, `systems/dialogue_ui.gd`, `systems/party_manager.gd`, `dorothy_visual.gd`, `scarecrow_visual.gd`, `tinman_visual.gd`, `lion_visual.gd`):**
+  - Built articulated 3D `MouthRig` (`UpperLip`, `LowerLip`, `MouthCavity`, `TeethHint` / hinged jaw) across Dorothy, Scarecrow, Tin Man, Lion, and all story NPCs (`WorldKit._build_npc_face`), driven at 60 FPS by real-time digraph/vowel phoneme mapping (`AH`, `OO`, `EE`, `MID`, `Closed`) synced to spoken dialogue.
+  - Added `ElevenLabsVoicePlayer` in `dialogue_ui.gd` that automatically plays drop-in ElevenLabs voice-clone clips at `res://assets/audio/voices/<speaker_slug>/<md5_10>.ogg|.mp3|.wav` before falling back to OS TTS.
+  - Upgraded `Party.enter_dialogue_shot()` to part all non-speaking/non-listening party members `±2.65m` outside the camera-to-speaker corridor so companions (e.g. Tin Man) never block the talking character, and fixed Lion's `calm_and_join()` in `glinda_court.gd` so he follows the party in Quadling Country.
+- **Dorothy's `Silver Heel-Click` (`C` × 3), Cut-Crystal `Hypnotic Perfume`, & All-Party `Z`/`X`/`C` Superpowers (`armament_dock.gd`, `play_hud.gd`, `player_controller.gd`, `scarecrow.gd`, `tinman.gd`, `lion.gd`, `toto_companion.gd`, `combat_fx.gd`, `glinda_court.gd`):**
+  - Added `Silver Heel-Click` to Dorothy's `Z`/`X`-toggleable `C` controls in every Oz level and wired Glinda's Road Home pad (`glinda_court.gd`) so clicking **`C` 3 times** taps her Silver Heels in a starlight burst to return to Kansas.
+  - Added a sculpted 3D Cut-Crystal `PerfumeAtomizer` in Dorothy's left hand with a directional spray cone and billowing rose-amethyst mist vortex (`CombatFx.perfume_cloud`).
+  - Wired full 4-ability `Z`/`X`/`C` superpower kits for **Scarecrow**, **Tin Woodman**, **Cowardly Lion**, and **Toto**, dynamically updating `ArmamentDock` whenever the Lead changes (`1–5` / `Tab`).
+- **Double-Tap Up Arrow (`↑↑`) Athletic Sprint & Anti-Stuck Obstacle Steering (`locomotion_util.gd`, `puppet_munchkin.gd`, all character visuals):**
+  - Added `340ms` double-tap `Up Arrow` / `W` running trigger with distinct athletic sprint / rotary feline & terrier bounding gallop biomechanics across all 5 characters, plus 3-whisker cottage avoidance and 8-ray radial stall recovery (`460ms`) so neither players nor Rogue Munchkins get wedged on buildings.
+- **West Castle Debugger Break Fix & Progressive 3-Stage Siege (`combat_fx.gd`, `winged_monkey.gd`, `west_castle.gd`):**
+  - Added missing `CombatFx.hit_sparks()` (resolving the runtime debugger break when Winged Monkeys dived) and staged Winkie Keep into a peaceful south road spawn (`z=+58`) followed by 3 progressive waves (`Vanguard` → `Courtyard Sky-Stalkers` → `Inner Sanctum Witch`).
+- **Victorian 16-Gore Silk Hot-Air Balloon & 2026 Smoked-Glass World Plaques (`world_kit.gd`, `homecoming.gd`, `wizard_tower.gd`, `west_castle.gd`, `poppy_road.gd`):**
+  - Built `WorldKit.build_hot_air_balloon()` (fluted 16-gore silk envelope, meridian bands, scalloped bunting & tassels, 12 rigging cables, twin copper burners with flame glow, woven wicker gondola & 6 sandbags), moored in Emerald City (`wizard_tower.gd`) and drifting in monochrome over Kansas (`homecoming.gd`).
+  - Upgraded `WorldKit.make_world_badge()` to a depth-free 2026 smoked-obsidian & gold-rim floating pill plaque (`no_depth_test = true`, tight proximity fade), permanently eliminating wall-sliced labels like `"Exit Chicker"`.
+- **Two New 24-Chapter Book-Faithful Levels (`regions/wilds/kalidah_wilds.*`, `regions/south/china_country.*`, `title_screen.gd`):**
+  - **`L3a · The Kalidah Wilds & Great Chasms` (Ch. VII):** Interactive Spyro-camera chasm counsel, Lion's Courage Leap over the First Chasm, 2 sculpted 3D **Kalidah Beasts** (bear bodies + sabre-tiger heads), and Tin Man's Towering Pine chop that topples `90°` across the Second Chasm into a solid walkable bridge.
+  - **`L6a · Fighting Trees & Dainty China Country` (Ch. XVIII–XXI):** Fighting Trees Orchard, gleaming white-and-cobalt glazed **Dainty China Country** with miniature Delft teapot cottages & interactive **China Princess** dialogue, and the **Giant 8-Legged Forest Spider** boss crowning the Lion King of Beasts.
+- **Verification:** All 5 Godot 4.8 headless simulation suites (`smoke_check`, `kansas_sim`, `play_sim`, `act34_sim`, `retail_p3_sim`) verified `exit 0` with zero script errors across all 9 playable campaign scenes.
 
 ## 2026-11-26 — Neon Pre-Carbon Iteration: Couture Footwear/Hosiery, Sculpted 3D Whip, Vase Shattering Synergy, Spyro Dialogue Camera, Winged Monkeys & Marshals
 
